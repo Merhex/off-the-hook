@@ -11,7 +11,7 @@ describe('comparisons', () => {
     for (const c of COMPARISONS) {
       expect(describeComparison(c, 1, 'en')).toBeTruthy();
       expect(describeComparison(c, 3, 'en')).toContain('3');
-      expect(describeComparison(c, 3, 'cs')).toContain('3×');
+      for (const l of ['cs', 'nl', 'lt'] as const) expect(describeComparison(c, 3, l)).toContain('3×');
     }
   });
 });

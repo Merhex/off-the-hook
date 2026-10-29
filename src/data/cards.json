@@ -5,11 +5,15 @@
       "id": "weak-hand-cat",
       "title": {
         "en": "Picasso Paw",
-        "cs": "Picassova tlapka"
+        "cs": "Picassova tlapka",
+        "nl": "Picasso-poot",
+        "lt": "Pikaso letena"
       },
       "task": {
         "en": "Draw a cat with your weaker hand in 30 seconds. Then give it a tragic backstory. It has one.",
-        "cs": "Nakresli kočku slabší rukou za 30 sekund. Pak jí vymysli tragický příběh. Nějaký určitě má."
+        "cs": "Nakresli kočku slabší rukou za 30 sekund. Pak jí vymysli tragický příběh. Nějaký určitě má.",
+        "nl": "Teken in 30 seconden een kat met je zwakke hand. Geef hem daarna een tragisch verleden. Dat heeft hij.",
+        "lt": "Per 30 sekundžių nupiešk katę silpnesne ranka. Tada sugalvok jai tragišką praeitį. Ji tokią turi."
       },
       "rarity": "common",
       "category": "ridiculous",
@@ -23,11 +27,15 @@
       "id": "ice-cube-hold",
       "title": {
         "en": "Cold Blooded",
-        "cs": "Studenokrevná"
+        "cs": "Studenokrevná",
+        "nl": "Koelbloedig",
+        "lt": "Šaltakraujis"
       },
       "task": {
         "en": "Hold an ice cube for 30 seconds, or until your hand files a complaint. Bluefin are warm-blooded. You are now neither.",
-        "cs": "Drž kostku ledu 30 sekund, nebo dokud ti ruka nepodá stížnost. Tuňák obecný je teplokrevný. Ty teď nejsi ani jedno."
+        "cs": "Drž kostku ledu 30 sekund, nebo dokud ti ruka nepodá stížnost. Tuňák obecný je teplokrevný. Ty teď nejsi ani jedno.",
+        "nl": "Hou 30 seconden een ijsblokje vast, of tot je hand een klacht indient. Blauwvintonijnen zijn warmbloedig. Jij bent nu geen van beide.",
+        "lt": "Laikyk ledo kubelį 30 sekundžių arba kol ranka pateiks skundą. Tunai šiltakraujai. Tu dabar nei toks, nei toks."
       },
       "rarity": "common",
       "category": "sensory",
@@ -41,11 +49,15 @@
       "id": "landed-jacks",
       "title": {
         "en": "Flop on Deck",
-        "cs": "Plácání na palubě"
+        "cs": "Plácání na palubě",
+        "nl": "Spartelen aan dek",
+        "lt": "Plastas denyje"
       },
       "task": {
         "en": "15 jumping jacks, performed like a tuna that just got landed on a boat and has opinions about it.",
-        "cs": "15 skákacích panáků jako tuňák, kterého právě vytáhli na loď a má k tomu svůj názor."
+        "cs": "15 skákacích panáků jako tuňák, kterého právě vytáhli na loď a má k tomu svůj názor.",
+        "nl": "15 jumping jacks, uitgevoerd als een tonijn die net aan boord is gehaald en daar een mening over heeft.",
+        "lt": "15 šuolių išskėstomis rankomis ir kojomis, lyg būtum tunas, ką tik ištrauktas į valtį ir turintis apie tai nuomonę."
       },
       "rarity": "common",
       "category": "physical",
@@ -59,11 +71,15 @@
       "id": "sour-face",
       "title": {
         "en": "Face Crime",
-        "cs": "Zločin obličejem"
+        "cs": "Zločin obličejem",
+        "nl": "Gezichtsmisdaad",
+        "lt": "Veido nusikaltimas"
       },
       "task": {
         "en": "Eat or lick something sour. Lemon, sour candy, pickle juice, whatever’s in the fridge. Commit to the face.",
-        "cs": "Sněz nebo olízni něco kyselého. Citron, kyselé bonbony, nálev od okurek, cokoli je v lednici. Ten výraz dotáhni do konce."
+        "cs": "Sněz nebo olízni něco kyselého. Citron, kyselé bonbony, nálev od okurek, cokoli je v lednici. Ten výraz dotáhni do konce.",
+        "nl": "Eet of lik iets zuurs. Citroen, zuurtjes, augurkenvocht, wat er maar in de koelkast staat. Ga all-in met het gezicht.",
+        "lt": "Suvalgyk ar palaižyk ką nors rūgštaus. Citriną, rūgštų saldainį, agurkų sūrymą, ką rasi šaldytuve. Nusiteik veidui."
       },
       "rarity": "common",
       "category": "sensory",
@@ -76,11 +92,15 @@
       "id": "five-four-three",
       "title": {
         "en": "Five Fish Count",
-        "cs": "Pět ryb"
+        "cs": "Pět ryb",
+        "nl": "Vijf-vissentelling",
+        "lt": "Penkių žuvų skaičiuotė"
       },
       "task": {
         "en": "Name 5 things you see, 4 you can touch, 3 you hear, 2 you smell, 1 you taste. Slowly. The craving hates being ignored this thoroughly.",
-        "cs": "Vyjmenuj 5 věcí, které vidíš, 4, kterých se můžeš dotknout, 3, které slyšíš, 2, které cítíš, a 1, kterou ochutnáš. Pomalu. Chuť nesnáší, když ji někdo takhle důkladně ignoruje."
+        "cs": "Vyjmenuj 5 věcí, které vidíš, 4, kterých se můžeš dotknout, 3, které slyšíš, 2, které cítíš, a 1, kterou ochutnáš. Pomalu. Chuť nesnáší, když ji někdo takhle důkladně ignoruje.",
+        "nl": "Noem 5 dingen die je ziet, 4 die je kunt aanraken, 3 die je hoort, 2 die je ruikt, 1 die je proeft. Langzaam. De trek haat het om zo grondig genegeerd te worden.",
+        "lt": "Įvardyk 5 dalykus, kuriuos matai, 4, kuriuos gali paliesti, 3, kuriuos girdi, 2, kuriuos užuodi, 1, kurio skonį jauti. Lėtai. Noras nekenčia būti taip kruopščiai ignoruojamas."
       },
       "rarity": "common",
       "category": "grounding",
@@ -93,11 +113,15 @@
       "id": "cursed-image",
       "title": {
         "en": "Send It to the Abyss",
-        "cs": "Pošli to do hlubin"
+        "cs": "Pošli to do hlubin",
+        "nl": "Stuur het de afgrond in",
+        "lt": "Siųsk į bedugnę"
       },
       "task": {
         "en": "Send the most cursed image in your camera roll to someone. Zero context. Do not answer follow-up questions.",
-        "cs": "Pošli někomu nejprokletější obrázek z galerie. Bez kontextu. Na doplňující otázky neodpovídej."
+        "cs": "Pošli někomu nejprokletější obrázek z galerie. Bez kontextu. Na doplňující otázky neodpovídej.",
+        "nl": "Stuur de meest vervloekte foto van je camerarol naar iemand. Zonder context. Beantwoord geen vervolgvragen.",
+        "lt": "Nusiųsk kam nors keisčiausią nuotrauką iš savo galerijos. Jokio konteksto. Į klausimus neatsakinėk."
       },
       "rarity": "common",
       "category": "social",
@@ -110,11 +134,15 @@
       "id": "wall-sit-song",
       "title": {
         "en": "Hold the Line",
-        "cs": "Drž linii"
+        "cs": "Drž linii",
+        "nl": "Hou de lijn",
+        "lt": "Laikyk valą"
       },
       "task": {
         "en": "Wall sit for 45 seconds. Put on a song for moral support. You won’t make it to the end of the song. That’s fine.",
-        "cs": "Sed u zdi na 45 sekund. Pusť si k tomu písničku pro morální podporu. Do konce písničky to nevydržíš. To nevadí."
+        "cs": "Sed u zdi na 45 sekund. Pusť si k tomu písničku pro morální podporu. Do konce písničky to nevydržíš. To nevadí.",
+        "nl": "Doe 45 seconden een muurzit. Zet een liedje op voor morele steun. Je haalt het eind van het liedje niet. Dat is prima.",
+        "lt": "45 sekundes sėdėk prie sienos be kėdės. Įsijunk dainą moraliniam palaikymui. Iki dainos pabaigos neišlaikysi. Nieko tokio."
       },
       "rarity": "common",
       "category": "physical",
@@ -128,11 +156,15 @@
       "id": "nature-doc",
       "title": {
         "en": "Planet Earth: Living Room",
-        "cs": "Planeta Země: Obývák"
+        "cs": "Planeta Země: Obývák",
+        "nl": "Planet Earth: Woonkamer",
+        "lt": "Planeta Žemė: svetainė"
       },
       "task": {
         "en": "Narrate the next 45 seconds of your life out loud like a nature documentary. The narrator suspects the subject will not survive the winter.",
-        "cs": "Příštích 45 sekund svého života komentuj nahlas jako přírodopisný dokument. Vypravěč tuší, že tenhle exemplář zimu nepřežije."
+        "cs": "Příštích 45 sekund svého života komentuj nahlas jako přírodopisný dokument. Vypravěč tuší, že tenhle exemplář zimu nepřežije.",
+        "nl": "Vertel de komende 45 seconden van je leven hardop als een natuurdocumentaire. De verteller vermoedt dat het subject de winter niet gaat halen.",
+        "lt": "Ateinančias 45 sekundes garsiai komentuok savo gyvenimą kaip gamtos dokumentikoje. Diktorius įtaria, kad šis individas žiemos neišgyvens."
       },
       "rarity": "common",
       "category": "ridiculous",
@@ -147,11 +179,15 @@
       "id": "cold-water-face",
       "title": {
         "en": "Dive Reflex",
-        "cs": "Potápěčský reflex"
+        "cs": "Potápěčský reflex",
+        "nl": "Duikreflex",
+        "lt": "Nėrimo refleksas"
       },
       "task": {
         "en": "Splash cold water on your face. This triggers the dive reflex and actually slows your heart. You are briefly a seal. Act accordingly.",
-        "cs": "Opláchni si obličej studenou vodou. Spustí to potápěčský reflex a srdce ti fakt zpomalí. Na chvíli jsi tuleň. Chovej se podle toho."
+        "cs": "Opláchni si obličej studenou vodou. Spustí to potápěčský reflex a srdce ti fakt zpomalí. Na chvíli jsi tuleň. Chovej se podle toho.",
+        "nl": "Plens koud water in je gezicht. Dat zet de duikreflex aan en vertraagt echt je hartslag. Je bent heel even een zeehond. Gedraag je ernaar.",
+        "lt": "Apsitaškyk veidą šaltu vandeniu. Tai sužadina nėrimo refleksą ir tikrai sulėtina širdies ritmą. Trumpam tu ruonis. Elkis atitinkamai."
       },
       "rarity": "common",
       "category": "sensory",
@@ -164,11 +200,15 @@
       "id": "loading-screen-squats",
       "title": {
         "en": "Loading Screen",
-        "cs": "Načítací obrazovka"
+        "cs": "Načítací obrazovka",
+        "nl": "Laadscherm",
+        "lt": "Įkėlimo ekranas"
       },
       "task": {
         "en": "Controller down. 20 squats before the next match. Your character can wait, they aren’t real and they don’t love you.",
-        "cs": "Ovladač dolů. 20 dřepů před dalším zápasem. Tvoje postava počká, není skutečná a nemiluje tě."
+        "cs": "Ovladač dolů. 20 dřepů před dalším zápasem. Tvoje postava počká, není skutečná a nemiluje tě.",
+        "nl": "Controller neer. 20 squats voor de volgende match. Je personage kan wachten, het is niet echt en houdt niet van je.",
+        "lt": "Pultą į šalį. 20 pritūpimų prieš kitą mačą. Tavo personažas palauks, jis netikras ir tavęs nemyli."
       },
       "rarity": "common",
       "category": "physical",
@@ -181,11 +221,15 @@
       "id": "previously-on",
       "title": {
         "en": "Previously On…",
-        "cs": "V minulém díle…"
+        "cs": "V minulém díle…",
+        "nl": "Eerder in…",
+        "lt": "Ankstesnėse serijose…"
       },
       "task": {
         "en": "Before the next episode autoplays, recap the last one out loud in exactly three sentences, like a deeply unreliable witness.",
-        "cs": "Než se spustí další díl, převyprávěj ten poslední nahlas přesně ve třech větách, jako hluboce nespolehlivý svědek."
+        "cs": "Než se spustí další díl, převyprávěj ten poslední nahlas přesně ve třech větách, jako hluboce nespolehlivý svědek.",
+        "nl": "Voordat de volgende aflevering begint, vat je de vorige hardop samen in precies drie zinnen, als een zeer onbetrouwbare getuige.",
+        "lt": "Kol neįsijungė kita serija, garsiai papasakok praėjusią lygiai trimis sakiniais, kaip labai nepatikimas liudininkas."
       },
       "rarity": "common",
       "category": "ridiculous",
@@ -198,11 +242,15 @@
       "id": "chew-something",
       "title": {
         "en": "Chew Toy",
-        "cs": "Kousátko"
+        "cs": "Kousátko",
+        "nl": "Kauwspeeltje",
+        "lt": "Kramtukas"
       },
       "task": {
         "en": "Give your mouth a job that isn’t slowly killing you: gum, a straw, a carrot, a frozen grape. Chew with hostility.",
-        "cs": "Dej puse práci, která tě pomalu nezabíjí: žvýkačka, brčko, mrkev, zmražená kulička hroznového vína. Žvýkej nepřátelsky."
+        "cs": "Dej puse práci, která tě pomalu nezabíjí: žvýkačka, brčko, mrkev, zmražená kulička hroznového vína. Žvýkej nepřátelsky.",
+        "nl": "Geef je mond een klus die je niet langzaam doodt: kauwgom, een rietje, een wortel, een bevroren druif. Kauw vijandig.",
+        "lt": "Duok burnai darbo, kuris tavęs lėtai nežudo: kramtomoji guma, šiaudelis, morka, sušaldyta vynuogė. Kramtyk priešiškai."
       },
       "rarity": "common",
       "category": "sensory",
@@ -215,11 +263,15 @@
       "id": "hostage-breathing",
       "title": {
         "en": "Hostage Negotiation",
-        "cs": "Vyjednávání s únosci"
+        "cs": "Vyjednávání s únosci",
+        "nl": "Gijzelingsonderhandeling",
+        "lt": "Derybos su pagrobėju"
       },
       "task": {
         "en": "The craving has taken you hostage. Stay calm. In for 4, hold for 4, out for 6. Four rounds. Do not make sudden moves.",
-        "cs": "Chuť tě vzala jako rukojmí. Zachovej klid. Nádech na 4, zadržet na 4, výdech na 6. Čtyři kola. Žádné prudké pohyby."
+        "cs": "Chuť tě vzala jako rukojmí. Zachovej klid. Nádech na 4, zadržet na 4, výdech na 6. Čtyři kola. Žádné prudké pohyby.",
+        "nl": "De trek heeft je gegijzeld. Blijf kalm. 4 tellen in, 4 vasthouden, 6 uit. Vier rondes. Geen plotselinge bewegingen.",
+        "lt": "Noras paėmė tave įkaitu. Ramiai. Įkvėpk per 4, sulaikyk per 4, iškvėpk per 6. Keturi ratai. Jokių staigių judesių."
       },
       "rarity": "common",
       "category": "grounding",
@@ -233,11 +285,15 @@
       "id": "specific-compliment",
       "title": {
         "en": "Compliment Ambush",
-        "cs": "Přepadení komplimentem"
+        "cs": "Přepadení komplimentem",
+        "nl": "Complimentenhinderlaag",
+        "lt": "Komplimento pasala"
       },
       "task": {
         "en": "Text someone a weirdly specific compliment. “Your elbows have always seemed trustworthy.” Leave it there.",
-        "cs": "Napiš někomu podivně konkrétní kompliment. „Tvoje lokty vždycky vypadaly důvěryhodně.“ A nech to být."
+        "cs": "Napiš někomu podivně konkrétní kompliment. „Tvoje lokty vždycky vypadaly důvěryhodně.“ A nech to být.",
+        "nl": "App iemand een raar specifiek compliment. “Jouw ellebogen kwamen altijd al betrouwbaar over.” Laat het daarbij.",
+        "lt": "Parašyk kam nors keistai konkretų komplimentą. „Tavo alkūnės visada atrodė patikimos.“ Ir tiek."
       },
       "rarity": "common",
       "category": "social",
@@ -250,11 +306,15 @@
       "id": "invent-holiday",
       "title": {
         "en": "Bank Holiday From Hell",
-        "cs": "Státní svátek z pekla"
+        "cs": "Státní svátek z pekla",
+        "nl": "Feestdag uit de hel",
+        "lt": "Šventė iš pragaro"
       },
       "task": {
         "en": "Invent a holiday: name, date, and one deeply cursed tradition everyone is legally required to follow.",
-        "cs": "Vymysli svátek: název, datum a jednu hluboce prokletou tradici, kterou musí ze zákona dodržovat všichni."
+        "cs": "Vymysli svátek: název, datum a jednu hluboce prokletou tradici, kterou musí ze zákona dodržovat všichni.",
+        "nl": "Verzin een feestdag: naam, datum en één diep vervloekte traditie die iedereen wettelijk moet volgen.",
+        "lt": "Sugalvok šventę: pavadinimą, datą ir vieną labai prakeiktą tradiciją, kurios visi privalo laikytis pagal įstatymą."
       },
       "rarity": "common",
       "category": "ridiculous",
@@ -267,11 +327,15 @@
       "id": "toe-touch",
       "title": {
         "en": "Reach the Ocean Floor",
-        "cs": "Až na dno oceánu"
+        "cs": "Až na dno oceánu",
+        "nl": "Naar de oceaanbodem",
+        "lt": "Iki vandenyno dugno"
       },
       "task": {
         "en": "Touch your toes (or your shins, no judgement) and hang there for 30 seconds. The floor is the sea bed. You live there now.",
-        "cs": "Dotkni se špiček prstů (nebo holení, nikdo nesoudí) a 30 sekund tak vis. Podlaha je mořské dno. Teď tam bydlíš."
+        "cs": "Dotkni se špiček prstů (nebo holení, nikdo nesoudí) a 30 sekund tak vis. Podlaha je mořské dno. Teď tam bydlíš.",
+        "nl": "Raak je tenen aan (of je schenen, geen oordeel) en blijf zo 30 seconden hangen. De vloer is de zeebodem. Daar woon je nu.",
+        "lt": "Paliesk kojų pirštus (arba blauzdas, niekas neteis) ir pakybok taip 30 sekundžių. Grindys yra jūros dugnas. Dabar tu ten gyveni."
       },
       "rarity": "common",
       "category": "physical",
@@ -285,11 +349,15 @@
       "id": "brush-teeth",
       "title": {
         "en": "Minty Fresh Spite",
-        "cs": "Mátová zášť"
+        "cs": "Mátová zášť",
+        "nl": "Muntfrisse wraak",
+        "lt": "Mėtinis kerštas"
       },
       "task": {
         "en": "A 30-second speed brush, like you’re scrubbing evidence off your teeth. Minty mouth, clean slate, smug smile.",
-        "cs": "Třicetisekundové rychločištění zubů, jako bys z nich drhla důkazy. Mátová pusa, čistý štít, samolibý úsměv."
+        "cs": "Třicetisekundové rychločištění zubů, jako bys z nich drhla důkazy. Mátová pusa, čistý štít, samolibý úsměv.",
+        "nl": "Poets 30 seconden razendsnel, alsof je bewijsmateriaal van je tanden schrobt. Frisse mond, schone lei, zelfvoldane glimlach.",
+        "lt": "30 sekundžių greitas dantų valymas, lyg nuo dantų šveistum įkalčius. Mėtinė burna, švarus lapas, pasipūtusi šypsena."
       },
       "rarity": "common",
       "category": "sensory",
@@ -303,11 +371,15 @@
       "id": "apocalypse-rank",
       "title": {
         "en": "Apocalypse Draft Pick",
-        "cs": "Draft na apokalypsu"
+        "cs": "Draft na apokalypsu",
+        "nl": "Apocalyps-draft",
+        "lt": "Apokalipsės šaukimas"
       },
       "task": {
         "en": "Pick three objects within reach and rank them by how useful they’d be in the apocalypse. Defend the last-place pick’s honour.",
-        "cs": "Vyber tři věci na dosah a seřaď je podle toho, jak užitečné by byly při apokalypse. Obhaj čest té poslední."
+        "cs": "Vyber tři věci na dosah a seřaď je podle toho, jak užitečné by byly při apokalypse. Obhaj čest té poslední.",
+        "nl": "Kies drie voorwerpen binnen handbereik en rangschik ze op hoe nuttig ze zouden zijn in de apocalyps. Verdedig de eer van de laatste plek.",
+        "lt": "Išsirink tris daiktus ranka pasiekiamu atstumu ir surikiuok pagal tai, kiek jie būtų naudingi apokalipsėje. Apgink paskutinės vietos garbę."
       },
       "rarity": "common",
       "category": "grounding",
@@ -320,11 +392,15 @@
       "id": "villain-monologue",
       "title": {
         "en": "Villain Monologue",
-        "cs": "Monolog padoucha"
+        "cs": "Monolog padoucha",
+        "nl": "Schurkenmonoloog",
+        "lt": "Piktadario monologas"
       },
       "task": {
         "en": "Deliver a 30-second villain monologue at the craving. It thinks it’s the villain. Show it what a real one looks like.",
-        "cs": "Přednes chuti 30sekundový monolog padoucha. Myslí si, že padouch je ona. Ukaž jí, jak vypadá skutečný."
+        "cs": "Přednes chuti 30sekundový monolog padoucha. Myslí si, že padouch je ona. Ukaž jí, jak vypadá skutečný.",
+        "nl": "Geef de trek 30 seconden lang een schurkenmonoloog. Hij denkt dat hij de schurk is. Laat zien hoe een echte eruitziet.",
+        "lt": "30 sekundžių sakyk norui piktadario monologą. Jis mano, kad jis čia piktadarys. Parodyk, kaip atrodo tikras."
       },
       "rarity": "common",
       "category": "ridiculous",
@@ -339,11 +415,15 @@
       "id": "walk-the-plank",
       "title": {
         "en": "Walk the Plank",
-        "cs": "Po prkně"
+        "cs": "Po prkně",
+        "nl": "Over de plank",
+        "lt": "Per lentą"
       },
       "task": {
         "en": "Walk to another room or out the door for 45 seconds. The craving can follow you, but it’s slow and out of shape.",
-        "cs": "Na 45 sekund odejdi do jiné místnosti nebo ven ze dveří. Chuť tě může sledovat, ale je pomalá a bez kondice."
+        "cs": "Na 45 sekund odejdi do jiné místnosti nebo ven ze dveří. Chuť tě může sledovat, ale je pomalá a bez kondice.",
+        "nl": "Loop 45 seconden naar een andere kamer of naar buiten. De trek mag je volgen, maar hij is traag en heeft geen conditie.",
+        "lt": "45 sekundes eik į kitą kambarį ar pro duris. Noras gali sekti iš paskos, bet jis lėtas ir be formos."
       },
       "rarity": "common",
       "category": "physical",
@@ -357,11 +437,15 @@
       "id": "craving-last-will",
       "title": {
         "en": "Last Will and Testament",
-        "cs": "Poslední vůle"
+        "cs": "Poslední vůle",
+        "nl": "Laatste wil",
+        "lt": "Paskutinė valia"
       },
       "task": {
         "en": "This craving has seconds to live. Write its last will in three lines: who inherits its terrible personality, its debts, and its dramatic final words.",
-        "cs": "Tahle chuť má jen pár vteřin života. Sepiš její poslední vůli na tři řádky: kdo zdědí její příšernou povahu, její dluhy a její dramatická poslední slova."
+        "cs": "Tahle chuť má jen pár vteřin života. Sepiš její poslední vůli na tři řádky: kdo zdědí její příšernou povahu, její dluhy a její dramatická poslední slova.",
+        "nl": "Deze trek heeft nog seconden te leven. Schrijf zijn testament in drie regels: wie zijn vreselijke persoonlijkheid erft, zijn schulden, en zijn dramatische laatste woorden.",
+        "lt": "Šiam norui liko kelios sekundės. Parašyk jo testamentą trimis eilutėmis: kas paveldi jo baisų charakterį, jo skolas ir dramatiškus paskutinius žodžius."
       },
       "rarity": "uncommon",
       "category": "ridiculous",
@@ -374,11 +458,15 @@
       "id": "titanic-dance",
       "title": {
         "en": "The Band Played On",
-        "cs": "Kapela hrála dál"
+        "cs": "Kapela hrála dál",
+        "nl": "De band speelde door",
+        "lt": "Orkestras grojo toliau"
       },
       "task": {
         "en": "45 seconds. Dance like the ship is going down and you’ve made peace with it.",
-        "cs": "45 sekund. Tancuj, jako by se loď potápěla a ty ses s tím už smířila."
+        "cs": "45 sekund. Tancuj, jako by se loď potápěla a ty ses s tím už smířila.",
+        "nl": "45 seconden. Dans alsof het schip zinkt en je er vrede mee hebt.",
+        "lt": "45 sekundės. Šok taip, lyg laivas skęstų, o tu su tuo jau susitaikei."
       },
       "rarity": "uncommon",
       "category": "physical",
@@ -392,11 +480,15 @@
       "id": "pushup-tax",
       "title": {
         "en": "Lung Tax",
-        "cs": "Plicní daň"
+        "cs": "Plicní daň",
+        "nl": "Longbelasting",
+        "lt": "Plaučių mokestis"
       },
       "task": {
         "en": "The craving is charging a tax. Pay it in 10 push-ups (knees allowed) instead of lung tissue.",
-        "cs": "Chuť vybírá daň. Zaplať ji 10 kliky (na kolenou se počítá) místo plicní tkáně."
+        "cs": "Chuť vybírá daň. Zaplať ji 10 kliky (na kolenou se počítá) místo plicní tkáně.",
+        "nl": "De trek heft belasting. Betaal met 10 push-ups (op je knieën mag) in plaats van met longweefsel.",
+        "lt": "Noras renka mokestį. Sumokėk 10 atsispaudimų (galima nuo kelių), o ne plaučių audiniu."
       },
       "rarity": "uncommon",
       "category": "physical",
@@ -409,11 +501,15 @@
       "id": "hot-sauce-drop",
       "title": {
         "en": "Hot Sauce Baptism",
-        "cs": "Křest pálivou omáčkou"
+        "cs": "Křest pálivou omáčkou",
+        "nl": "Hete-saus-doop",
+        "lt": "Aštraus padažo krikštas"
       },
       "task": {
         "en": "One drop of hot sauce on the tongue. You are reborn. Painfully.",
-        "cs": "Jedna kapka pálivé omáčky na jazyk. Jsi znovuzrozená. Bolestivě."
+        "cs": "Jedna kapka pálivé omáčky na jazyk. Jsi znovuzrozená. Bolestivě.",
+        "nl": "Eén druppel hete saus op je tong. Je bent herboren. Pijnlijk.",
+        "lt": "Vienas lašas aštraus padažo ant liežuvio. Tu atgimei. Skausmingai."
       },
       "rarity": "uncommon",
       "category": "sensory",
@@ -426,11 +522,15 @@
       "id": "dolphin-voice-memo",
       "title": {
         "en": "Signal from the Deep",
-        "cs": "Signál z hlubin"
+        "cs": "Signál z hlubin",
+        "nl": "Signaal uit de diepte",
+        "lt": "Signalas iš gelmių"
       },
       "task": {
         "en": "Send someone a voice memo of your best dolphin noise. Never explain it. Take it to your grave.",
-        "cs": "Pošli někomu hlasovku se svým nejlepším delfíním zvukem. Nikdy to nevysvětluj. Vezmi si to do hrobu."
+        "cs": "Pošli někomu hlasovku se svým nejlepším delfíním zvukem. Nikdy to nevysvětluj. Vezmi si to do hrobu.",
+        "nl": "Stuur iemand een spraakbericht met je beste dolfijngeluid. Leg het nooit uit. Neem het mee je graf in.",
+        "lt": "Nusiųsk kam nors balso žinutę su geriausiu savo delfino garsu. Niekada nepaaiškink. Nusinešk paslaptį į kapus."
       },
       "rarity": "uncommon",
       "category": "social",
@@ -443,11 +543,15 @@
       "id": "boss-plank",
       "title": {
         "en": "Boss Music",
-        "cs": "Hudba bosse"
+        "cs": "Hudba bosse",
+        "nl": "Eindbaasmuziek",
+        "lt": "Boso muzika"
       },
       "task": {
         "en": "Pause the game. Plank for 45 seconds while humming boss music. You are the final boss now.",
-        "cs": "Pauzni hru. Prkno na 45 sekund a k tomu si broukej hudbu na bosse. Finální boss jsi teď ty."
+        "cs": "Pauzni hru. Prkno na 45 sekund a k tomu si broukej hudbu na bosse. Finální boss jsi teď ty.",
+        "nl": "Pauzeer het spel. Plank 45 seconden terwijl je eindbaasmuziek neuriet. Jij bent nu de eindbaas.",
+        "lt": "Sustabdyk žaidimą. 45 sekundes laikyk lentą ir niūniuok boso muziką. Dabar tu esi paskutinis bosas."
       },
       "rarity": "uncommon",
       "category": "physical",
@@ -461,11 +565,15 @@
       "id": "crime-scene",
       "title": {
         "en": "Crime Scene",
-        "cs": "Místo činu"
+        "cs": "Místo činu",
+        "nl": "Plaats delict",
+        "lt": "Nusikaltimo vieta"
       },
       "task": {
         "en": "Describe the room you’re in like a detective who just arrived. Who died? What’s the murder weapon? Why is there a sock there?",
-        "cs": "Popiš místnost, ve které jsi, jako detektiv, který právě dorazil. Kdo zemřel? Co je vražedná zbraň? Proč tam leží ponožka?"
+        "cs": "Popiš místnost, ve které jsi, jako detektiv, který právě dorazil. Kdo zemřel? Co je vražedná zbraň? Proč tam leží ponožka?",
+        "nl": "Beschrijf de kamer waarin je bent als een rechercheur die net binnenkomt. Wie is er dood? Wat is het moordwapen? Waarom ligt daar een sok?",
+        "lt": "Aprašyk kambarį, kuriame esi, kaip ką tik atvykęs detektyvas. Kas mirė? Koks žmogžudystės ginklas? Kodėl ten guli kojinė?"
       },
       "rarity": "uncommon",
       "category": "grounding",
@@ -479,11 +587,15 @@
       "id": "object-obituary",
       "title": {
         "en": "Obituary Column",
-        "cs": "Parte"
+        "cs": "Parte",
+        "nl": "In memoriam",
+        "lt": "Nekrologas"
       },
       "task": {
         "en": "Pick a random object in the room and write its three-line obituary. Cause of death: you. In lieu of flowers: don’t.",
-        "cs": "Vyber náhodnou věc v místnosti a napiš jí parte na tři řádky. Příčina smrti: ty. Místo květin: nic."
+        "cs": "Vyber náhodnou věc v místnosti a napiš jí parte na tři řádky. Příčina smrti: ty. Místo květin: nic.",
+        "nl": "Kies een willekeurig voorwerp in de kamer en schrijf een overlijdensbericht van drie regels. Doodsoorzaak: jij. In plaats van bloemen: niks.",
+        "lt": "Išsirink atsitiktinį daiktą kambaryje ir parašyk jam trijų eilučių nekrologą. Mirties priežastis: tu. Vietoj gėlių: nieko."
       },
       "rarity": "uncommon",
       "category": "ridiculous",
@@ -496,11 +608,15 @@
       "id": "cold-wrists",
       "title": {
         "en": "Ice in the Veins",
-        "cs": "Led v žilách"
+        "cs": "Led v žilách",
+        "nl": "IJs in de aderen",
+        "lt": "Ledas gyslose"
       },
       "task": {
         "en": "Run cold water over your wrists for 30 seconds. Emotionally, you are now a mob boss.",
-        "cs": "Pouštěj si 30 sekund studenou vodu na zápěstí. Citově jsi teď šéfová mafie."
+        "cs": "Pouštěj si 30 sekund studenou vodu na zápěstí. Citově jsi teď šéfová mafie.",
+        "nl": "Laat 30 seconden koud water over je polsen lopen. Emotioneel ben je nu een maffiabaas.",
+        "lt": "30 sekundžių leisk šaltam vandeniui tekėti ant riešų. Emociškai dabar tu mafijos bosas."
       },
       "rarity": "uncommon",
       "category": "sensory",
@@ -514,11 +630,15 @@
       "id": "surface-speedrun",
       "title": {
         "en": "Any% Cleaning Speedrun",
-        "cs": "Speedrun úklidu (Any%)"
+        "cs": "Speedrun úklidu (Any%)",
+        "nl": "Any% opruim-speedrun",
+        "lt": "Any% tvarkymo greitbėgis"
       },
       "task": {
         "en": "Pick one surface. Clear it in 45 seconds. World record pace. No glitches.",
-        "cs": "Vyber jeden povrch. Ukliď ho za 45 sekund. Tempo na světový rekord. Žádné glitche."
+        "cs": "Vyber jeden povrch. Ukliď ho za 45 sekund. Tempo na světový rekord. Žádné glitche.",
+        "nl": "Kies één oppervlak. Ruim het op in 45 seconden. Wereldrecordtempo. Geen glitches.",
+        "lt": "Išsirink vieną paviršių. Sutvarkyk per 45 sekundes. Pasaulio rekordo tempas. Jokių klaidų."
       },
       "rarity": "uncommon",
       "category": "physical",
@@ -532,11 +652,15 @@
       "id": "wrong-answers",
       "title": {
         "en": "Wrong Answers Only",
-        "cs": "Jen špatné odpovědi"
+        "cs": "Jen špatné odpovědi",
+        "nl": "Alleen foute antwoorden",
+        "lt": "Tik neteisingi atsakymai"
       },
       "task": {
         "en": "Text someone a normal question (“what should I eat?”) and demand wrong answers only. Check the damage later.",
-        "cs": "Napiš někomu normální otázku („co mám jíst?“) a chtěj jen špatné odpovědi. Škody zkontroluj později."
+        "cs": "Napiš někomu normální otázku („co mám jíst?“) a chtěj jen špatné odpovědi. Škody zkontroluj později.",
+        "nl": "Stuur iemand een normale vraag (“wat zal ik eten?”) en eis alleen foute antwoorden. Bekijk de schade later.",
+        "lt": "Parašyk kam nors įprastą klausimą („ką man valgyti?“) ir reikalauk tik neteisingų atsakymų. Žalą įvertinsi vėliau."
       },
       "rarity": "uncommon",
       "category": "social",
@@ -549,11 +673,15 @@
       "id": "craving-eulogy",
       "title": {
         "en": "Funeral at Sea",
-        "cs": "Pohřeb na moři"
+        "cs": "Pohřeb na moři",
+        "nl": "Uitvaart op zee",
+        "lt": "Laidotuvės jūroje"
       },
       "task": {
         "en": "This craving is dying. Stand up and give it a 45-second eulogy. Mention its flaws. Someone in the back is sobbing. It’s not you.",
-        "cs": "Tahle chuť umírá. Postav se a prones nad ní 45sekundovou smuteční řeč. Zmiň její chyby. Někdo vzadu vzlyká. Ty to nejsi."
+        "cs": "Tahle chuť umírá. Postav se a prones nad ní 45sekundovou smuteční řeč. Zmiň její chyby. Někdo vzadu vzlyká. Ty to nejsi.",
+        "nl": "Deze trek gaat dood. Sta op en geef 45 seconden een grafrede. Noem zijn gebreken. Achterin zit iemand te snikken. Jij bent het niet.",
+        "lt": "Šis noras miršta. Atsistok ir 45 sekundes sakyk jam laidotuvių kalbą. Paminėk jo trūkumus. Kažkas gale rauda. Ne tu."
       },
       "rarity": "rare",
       "category": "ridiculous",
@@ -567,11 +695,15 @@
       "id": "landed-tuna",
       "title": {
         "en": "Landed",
-        "cs": "Vylovená"
+        "cs": "Vylovená",
+        "nl": "Aan land",
+        "lt": "Ištrauktas"
       },
       "task": {
         "en": "Lie on the floor like a freshly landed tuna for 45 seconds. Flop occasionally. Stare at the ceiling. This is your life now.",
-        "cs": "Lehni si na 45 sekund na zem jako čerstvě vylovený tuňák. Občas se zaplácej. Zírej do stropu. Tohle je teď tvůj život."
+        "cs": "Lehni si na 45 sekund na zem jako čerstvě vylovený tuňák. Občas se zaplácej. Zírej do stropu. Tohle je teď tvůj život.",
+        "nl": "Lig 45 seconden op de vloer als een net gevangen tonijn. Spartel af en toe. Staar naar het plafond. Dit is je leven nu.",
+        "lt": "45 sekundes gulėk ant grindų kaip ką tik ištrauktas tunas. Kartais paplastėk. Spoksok į lubas. Toks dabar tavo gyvenimas."
       },
       "rarity": "rare",
       "category": "physical",
@@ -585,11 +717,15 @@
       "id": "craving-tribunal",
       "title": {
         "en": "Tuna Tribunal",
-        "cs": "Tuňácký tribunál"
+        "cs": "Tuňácký tribunál",
+        "nl": "Tonijntribunaal",
+        "lt": "Tunų tribunolas"
       },
       "task": {
         "en": "Put the craving on trial in 45 seconds flat. Prosecution, defence (make it terrible), verdict, sentence. Execution method is up to the court.",
-        "cs": "Postav chuť před soud, na všechno máš 45 sekund. Obžaloba, obhajoba (ať je hrozná), verdikt, trest. Způsob popravy je na soudu."
+        "cs": "Postav chuť před soud, na všechno máš 45 sekund. Obžaloba, obhajoba (ať je hrozná), verdikt, trest. Způsob popravy je na soudu.",
+        "nl": "Breng de trek in 45 seconden voor de rechter. Aanklager, verdediging (maak die vreselijk), vonnis, straf. De executiemethode is aan het hof.",
+        "lt": "Per 45 sekundes nuteisk norą. Kaltinimas, gynyba (tegul ji būna siaubinga), nuosprendis, bausmė. Egzekucijos būdą renkasi teismas."
       },
       "rarity": "rare",
       "category": "ridiculous",
@@ -603,11 +739,15 @@
       "id": "ice-bowl-dunk",
       "title": {
         "en": "Abyssal Plunge",
-        "cs": "Ponor do hlubin"
+        "cs": "Ponor do hlubin",
+        "nl": "Duik in de diepzee",
+        "lt": "Panirimas į gelmes"
       },
       "task": {
         "en": "Fill a bowl with cold water and ice. Hold your breath and dunk your face for a few seconds. Surface like something ancient that has awakened.",
-        "cs": "Napusť misku studenou vodou s ledem. Zadrž dech a na pár sekund do ní ponoř obličej. Vynoř se jako něco prastarého, co se právě probudilo."
+        "cs": "Napusť misku studenou vodou s ledem. Zadrž dech a na pár sekund do ní ponoř obličej. Vynoř se jako něco prastarého, co se právě probudilo.",
+        "nl": "Vul een kom met koud water en ijs. Hou je adem in en doop je gezicht er een paar seconden in. Kom boven als iets oeroud dat net ontwaakt is.",
+        "lt": "Pripildyk dubenį šalto vandens su ledu. Sulaikyk kvapą ir kelioms sekundėms panardink veidą. Išnirk kaip kažkas senovinio, ką tik pabudusio."
       },
       "rarity": "rare",
       "category": "sensory",
@@ -620,11 +760,15 @@
       "id": "freedom-shanty",
       "title": {
         "en": "Shanty of Spite",
-        "cs": "Námořnická píseň zášti"
+        "cs": "Námořnická píseň zášti",
+        "nl": "Zeemanslied van wraak",
+        "lt": "Keršto jūreivių daina"
       },
       "task": {
         "en": "Make up a two-line sea shanty about the hook that tried to catch you and failed. Sing it into a voice memo. Send it to someone who didn’t ask.",
-        "cs": "Vymysli dvouveršovou námořnickou píseň o háčku, který tě chtěl chytit a nepovedlo se mu to. Nazpívej ji do hlasovky. Pošli ji někomu, kdo o ni nežádal."
+        "cs": "Vymysli dvouveršovou námořnickou píseň o háčku, který tě chtěl chytit a nepovedlo se mu to. Nazpívej ji do hlasovky. Pošli ji někomu, kdo o ni nežádal.",
+        "nl": "Verzin een zeemanslied van twee regels over de haak die je probeerde te vangen en faalde. Zing het in een spraakbericht. Stuur het naar iemand die er niet om vroeg.",
+        "lt": "Sukurk dviejų eilučių jūreivių dainą apie kabliuką, kuris bandė tave pagauti ir nesugebėjo. Įdainuok į balso žinutę. Nusiųsk kam nors, kas neprašė."
       },
       "rarity": "rare",
       "category": "social",
@@ -638,11 +782,15 @@
       "id": "around-the-block",
       "title": {
         "en": "Migration Season",
-        "cs": "Období migrace"
+        "cs": "Období migrace",
+        "nl": "Trektijd",
+        "lt": "Migracijos sezonas"
       },
       "task": {
         "en": "45 seconds of stairs, up and down (no stairs? March on the spot, knees high). Bluefin cross entire oceans one stroke at a time; you can cross a staircase.",
-        "cs": "45 sekund schodů nahoru a dolů (nemáš schody? Pochoduj na místě s vysokými koleny). Tuňáci přeplavou celé oceány tempo po tempu, ty zvládneš jedno schodiště."
+        "cs": "45 sekund schodů nahoru a dolů (nemáš schody? Pochoduj na místě s vysokými koleny). Tuňáci přeplavou celé oceány tempo po tempu, ty zvládneš jedno schodiště.",
+        "nl": "45 seconden trap op en af (geen trap? Marcheer op de plaats, knieën hoog). Blauwvintonijnen steken hele oceanen over, slag voor slag; jij kunt een trap aan.",
+        "lt": "45 sekundės laiptais aukštyn ir žemyn (nėra laiptų? Žygiuok vietoje, keliai aukštai). Tunai perplaukia ištisus vandenynus mostas po mosto; tu įveiksi laiptus."
       },
       "rarity": "rare",
       "category": "physical",
@@ -656,11 +804,15 @@
       "id": "haunted-body-scan",
       "title": {
         "en": "Exorcism",
-        "cs": "Exorcismus"
+        "cs": "Exorcismus",
+        "nl": "Duiveluitdrijving",
+        "lt": "Egzorcizmas"
       },
       "task": {
         "en": "Scan your body head to toe. Find where the craving lives (chest? throat? hands?). Describe it as a ghost, give it a name, and tell it to get out.",
-        "cs": "Projdi si tělo od hlavy k patě. Najdi, kde chuť bydlí (hrudník? krk? ruce?). Popiš ji jako ducha, dej jí jméno a řekni jí, ať vypadne."
+        "cs": "Projdi si tělo od hlavy k patě. Najdi, kde chuť bydlí (hrudník? krk? ruce?). Popiš ji jako ducha, dej jí jméno a řekni jí, ať vypadne.",
+        "nl": "Scan je lichaam van top tot teen. Vind waar de trek woont (borst? keel? handen?). Beschrijf hem als een geest, geef hem een naam en zeg dat hij moet oprotten.",
+        "lt": "Peržvelk savo kūną nuo galvos iki kojų. Surask, kur gyvena noras (krūtinėje? gerklėje? rankose?). Aprašyk jį kaip vaiduoklį, duok vardą ir liepk jam nešdintis."
       },
       "rarity": "rare",
       "category": "grounding",
@@ -675,11 +827,15 @@
       "id": "movie-trailer",
       "title": {
         "en": "In a World…",
-        "cs": "Ve světě, kde…"
+        "cs": "Ve světě, kde…",
+        "nl": "In een wereld…",
+        "lt": "Pasaulyje, kur…"
       },
       "task": {
         "en": "Record a 30-second movie-trailer voiceover of you defeating this craving. Deep voice. Explosions (mouth-made). End on the title card: OFF THE HOOK.",
-        "cs": "Nahraj 30sekundový voiceover filmového traileru o tom, jak porážíš tuhle chuť. Hluboký hlas. Výbuchy (pusou). Na konci titulek: OFF THE HOOK."
+        "cs": "Nahraj 30sekundový voiceover filmového traileru o tom, jak porážíš tuhle chuť. Hluboký hlas. Výbuchy (pusou). Na konci titulek: OFF THE HOOK.",
+        "nl": "Neem 30 seconden een filmtrailer-voice-over op van hoe jij deze trek verslaat. Zware stem. Explosies (met je mond). Eindig met de titel: OFF THE HOOK.",
+        "lt": "Įrašyk 30 sekundžių filmo anonso balsą apie tai, kaip nugali šį norą. Žemas balsas. Sprogimai (burna). Pabaigoje pavadinimas: OFF THE HOOK."
       },
       "rarity": "legendary",
       "category": "ridiculous",
@@ -693,11 +849,15 @@
       "id": "bluefin-burst",
       "title": {
         "en": "Bluefin Burst",
-        "cs": "Tuňákový sprint"
+        "cs": "Tuňákový sprint",
+        "nl": "Tonijnsprint",
+        "lt": "Tuno spurtas"
       },
       "task": {
         "en": "Bluefin hit 70 km/h. Your turn: 30 seconds of high knees, as fast as your legs allow. The craving can’t keep up. Nothing can.",
-        "cs": "Tuňák obecný zvládne 70 km/h. Teď ty: 30 sekund běhu na místě s vysokými koleny, tak rychle, jak ti nohy dovolí. Chuť nestíhá. Nic nestíhá."
+        "cs": "Tuňák obecný zvládne 70 km/h. Teď ty: 30 sekund běhu na místě s vysokými koleny, tak rychle, jak ti nohy dovolí. Chuť nestíhá. Nic nestíhá.",
+        "nl": "Blauwvintonijnen halen 70 km/u. Jouw beurt: 30 seconden knieheffen, zo snel als je benen kunnen. De trek kan het niet bijhouden. Niets kan dat.",
+        "lt": "Tunai pasiekia 70 km/h. Tavo eilė: 30 sekundžių bėk vietoje, keliai aukštai, kiek tik kojos leidžia. Noras neatsilaikys. Niekas neatsilaikys."
       },
       "rarity": "legendary",
       "category": "physical",
@@ -712,11 +872,15 @@
       "id": "clam-press",
       "title": {
         "en": "Clam Up",
-        "cs": "Zavřená škeble"
+        "cs": "Zavřená škeble",
+        "nl": "Dichtklappen",
+        "lt": "Užsidaryk kaip moliuskas"
       },
       "task": {
         "en": "Press your palms together as hard as you can for 10 seconds, then let go. Three rounds. You are a clam. Nothing gets in.",
-        "cs": "Stiskni dlaně k sobě, co nejsilněji to jde, na 10 sekund, a pak povol. Tři kola. Jsi škeble. Nic se dovnitř nedostane."
+        "cs": "Stiskni dlaně k sobě, co nejsilněji to jde, na 10 sekund, a pak povol. Tři kola. Jsi škeble. Nic se dovnitř nedostane.",
+        "nl": "Druk je handpalmen 10 seconden zo hard mogelijk tegen elkaar en laat dan los. Drie rondes. Je bent een mossel. Er komt niets binnen.",
+        "lt": "Kuo stipriau suspausk delnus 10 sekundžių, tada atleisk. Trys ratai. Tu moliuskas. Niekas neprasibraus."
       },
       "rarity": "common",
       "category": "physical",
@@ -730,11 +894,15 @@
       "id": "nose-sommelier",
       "title": {
         "en": "Nose Sommelier",
-        "cs": "Čichový someliér"
+        "cs": "Čichový someliér",
+        "nl": "Neussommelier",
+        "lt": "Nosies someljė"
       },
       "task": {
         "en": "Find the strongest smell within reach: your tea, soap, your sleeve, someone’s lunch. Sniff it slowly and describe its notes like it costs a fortune.",
-        "cs": "Najdi nejsilnější vůni v dosahu: tvůj čaj, mýdlo, vlastní rukáv, cizí svačinu. Pomalu přičichni a popiš její tóny, jako by stála majlant."
+        "cs": "Najdi nejsilnější vůni v dosahu: tvůj čaj, mýdlo, vlastní rukáv, cizí svačinu. Pomalu přičichni a popiš její tóny, jako by stála majlant.",
+        "nl": "Zoek de sterkste geur binnen handbereik: je thee, zeep, je mouw, iemands lunch. Snuif er langzaam aan en beschrijf de tonen alsof het een fortuin kost.",
+        "lt": "Surask stipriausią kvapą netoliese: arbatą, muilą, rankovę, kažkieno pietus. Lėtai pauostyk ir aprašyk jo natas lyg jis kainuotų turtus."
       },
       "rarity": "common",
       "category": "sensory",
@@ -747,11 +915,15 @@
       "id": "tongue-twister",
       "title": {
         "en": "Tongue Tied",
-        "cs": "Jazykolam"
+        "cs": "Jazykolam",
+        "nl": "Tongbreker",
+        "lt": "Liežuvio laužytojas"
       },
       "task": {
         "en": "Say “six slippery sardines slid slowly southward” five times fast. In your head if you’re on a bus. Out loud if you’re brave.",
-        "cs": "Řekni pětkrát rychle „strč prst skrz krk“. V duchu, jestli sedíš v tramvaji. Nahlas, jestli jsi odvážná."
+        "cs": "Řekni pětkrát rychle „strč prst skrz krk“. V duchu, jestli sedíš v tramvaji. Nahlas, jestli jsi odvážná.",
+        "nl": "Zeg vijf keer snel achter elkaar: “de kat krabt de krullen van de trap”. In je hoofd als je in de bus zit. Hardop als je dapper bent.",
+        "lt": "Penkis kartus greitai pasakyk „Šešios žąsys su šešiais žąsyčiais“. Mintyse, jei esi autobuse. Garsiai, jei drąsos užtenka."
       },
       "rarity": "common",
       "category": "ridiculous",
@@ -764,11 +936,15 @@
       "id": "toe-piano",
       "title": {
         "en": "Toe Piano",
-        "cs": "Klavír v botách"
+        "cs": "Klavír v botách",
+        "nl": "Tenenpiano",
+        "lt": "Kojų pirštų pianinas"
       },
       "task": {
         "en": "Play a 30-second piano concerto with your toes, inside your shoes or socks. Ten keys, one masterpiece, zero audience. Bow internally.",
-        "cs": "Zahraj prsty u nohou třicetivteřinový klavírní koncert, v botách nebo v ponožkách. Deset kláves, jedno mistrovské dílo, nula diváků. V duchu se ukloň."
+        "cs": "Zahraj prsty u nohou třicetivteřinový klavírní koncert, v botách nebo v ponožkách. Deset kláves, jedno mistrovské dílo, nula diváků. V duchu se ukloň.",
+        "nl": "Speel 30 seconden een pianoconcert met je tenen, in je schoenen of sokken. Tien toetsen, één meesterwerk, nul publiek. Buig inwendig.",
+        "lt": "30 sekundžių kojų pirštais bateliuose ar kojinėse groji fortepijono koncertą. Dešimt klavišų, vienas šedevras, nulis žiūrovų. Nusilenk mintyse."
       },
       "rarity": "uncommon",
       "category": "physical",
@@ -782,11 +958,15 @@
       "id": "cold-sip",
       "title": {
         "en": "Freshwater Upgrade",
-        "cs": "Sladkovodní upgrade"
+        "cs": "Sladkovodní upgrade",
+        "nl": "Zoetwater-upgrade",
+        "lt": "Gėlo vandens privilegija"
       },
       "task": {
         "en": "Drink something cold in ten slow sips. Feel each one all the way down. Tuna drink seawater all day. You got the upgrade.",
-        "cs": "Vypij něco studeného na deset pomalých doušků. Vnímej každý až dolů. Tuňáci celý den pijou mořskou vodu. Ty máš upgrade."
+        "cs": "Vypij něco studeného na deset pomalých doušků. Vnímej každý až dolů. Tuňáci celý den pijou mořskou vodu. Ty máš upgrade.",
+        "nl": "Drink iets kouds in tien langzame slokjes. Voel elk slokje helemaal naar beneden gaan. Tonijnen drinken de hele dag zeewater. Jij kreeg de upgrade.",
+        "lt": "Išgerk ką nors šalto dešimčia lėtų gurkšnių. Pajusk kiekvieną iki pat apačios. Tunai visą dieną geria jūros vandenį. Tau pasisekė labiau."
       },
       "rarity": "uncommon",
       "category": "sensory",
@@ -799,11 +979,15 @@
       "id": "alphabet-aquarium",
       "title": {
         "en": "Alphabet Aquarium",
-        "cs": "Abecední akvárium"
+        "cs": "Abecední akvárium",
+        "nl": "Alfabetaquarium",
+        "lt": "Abėcėlės akvariumas"
       },
       "task": {
         "en": "Name a sea creature for every letter, A to Z, in 45 seconds. Stuck on X? Everyone is. Invent one and describe it with confidence.",
-        "cs": "Vyjmenuj mořského tvora na každé písmeno abecedy, od A do Z, za 45 sekund. Zasekla ses na X? To každý. Vymysli si ho a popiš ho sebevědomě."
+        "cs": "Vyjmenuj mořského tvora na každé písmeno abecedy, od A do Z, za 45 sekund. Zasekla ses na X? To každý. Vymysli si ho a popiš ho sebevědomě.",
+        "nl": "Noem in 45 seconden voor elke letter van A tot Z een zeedier. Vast bij de X? Iedereen. Verzin er een en beschrijf hem vol zelfvertrouwen.",
+        "lt": "Per 45 sekundes kiekvienai raidei nuo A iki Ž sugalvok jūros gyvūną. Užstrigai ties Y? Visi užstringa. Išsigalvok ir užtikrintai jį apibūdink."
       },
       "rarity": "uncommon",
       "category": "grounding",
@@ -817,11 +1001,15 @@
       "id": "pearl-diver",
       "title": {
         "en": "Pearl Diver",
-        "cs": "Lovkyně perel"
+        "cs": "Lovkyně perel",
+        "nl": "Parelduiker",
+        "lt": "Perlų narūnas"
       },
       "task": {
         "en": "Dive for three pearls: type three tiny good things from today into your notes. Rules: one must be food, and one must be extremely stupid.",
-        "cs": "Vylov tři perly: napiš si do poznámek tři drobné dobré věci z dneška. Pravidla: jedna musí být jídlo a jedna musí být extrémně hloupá."
+        "cs": "Vylov tři perly: napiš si do poznámek tři drobné dobré věci z dneška. Pravidla: jedna musí být jídlo a jedna musí být extrémně hloupá.",
+        "nl": "Duik naar drie parels: tik drie kleine goede dingen van vandaag in je notities. Regels: één moet over eten gaan, en één moet extreem dom zijn.",
+        "lt": "Nerk trijų perlų: užsirašyk tris mažus gerus šios dienos dalykus. Taisyklės: vienas turi būti apie maistą, o vienas – nepaprastai kvailas."
       },
       "rarity": "uncommon",
       "category": "grounding",
@@ -834,11 +1022,15 @@
       "id": "undercover-tuna",
       "title": {
         "en": "Undercover Tuna",
-        "cs": "Tuňák v utajení"
+        "cs": "Tuňák v utajení",
+        "nl": "Undercover tonijn",
+        "lt": "Slaptasis tunas"
       },
       "task": {
         "en": "Pick someone nearby (or the last person in your camera roll). Notice three details, then silently build their secret life: name, job, and what’s really in that bag.",
-        "cs": "Vyber si někoho poblíž (nebo poslední osobu ve fotkách). Všimni si tří detailů a v duchu mu vymysli tajný život: jméno, práci a co má doopravdy v té tašce."
+        "cs": "Vyber si někoho poblíž (nebo poslední osobu ve fotkách). Všimni si tří detailů a v duchu mu vymysli tajný život: jméno, práci a co má doopravdy v té tašce.",
+        "nl": "Kies iemand in de buurt (of de laatste persoon in je camerarol). Let op drie details en bouw in stilte hun geheime leven: naam, baan, en wat er echt in die tas zit.",
+        "lt": "Išsirink ką nors šalia (arba paskutinį žmogų galerijoje). Pastebėk tris detales ir tyliai sukurk jo slaptą gyvenimą: vardą, darbą ir kas iš tikrųjų tame krepšyje."
       },
       "rarity": "rare",
       "category": "grounding",
@@ -851,11 +1043,15 @@
       "id": "emoji-hieroglyphs",
       "title": {
         "en": "Hieroglyphs",
-        "cs": "Hieroglyfy"
+        "cs": "Hieroglyfy",
+        "nl": "Hiërogliefen",
+        "lt": "Hieroglifai"
       },
       "task": {
         "en": "Text someone your entire life story in exactly five emoji. Let them guess. Confirm nothing. Deny nothing. Swim away.",
-        "cs": "Pošli někomu celý svůj životní příběh v přesně pěti emoji. Ať hádá. Nic nepotvrzuj. Nic nevyvracej. Odplav."
+        "cs": "Pošli někomu celý svůj životní příběh v přesně pěti emoji. Ať hádá. Nic nepotvrzuj. Nic nevyvracej. Odplav.",
+        "nl": "Stuur iemand je hele levensverhaal in precies vijf emoji. Laat ze raden. Bevestig niets. Ontken niets. Zwem weg.",
+        "lt": "Nusiųsk kam nors visą savo gyvenimo istoriją lygiai penkiais jaustukais. Tegul spėja. Nieko nepatvirtink. Nieko nepaneik. Nuplauk."
       },
       "rarity": "rare",
       "category": "social",
@@ -868,11 +1064,15 @@
       "id": "haiku-of-spite",
       "title": {
         "en": "Haiku of Spite",
-        "cs": "Haiku pomsty"
+        "cs": "Haiku pomsty",
+        "nl": "Haiku van wrok",
+        "lt": "Pagiežos haiku"
       },
       "task": {
         "en": "Write the craving a haiku in your notes: 5, 7, 5 syllables. It should leave the craving feeling personally attacked. Read it back. Admire.",
-        "cs": "Napiš téhle chuti do poznámek haiku: 5, 7, 5 slabik. Má se po něm cítit osobně napadená. Přečti si ho. Obdivuj."
+        "cs": "Napiš téhle chuti do poznámek haiku: 5, 7, 5 slabik. Má se po něm cítit osobně napadená. Přečti si ho. Obdivuj.",
+        "nl": "Schrijf de trek een haiku in je notities: 5, 7, 5 lettergrepen. De trek moet zich persoonlijk aangevallen voelen. Lees hem terug. Bewonder.",
+        "lt": "Parašyk norui haiku: 5, 7, 5 skiemenys. Noras turi pasijusti asmeniškai įžeistas. Perskaityk. Pasigėrėk."
       },
       "rarity": "rare",
       "category": "ridiculous",
@@ -885,11 +1085,15 @@
       "id": "end-credits",
       "title": {
         "en": "End Credits",
-        "cs": "Závěrečné titulky"
+        "cs": "Závěrečné titulky",
+        "nl": "Aftiteling",
+        "lt": "Titrai"
       },
       "task": {
         "en": "45 seconds: walk like the hero in the final scene of a film. Slow, unbothered, wind in your fins. Behind you, the craving explodes. Don’t look back.",
-        "cs": "45 sekund: kráčej jako hrdinka v závěrečné scéně filmu. Pomalu, nad věcí, vítr v ploutvích. Za tebou vybuchne chuť. Neohlížej se."
+        "cs": "45 sekund: kráčej jako hrdinka v závěrečné scéně filmu. Pomalu, nad věcí, vítr v ploutvích. Za tebou vybuchne chuť. Neohlížej se.",
+        "nl": "45 seconden: loop als de held in de slotscène van een film. Langzaam, onverstoorbaar, wind in je vinnen. Achter je ontploft de trek. Niet omkijken.",
+        "lt": "45 sekundės: eik kaip herojus paskutinėje filmo scenoje. Lėtai, ramiai, vėjas pelekuose. Už nugaros sprogsta noras. Neatsigręžk."
       },
       "rarity": "legendary",
       "category": "physical",
@@ -903,11 +1107,15 @@
       "id": "dd-ramen-shop",
       "title": {
         "en": "Eight Seats",
-        "cs": "Osm míst"
+        "cs": "Osm míst",
+        "nl": "Acht stoelen",
+        "lt": "Aštuonios vietos"
       },
       "task": {
         "en": "You’re queuing for a tiny ramen shop. It’s drizzling. Inside, a bowl lands in front of you. Describe it topping by topping: the broth, the egg, the steam on your face. Then eat it slowly in your head.",
-        "cs": "Stojíš frontu do malého ramen bistra. Mrholí. Uvnitř před tebou přistane miska. Popiš ji kousek po kousku: vývar, vajíčko, páru na obličeji. Pak ji v duchu pomalu sněz."
+        "cs": "Stojíš frontu do malého ramen bistra. Mrholí. Uvnitř před tebou přistane miska. Popiš ji kousek po kousku: vývar, vajíčko, páru na obličeji. Pak ji v duchu pomalu sněz.",
+        "nl": "Je staat in de rij voor een piepklein ramententje. Het motregent. Binnen landt er een kom voor je neus. Beschrijf hem stukje voor stukje: de bouillon, het ei, de stoom op je gezicht. Eet hem daarna langzaam op in je hoofd.",
+        "lt": "Stovi eilėje į mažytę ramen užkandinę. Dulksna. Viduje priešais tave nusileidžia dubenėlis. Aprašyk jį dalis po dalies: sultinį, kiaušinį, garus ant veido. Tada mintyse lėtai jį suvalgyk."
       },
       "rarity": "common",
       "category": "daydream",
@@ -920,11 +1128,15 @@
       "id": "dd-night-shop",
       "title": {
         "en": "Corner Shop at 1 a.m.",
-        "cs": "Večerka v jednu ráno"
+        "cs": "Večerka v jednu ráno",
+        "nl": "Nachtwinkel om 1 uur",
+        "lt": "Parduotuvė pirmą nakties"
       },
       "task": {
         "en": "It’s 1 a.m. in an all-night corner shop. Fill your basket in your head: one snack, one drink, one thing you can’t identify, one flavour that shouldn’t exist, and one sandwich. Not tuna. Please.",
-        "cs": "Je jedna ráno a jsi v nonstop večerce. Naplň si v duchu košík: jednu dobrotu, jedno pití, jednu věc, kterou nepoznáš, jednu příchuť, která by neměla existovat, a jeden sendvič. Ne s tuňákem. Prosím."
+        "cs": "Je jedna ráno a jsi v nonstop večerce. Naplň si v duchu košík: jednu dobrotu, jedno pití, jednu věc, kterou nepoznáš, jednu příchuť, která by neměla existovat, a jeden sendvič. Ne s tuňákem. Prosím.",
+        "nl": "Het is 1 uur ’s nachts in een nachtwinkel. Vul in gedachten je mandje: één snack, één drankje, één ding dat je niet herkent, één smaak die niet zou mogen bestaan, en één broodje. Geen tonijn. Alsjeblieft.",
+        "lt": "Pirma nakties, tu visą parą dirbančioje parduotuvėje. Mintyse prikrauk krepšelį: vienas užkandis, vienas gėrimas, vienas neatpažįstamas daiktas, vienas skonis, kuris neturėtų egzistuoti, ir vienas sumuštinis. Ne su tunu. Prašau."
       },
       "rarity": "common",
       "category": "daydream",
@@ -937,11 +1149,15 @@
       "id": "dd-tangerine-orchard",
       "title": {
         "en": "Tangerine Orchard",
-        "cs": "Mandarinkový sad"
+        "cs": "Mandarinkový sad",
+        "nl": "Mandarijnenboomgaard",
+        "lt": "Mandarinų sodas"
       },
       "task": {
         "en": "A tangerine orchard by the sea. Pick one off the branch. Peel it in one long strip. Smell your fingers. Eat it slice by slice for 30 seconds. Sweet or sour?",
-        "cs": "Mandarinkový sad u moře. Utrhni jednu z větve. Oloupej ji jedním dlouhým proužkem. Přičichni si k prstům. Jez ji 30 sekund dílek po dílku. Sladká, nebo kyselá?"
+        "cs": "Mandarinkový sad u moře. Utrhni jednu z větve. Oloupej ji jedním dlouhým proužkem. Přičichni si k prstům. Jez ji 30 sekund dílek po dílku. Sladká, nebo kyselá?",
+        "nl": "Een mandarijnenboomgaard aan zee. Pluk er een van de tak. Pel hem in één lange sliert. Ruik aan je vingers. Eet hem 30 seconden partje voor partje. Zoet of zuur?",
+        "lt": "Mandarinų sodas prie jūros. Nuskink vieną nuo šakos. Nulupk vienu ilgu kaspinu. Pauostyk pirštus. 30 sekundžių valgyk skiltelę po skiltelės. Saldus ar rūgštus?"
       },
       "rarity": "common",
       "category": "daydream",
@@ -955,11 +1171,15 @@
       "id": "dd-tea-room",
       "title": {
         "en": "Tea, Slowly",
-        "cs": "Čaj, pomalu"
+        "cs": "Čaj, pomalu",
+        "nl": "Thee, langzaam",
+        "lt": "Arbata, lėtai"
       },
       "task": {
         "en": "A quiet tea room. A cushion under your knees, steam rising from the cup. Hold it in both hands. How does the tea smell? Take three slow sips in your head. No slurping.",
-        "cs": "Tichá čajovna. Pod koleny polštář, z šálku stoupá pára. Drž ho v obou dlaních. Jak čaj voní? Dej si v duchu tři pomalé doušky. Žádné srkání."
+        "cs": "Tichá čajovna. Pod koleny polštář, z šálku stoupá pára. Drž ho v obou dlaních. Jak čaj voní? Dej si v duchu tři pomalé doušky. Žádné srkání.",
+        "nl": "Een stille theesalon. Een kussen onder je knieën, stoom die uit het kopje opstijgt. Hou het met twee handen vast. Hoe ruikt de thee? Neem in gedachten drie langzame slokjes. Niet slurpen.",
+        "lt": "Rami arbatinė. Po keliais pagalvėlė, iš puodelio kyla garai. Laikyk jį abiem rankomis. Kaip kvepia arbata? Mintyse lėtai gurkštelėk tris kartus. Nesrėbk."
       },
       "rarity": "uncommon",
       "category": "daydream",
@@ -973,11 +1193,15 @@
       "id": "dd-red-carpet",
       "title": {
         "en": "Red Carpet",
-        "cs": "Červený koberec"
+        "cs": "Červený koberec",
+        "nl": "Rode loper",
+        "lt": "Raudonasis kilimas"
       },
       "task": {
         "en": "You’re stepping onto a red carpet. Cameras everywhere. What are you wearing, down to the shoes? Now plan your three photos: where you stand, the pose, the caption.",
-        "cs": "Vystupuješ na červený koberec. Všude fotoaparáty. Co máš na sobě, až po boty? Teď naplánuj tři fotky: kde stojíš, jaká póza, jaký popisek."
+        "cs": "Vystupuješ na červený koberec. Všude fotoaparáty. Co máš na sobě, až po boty? Teď naplánuj tři fotky: kde stojíš, jaká póza, jaký popisek.",
+        "nl": "Je stapt op een rode loper. Overal camera’s. Wat heb je aan, tot en met je schoenen? Plan nu je drie foto’s: waar je staat, de pose, het onderschrift.",
+        "lt": "Žengi ant raudonojo kilimo. Visur kameros. Kuo apsirengta, iki pat batų? Dabar suplanuok tris nuotraukas: kur stovi, kokia poza, koks prierašas."
       },
       "rarity": "uncommon",
       "category": "daydream",
@@ -990,11 +1214,15 @@
       "id": "dd-panda-inspection",
       "title": {
         "en": "Panda Inspection",
-        "cs": "Inspekce pand"
+        "cs": "Inspekce pand",
+        "nl": "Panda-inspectie",
+        "lt": "Pandų inspekcija"
       },
       "task": {
         "en": "You’re at a panda sanctuary. Pick one panda and name it. For 30 seconds, narrate its day like a sports commentator. Bamboo. Rolling. More bamboo. Lazier than a tuna on a Sunday.",
-        "cs": "Jsi v pandí rezervaci. Vyber si jednu pandu a pojmenuj ji. 30 sekund komentuj její den jako sportovní komentátor. Bambus. Válení. Další bambus. Línější než tuňák v neděli."
+        "cs": "Jsi v pandí rezervaci. Vyber si jednu pandu a pojmenuj ji. 30 sekund komentuj její den jako sportovní komentátor. Bambus. Válení. Další bambus. Línější než tuňák v neděli.",
+        "nl": "Je bent in een pandaopvang. Kies één panda en geef hem een naam. Becommentarieer 30 seconden zijn dag als een sportcommentator. Bamboe. Rollen. Meer bamboe. Luier dan een tonijn op zondag.",
+        "lt": "Tu pandų draustinyje. Išsirink vieną pandą ir duok jai vardą. 30 sekundžių komentuok jos dieną kaip sporto komentatorius. Bambukas. Vartymasis. Dar bambuko. Tingesnė už tuną sekmadienį."
       },
       "rarity": "uncommon",
       "category": "daydream",
@@ -1008,11 +1236,15 @@
       "id": "dd-karaoke-room",
       "title": {
         "en": "Karaoke Room",
-        "cs": "Karaoke místnost"
+        "cs": "Karaoke místnost",
+        "nl": "Karaokekamer",
+        "lt": "Karaokės kambarys"
       },
       "task": {
         "en": "A private karaoke room: neon everywhere, a tambourine on the table. You get the mic. Pick your three songs, in order. The last one is your guiltiest pleasure. Who’s on backing vocals?",
-        "cs": "Soukromá karaoke místnost: všude neony, na stole tamburína. Mikrofon máš ty. Vyber tři písničky, v pořadí. Poslední je tvoje nejtajnější slabost. Kdo dělá vokály?"
+        "cs": "Soukromá karaoke místnost: všude neony, na stole tamburína. Mikrofon máš ty. Vyber tři písničky, v pořadí. Poslední je tvoje nejtajnější slabost. Kdo dělá vokály?",
+        "nl": "Een privé-karaokekamer: overal neon, een tamboerijn op tafel. Jij krijgt de microfoon. Kies je drie liedjes, op volgorde. De laatste is je grootste guilty pleasure. Wie doet de achtergrondzang?",
+        "lt": "Privatus karaokės kambarys: visur neonas, ant stalo tamburinas. Mikrofonas tavo. Išsirink tris dainas iš eilės. Paskutinė – tavo slapčiausia silpnybė. Kas pritars?"
       },
       "rarity": "uncommon",
       "category": "daydream",
@@ -1025,11 +1257,15 @@
       "id": "dd-hot-spring",
       "title": {
         "en": "Hot Spring Night",
-        "cs": "Noc u horkého pramene"
+        "cs": "Noc u horkého pramene",
+        "nl": "Nacht bij de warmwaterbron",
+        "lt": "Naktis prie karštųjų versmių"
       },
       "task": {
         "en": "A cabin in the mountains. Robe on, slippers off. Step into the hot spring while snow falls on the water. For 45 seconds, just feel the heat in your shoulders. Nothing else to do.",
-        "cs": "Chata v horách. Župan na sebe, pantofle dolů. Vlez do horkého pramene, zatímco na hladinu padá sníh. 45 sekund jen cíť teplo v ramenou. Nic jiného dělat nemusíš."
+        "cs": "Chata v horách. Župan na sebe, pantofle dolů. Vlez do horkého pramene, zatímco na hladinu padá sníh. 45 sekund jen cíť teplo v ramenou. Nic jiného dělat nemusíš.",
+        "nl": "Een hut in de bergen. Badjas aan, slippers uit. Stap in de warmwaterbron terwijl er sneeuw op het water valt. Voel 45 seconden alleen de warmte in je schouders. Verder hoef je niks.",
+        "lt": "Namelis kalnuose. Chalatas ant pečių, šlepetės nuo kojų. Įlipk į karštąją versmę, kol ant vandens krenta sniegas. 45 sekundes tiesiog jausk šilumą pečiuose. Daugiau nieko nereikia."
       },
       "rarity": "rare",
       "category": "daydream",
@@ -1043,11 +1279,15 @@
       "id": "dd-perfect-day",
       "title": {
         "en": "One Perfect Day",
-        "cs": "Jeden dokonalý den"
+        "cs": "Jeden dokonalý den",
+        "nl": "Eén perfecte dag",
+        "lt": "Viena tobula diena"
       },
       "task": {
         "en": "Plan one perfect day anywhere in the world, money no object. Breakfast, where you go, who’s with you, what you wear, the last thing you see before sleep. The more specific, the better.",
-        "cs": "Naplánuj jeden dokonalý den kdekoli na světě, na penězích nezáleží. Snídaně, kam jdeš, kdo je s tebou, co máš na sobě, co uvidíš jako poslední před spaním. Čím konkrétnější, tím líp."
+        "cs": "Naplánuj jeden dokonalý den kdekoli na světě, na penězích nezáleží. Snídaně, kam jdeš, kdo je s tebou, co máš na sobě, co uvidíš jako poslední před spaním. Čím konkrétnější, tím líp.",
+        "nl": "Plan één perfecte dag, waar ook ter wereld, geld speelt geen rol. Ontbijt, waar je heen gaat, wie er bij je is, wat je draagt, het laatste wat je ziet voor het slapengaan. Hoe specifieker, hoe beter.",
+        "lt": "Suplanuok vieną tobulą dieną bet kur pasaulyje, pinigai nesvarbu. Pusryčiai, kur eini, kas šalia, kuo apsirengta, ką paskutinio pamatai prieš miegą. Kuo konkrečiau, tuo geriau."
       },
       "rarity": "rare",
       "category": "daydream",
@@ -1060,11 +1300,15 @@
       "id": "dd-front-row",
       "title": {
         "en": "Front Row",
-        "cs": "První řada"
+        "cs": "První řada",
+        "nl": "Eerste rij",
+        "lt": "Pirma eilė"
       },
       "task": {
         "en": "Close your eyes. The stadium goes dark and thousands of phone lights come on. Your favourite artist walks out. What’s the first song? What are you screaming? Stay in that crowd for 60 seconds.",
-        "cs": "Zavři oči. Stadion potemní a rozsvítí se tisíce světel z mobilů. Na pódium vychází tvoje nejoblíbenější hvězda. Jaká je první písnička? Co ječíš? Zůstaň v tom davu 60 sekund."
+        "cs": "Zavři oči. Stadion potemní a rozsvítí se tisíce světel z mobilů. Na pódium vychází tvoje nejoblíbenější hvězda. Jaká je první písnička? Co ječíš? Zůstaň v tom davu 60 sekund.",
+        "nl": "Doe je ogen dicht. Het stadion wordt donker en duizenden telefoonlampjes gaan aan. Je favoriete artiest komt op. Wat is het eerste nummer? Wat schreeuw je? Blijf 60 seconden in die menigte.",
+        "lt": "Užsimerk. Stadionas aptemsta ir įsižiebia tūkstančiai telefonų žibintuvėlių. Išeina tavo mėgstamiausias atlikėjas. Kokia pirma daina? Ką rėki? Pabūk toje minioje 60 sekundžių."
       },
       "rarity": "legendary",
       "category": "daydream",

@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { LANGS } from './cards';
 import { MILESTONES } from './milestones';
 import { coralLook, DECORATION_NAMES, emptySeabed, markSeen, monthsSince, withEarned } from './seabed';
 import { isDrawn } from './components/Seabed';
@@ -9,7 +10,7 @@ describe('seabed', () => {
   it('has a decoration for every milestone, in both languages', () => {
     for (const m of MILESTONES) {
       const name = DECORATION_NAMES[m.id];
-      expect(name?.en && name?.cs, m.id).toBeTruthy();
+      for (const l of LANGS) expect(name?.[l], `${m.id} ${l}`).toBeTruthy();
     }
     expect(Object.keys(DECORATION_NAMES).length).toBe(MILESTONES.length);
   });

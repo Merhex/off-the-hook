@@ -10,7 +10,7 @@ The sources for every milestone claim live in [`docs/milestones.md`](docs/milest
 
 - **No backend.** It's a static site. All progress stays on your phone (IndexedDB), with backup/restore to a file.
 - **Installable and offline.** It's a PWA: add it to the home screen from Safari and it runs full screen, offline.
-- **English and Czech.** The language is picked from the phone's settings and can be changed in Settings.
+- **English, Dutch, Lithuanian and Czech.** The language is picked from the phone's settings and can be changed in Settings. To add one, add its code to `Lang`, `LANGS`, `LANG_NAMES` and `LOCALES` in [`src/cards.ts`](src/cards.ts), add a strings file like [`src/i18n-nl.ts`](src/i18n-nl.ts), and fill in the new key in the cards, milestones, comparisons and seabed names; `npm test` and `npm run build` point out anything missing.
 - **Where are you?** At the start of a craving you can switch between *At home* and *Out and about* (remembered). Out of the house, only cards tagged `anywhere` or `outside` are drawn.
 - **Sunken Treasure** (optional): a live counter of the money you're not spending, from a weekly amount and a start date. It never resets; a changed weekly amount only applies from then on. Currency (Kč, €, $) is separate from the language. Below it, a few random things the money would already buy, from an ice cream to a hot tub. They're in [`src/comparisons.ts`](src/comparisons.ts). With 3D, opening the treasure swims the camera down to a chest in the middle of the tank, whose lid opens above the page.
 - **Milestones**, below the treasure: what to expect from quit day to one year, counted from the treasure's start date. Text in [`src/data/milestones.json`](src/data/milestones.json), sources in [`docs/milestones.md`](docs/milestones.md).
@@ -23,7 +23,7 @@ The sources for every milestone claim live in [`docs/milestones.md`](docs/milest
 
 ## Adding or editing cards
 
-All cards are in [`src/data/cards.json`](src/data/cards.json). Each card has an English and Czech title and task.
+All cards are in [`src/data/cards.json`](src/data/cards.json). Each card has a title and task in every language.
 
 1. Add the card. Give it a new, permanent `id` (never change or reuse an ID: players' collections are keyed on it).
 2. Set `addedIn` to the next deck version, and bump `deckVersion` at the top of the file.
@@ -34,7 +34,7 @@ Rarity chances, the guaranteed-rare counter and the weighting toward uncaught ca
 
 ## The petting Easter egg
 
-Tap the tuna on the home screen and it closes its eyes. Tap it five times fast and it tells a joke: 1 in 10 come from the dark list. The jokes are `petJokes` and `petDarkJokes` in [`src/i18n.ts`](src/i18n.ts) (English and Czech). Timing and odds are `PET_SETTINGS` in [`src/pet.ts`](src/pet.ts). Every tap is counted, and the Logbook shows the total just above the history (`PetCount` in [`src/components/Logbook.tsx`](src/components/Logbook.tsx)).
+Tap the tuna on the home screen and it closes its eyes. Tap it five times fast and it tells a joke: 1 in 10 come from the dark list. The jokes are `petJokes` and `petDarkJokes` in [`src/i18n.ts`](src/i18n.ts) (every language). Timing and odds are `PET_SETTINGS` in [`src/pet.ts`](src/pet.ts). Every tap is counted, and the Logbook shows the total just above the history (`PetCount` in [`src/components/Logbook.tsx`](src/components/Logbook.tsx)).
 
 ## Development
 

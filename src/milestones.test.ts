@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { LANGS } from './cards';
 import { daysSince, latestMilestoneDay, MILESTONES, milestoneProgress, reachedOn } from './milestones';
 
 describe('milestones', () => {
@@ -7,7 +8,7 @@ describe('milestones', () => {
     expect(new Set(MILESTONES.map((m) => m.id)).size).toBe(MILESTONES.length);
     expect(new Set(MILESTONES.map((m) => m.day)).size).toBe(MILESTONES.length);
     for (const m of MILESTONES) {
-      for (const field of [m.when, m.title, m.body]) expect(field.en && field.cs, m.id).toBeTruthy();
+      for (const field of [m.when, m.title, m.body]) for (const l of LANGS) expect(field[l], `${m.id} ${l}`).toBeTruthy();
     }
   });
 

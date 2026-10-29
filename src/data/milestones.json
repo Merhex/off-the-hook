@@ -3,101 +3,221 @@
     {
       "id": "quit-day",
       "day": 0,
-      "when": { "en": "Quit day", "cs": "Den D" },
-      "title": { "en": "Cast Off", "cs": "Vyplouváme" },
+      "when": {
+        "en": "Quit day",
+        "cs": "Den D",
+        "nl": "Stopdag",
+        "lt": "Metimo diena"
+      },
+      "title": {
+        "en": "Cast Off",
+        "cs": "Vyplouváme",
+        "nl": "Uitvaren",
+        "lt": "Išplaukiam"
+      },
       "body": {
         "en": "You’ve started. The first few days are usually the hardest, and that’s normal, not a sign it isn’t working. Each craving still only lasts a few minutes. Keep swimming.",
-        "cs": "Začala jsi. První dny bývají nejtěžší a je to normální, ne znamení, že to nefunguje. Každá chuť pořád trvá jen pár minut. Plav dál."
+        "cs": "Začala jsi. První dny bývají nejtěžší a je to normální, ne znamení, že to nefunguje. Každá chuť pořád trvá jen pár minut. Plav dál.",
+        "nl": "Je bent begonnen. De eerste dagen zijn meestal het zwaarst, en dat is normaal, geen teken dat het niet werkt. Elke trek duurt nog steeds maar een paar minuten. Blijf zwemmen.",
+        "lt": "Pradėjai. Pirmosios dienos paprastai sunkiausios, ir tai normalu, o ne ženklas, kad nepavyksta. Kiekvienas noras vis tiek trunka tik kelias minutes. Plauk toliau."
       }
     },
     {
       "id": "day-1",
       "day": 1,
-      "when": { "en": "1 day", "cs": "1 den" },
-      "title": { "en": "First Tide", "cs": "První příliv" },
+      "when": {
+        "en": "1 day",
+        "cs": "1 den",
+        "nl": "1 dag",
+        "lt": "1 diena"
+      },
+      "title": {
+        "en": "First Tide",
+        "cs": "První příliv",
+        "nl": "Eerste getij",
+        "lt": "Pirmasis potvynis"
+      },
       "body": {
         "en": "One full day. By now almost all the nicotine has left your blood, so what you’re feeling is your brain noticing it’s gone. Restless, snappy or foggy is normal, and it passes.",
-        "cs": "Celý jeden den. Většina nikotinu už ti zmizela z krve, takže to, co cítíš, je mozek, který si všiml, že chybí. Neklid, podrážděnost nebo mlha v hlavě jsou normální a přejdou."
+        "cs": "Celý jeden den. Většina nikotinu už ti zmizela z krve, takže to, co cítíš, je mozek, který si všiml, že chybí. Neklid, podrážděnost nebo mlha v hlavě jsou normální a přejdou.",
+        "nl": "Een hele dag. Inmiddels is bijna alle nicotine uit je bloed, dus wat je voelt, is je brein dat merkt dat het weg is. Onrustig, kortaf of wazig is normaal, en het gaat over.",
+        "lt": "Visa diena. Beveik visas nikotinas jau pasišalino iš kraujo, tad tai, ką jauti, yra smegenys, pastebėjusios, kad jo nebėra. Nerimas, irzlumas ar migla galvoje yra normalu ir praeina."
       }
     },
     {
       "id": "day-3",
       "day": 3,
-      "when": { "en": "3 days", "cs": "3 dny" },
-      "title": { "en": "Top of the Wave", "cs": "Na vrcholu vlny" },
+      "when": {
+        "en": "3 days",
+        "cs": "3 dny",
+        "nl": "3 dagen",
+        "lt": "3 dienos"
+      },
+      "title": {
+        "en": "Top of the Wave",
+        "cs": "Na vrcholu vlny",
+        "nl": "Top van de golf",
+        "lt": "Bangos viršūnėje"
+      },
       "body": {
         "en": "Withdrawal is usually at its worst in the first three days, and you’ve just swum through them. If today still feels rough, that’s the top of the wave. For most people it eases from here.",
-        "cs": "Abstinenční příznaky bývají nejhorší první tři dny a ty jsi je právě proplavala. Jestli je dnešek pořád drsný, jsi na vrcholu vlny. Většině lidí se odsud začne ulevovat."
+        "cs": "Abstinenční příznaky bývají nejhorší první tři dny a ty jsi je právě proplavala. Jestli je dnešek pořád drsný, jsi na vrcholu vlny. Většině lidí se odsud začne ulevovat.",
+        "nl": "Ontwenning is meestal het ergst in de eerste drie dagen, en daar ben je net doorheen gezwommen. Voelt vandaag nog zwaar? Dan zit je op de top van de golf. Voor de meeste mensen wordt het vanaf hier makkelijker.",
+        "lt": "Abstinencija paprastai stipriausia per pirmas tris dienas, o tu jas ką tik perplaukei. Jei šiandien vis dar sunku, tai bangos viršūnė. Daugumai žmonių nuo čia darosi lengviau."
       }
     },
     {
       "id": "week-1",
       "day": 7,
-      "when": { "en": "1 week", "cs": "1 týden" },
-      "title": { "en": "Open Water", "cs": "Otevřené moře" },
+      "when": {
+        "en": "1 week",
+        "cs": "1 týden",
+        "nl": "1 week",
+        "lt": "1 savaitė"
+      },
+      "title": {
+        "en": "Open Water",
+        "cs": "Otevřené moře",
+        "nl": "Open water",
+        "lt": "Atviri vandenys"
+      },
       "body": {
         "en": "One week. The first week is the toughest stretch, and it’s behind you. Cravings still drop by, often at the same old moments. Every one you ride out teaches your brain that the hook is empty.",
-        "cs": "Jeden týden. První týden je nejtěžší úsek a máš ho za sebou. Chutě se pořád ozývají, často ve stejných chvílích jako dřív. Každá, kterou přečkáš, učí tvůj mozek, že na háčku nic není."
+        "cs": "Jeden týden. První týden je nejtěžší úsek a máš ho za sebou. Chutě se pořád ozývají, často ve stejných chvílích jako dřív. Každá, kterou přečkáš, učí tvůj mozek, že na háčku nic není.",
+        "nl": "Eén week. De eerste week is het zwaarste stuk, en die ligt achter je. Trek komt nog langs, vaak op dezelfde oude momenten. Elke keer dat je hem uitzit, leert je brein dat de haak leeg is.",
+        "lt": "Viena savaitė. Pirmoji savaitė sunkiausia, ir ji jau už nugaros. Norai dar užsuka, dažnai tomis pačiomis senomis akimirkomis. Kiekvienas atlaikytas noras moko smegenis, kad kabliukas tuščias."
       }
     },
     {
       "id": "week-2",
       "day": 14,
-      "when": { "en": "2 weeks", "cs": "2 týdny" },
-      "title": { "en": "Finding the Current", "cs": "Chytáš proud" },
+      "when": {
+        "en": "2 weeks",
+        "cs": "2 týdny",
+        "nl": "2 weken",
+        "lt": "2 savaitės"
+      },
+      "title": {
+        "en": "Finding the Current",
+        "cs": "Chytáš proud",
+        "nl": "De stroming vinden",
+        "lt": "Srovės paieškos"
+      },
       "body": {
         "en": "Two weeks. Restlessness, bad sleep and a foggy head usually keep easing over the next couple of weeks. Cravings tend to come less often and leave faster, even if the odd one still hits hard.",
-        "cs": "Dva týdny. Neklid, špatný spánek a mlha v hlavě obvykle v dalších týdnech dál slábnou. Chutě chodí méně často a rychleji odcházejí, i když nějaká ještě občas pořádně zabere."
+        "cs": "Dva týdny. Neklid, špatný spánek a mlha v hlavě obvykle v dalších týdnech dál slábnou. Chutě chodí méně často a rychleji odcházejí, i když nějaká ještě občas pořádně zabere.",
+        "nl": "Twee weken. Onrust, slecht slapen en een wazig hoofd nemen meestal de komende weken verder af. Trek komt vaak minder vaak en verdwijnt sneller, ook al slaat er af en toe nog eentje hard toe.",
+        "lt": "Dvi savaitės. Neramumas, prastas miegas ir migla galvoje paprastai toliau silpsta ateinančias porą savaičių. Norai ateina rečiau ir praeina greičiau, net jei kartais kuris stipriai smogia."
       }
     },
     {
       "id": "month-1",
       "day": 30,
-      "when": { "en": "1 month", "cs": "1 měsíc" },
-      "title": { "en": "Deep Water", "cs": "Hluboká voda" },
+      "when": {
+        "en": "1 month",
+        "cs": "1 měsíc",
+        "nl": "1 maand",
+        "lt": "1 mėnuo"
+      },
+      "title": {
+        "en": "Deep Water",
+        "cs": "Hluboká voda",
+        "nl": "Diep water",
+        "lt": "Gilūs vandenys"
+      },
       "body": {
         "en": "One month. On average, withdrawal symptoms last three to four weeks, so for most people the worst has faded by now. What’s left is mostly habit, and a habit loses its grip every time it goes unfed.",
-        "cs": "Jeden měsíc. Abstinenční příznaky trvají v průměru tři až čtyři týdny, takže většina lidí má to nejhorší za sebou. Co zbývá, je hlavně zvyk, a zvyk slábne pokaždé, když ho nenakrmíš."
+        "cs": "Jeden měsíc. Abstinenční příznaky trvají v průměru tři až čtyři týdny, takže většina lidí má to nejhorší za sebou. Co zbývá, je hlavně zvyk, a zvyk slábne pokaždé, když ho nenakrmíš.",
+        "nl": "Eén maand. Gemiddeld duren ontwenningsverschijnselen drie tot vier weken, dus voor de meeste mensen is het ergste nu voorbij. Wat overblijft, is vooral gewoonte, en een gewoonte verliest grip elke keer dat je hem niet voedt.",
+        "lt": "Vienas mėnuo. Vidutiniškai abstinencijos simptomai trunka tris–keturias savaites, tad daugumai blogiausia jau praėjo. Liko daugiausia įprotis, o įprotis silpsta kaskart, kai jo nepamaitini."
       }
     },
     {
       "id": "month-2",
       "day": 60,
-      "when": { "en": "2 months", "cs": "2 měsíce" },
-      "title": { "en": "Calmer Waters", "cs": "Klidnější vody" },
+      "when": {
+        "en": "2 months",
+        "cs": "2 měsíce",
+        "nl": "2 maanden",
+        "lt": "2 mėnesiai"
+      },
+      "title": {
+        "en": "Calmer Waters",
+        "cs": "Klidnější vody",
+        "nl": "Rustiger water",
+        "lt": "Ramesni vandenys"
+      },
       "body": {
         "en": "Two months. Research on people who quit smoking found that after about six weeks they felt less anxious and stressed than people who kept going, not more. Nicotine mostly soothes the edginess it creates itself.",
-        "cs": "Dva měsíce. Výzkumy lidí, kteří přestali kouřit, zjistily, že po zhruba šesti týdnech měli méně úzkosti a stresu než ti, kdo pokračovali, ne víc. Nikotin hlavně tiší neklid, který si sám způsobuje."
+        "cs": "Dva měsíce. Výzkumy lidí, kteří přestali kouřit, zjistily, že po zhruba šesti týdnech měli méně úzkosti a stresu než ti, kdo pokračovali, ne víc. Nikotin hlavně tiší neklid, který si sám způsobuje.",
+        "nl": "Twee maanden. Onderzoek onder mensen die stopten met roken liet zien dat ze zich na zo’n zes weken minder angstig en gestrest voelden dan mensen die doorgingen, niet meer. Nicotine sust vooral de onrust die het zelf veroorzaakt.",
+        "lt": "Du mėnesiai. Tyrimai su mesti rūkyti nusprendusiais žmonėmis parodė, kad po maždaug šešių savaičių jie jautė mažiau nerimo ir streso nei tie, kurie rūkė toliau, o ne daugiau. Nikotinas daugiausia ramina įtampą, kurią pats ir sukelia."
       }
     },
     {
       "id": "month-3",
       "day": 90,
-      "when": { "en": "3 months", "cs": "3 měsíce" },
-      "title": { "en": "Rewired", "cs": "Přepojeno" },
+      "when": {
+        "en": "3 months",
+        "cs": "3 měsíce",
+        "nl": "3 maanden",
+        "lt": "3 mėnesiai"
+      },
+      "title": {
+        "en": "Rewired",
+        "cs": "Přepojeno",
+        "nl": "Opnieuw bedraad",
+        "lt": "Perjungta"
+      },
       "body": {
         "en": "Three months. In brain scans of people who quit, nicotine receptors were back to normal levels somewhere between 6 and 12 weeks. Your brain has been quietly rewiring itself the whole time.",
-        "cs": "Tři měsíce. Snímky mozku lidí, kteří přestali, ukázaly, že se nikotinové receptory vrátily na normální úroveň někdy mezi 6. a 12. týdnem. Tvůj mozek se celou dobu potichu přepojoval."
+        "cs": "Tři měsíce. Snímky mozku lidí, kteří přestali, ukázaly, že se nikotinové receptory vrátily na normální úroveň někdy mezi 6. a 12. týdnem. Tvůj mozek se celou dobu potichu přepojoval.",
+        "nl": "Drie maanden. Bij hersenscans van mensen die stopten, waren de nicotinereceptoren ergens tussen 6 en 12 weken weer op normaal niveau. Je brein heeft zichzelf al die tijd stilletjes opnieuw bedraad.",
+        "lt": "Trys mėnesiai. Metusių žmonių smegenų skenavimai parodė, kad nikotino receptoriai grįžo į normalų lygį kažkur tarp 6 ir 12 savaičių. Tavo smegenys visą tą laiką tyliai persijunginėjo."
       }
     },
     {
       "id": "month-6",
       "day": 182,
-      "when": { "en": "6 months", "cs": "6 měsíců" },
-      "title": { "en": "Ocean Crosser", "cs": "Přes oceán" },
+      "when": {
+        "en": "6 months",
+        "cs": "6 měsíců",
+        "nl": "6 maanden",
+        "lt": "6 mėnesiai"
+      },
+      "title": {
+        "en": "Ocean Crosser",
+        "cs": "Přes oceán",
+        "nl": "Oceaanoversteker",
+        "lt": "Vandenyno perplaukėjas"
+      },
       "body": {
         "en": "Half a year. Bluefin cross whole oceans; you just crossed six months. Cravings this far in are usually rare and brief, but one can still ambush you at a party or in a rough week. Expect it, and it loses its pull.",
-        "cs": "Půl roku. Tuňák obecný přeplave celé oceány a ty jsi právě přeplavala šest měsíců. Chutě jsou teď obvykle vzácné a krátké, ale pořád tě nějaká může přepadnout na párty nebo v těžkém týdnu. Když s ní počítáš, ztrácí sílu."
+        "cs": "Půl roku. Tuňák obecný přeplave celé oceány a ty jsi právě přeplavala šest měsíců. Chutě jsou teď obvykle vzácné a krátké, ale pořád tě nějaká může přepadnout na párty nebo v těžkém týdnu. Když s ní počítáš, ztrácí sílu.",
+        "nl": "Een half jaar. Blauwvintonijnen steken hele oceanen over; jij bent net zes maanden overgestoken. Zo ver in is trek meestal zeldzaam en kort, maar hij kan je nog overvallen op een feestje of in een zware week. Reken erop, dan verliest hij zijn kracht.",
+        "lt": "Pusė metų. Tunai perplaukia ištisus vandenynus; tu ką tik perplaukei šešis mėnesius. Tokiame etape norai paprastai reti ir trumpi, bet vienas dar gali užklupti vakarėlyje ar sunkią savaitę. Tikėkis jo, ir jis praras jėgą."
       }
     },
     {
       "id": "year-1",
       "day": 365,
-      "when": { "en": "1 year", "cs": "1 rok" },
-      "title": { "en": "Legend of the Deep", "cs": "Legenda hlubin" },
+      "when": {
+        "en": "1 year",
+        "cs": "1 rok",
+        "nl": "1 jaar",
+        "lt": "1 metai"
+      },
+      "title": {
+        "en": "Legend of the Deep",
+        "cs": "Legenda hlubin",
+        "nl": "Legende van de diepzee",
+        "lt": "Gelmių legenda"
+      },
       "body": {
         "en": "One whole year. A full lap around the sun since you cut the line. Go look at your school and your aquarium: every fish in there is a hook that went home hungry.",
-        "cs": "Celý rok. Celé kolečko kolem Slunce od chvíle, kdy jsi přestřihla vlasec. Mrkni na svoje hejno a akvárium: každá ryba v nich je háček, který odešel s prázdnou."
+        "cs": "Celý rok. Celé kolečko kolem Slunce od chvíle, kdy jsi přestřihla vlasec. Mrkni na svoje hejno a akvárium: každá ryba v nich je háček, který odešel s prázdnou.",
+        "nl": "Een heel jaar. Een volledig rondje om de zon sinds je de lijn doorknipte. Ga eens kijken naar je school en je aquarium: elke vis daarin is een haak die met honger naar huis ging.",
+        "lt": "Visi metai. Visas ratas aplink saulę nuo tada, kai nukirpai valą. Pažvelk į savo būrį ir akvariumą: kiekviena ten esanti žuvis yra kabliukas, grįžęs namo alkanas."
       }
     }
   ]

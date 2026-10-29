@@ -57,3 +57,13 @@ describe('jokes', () => {
     });
   }
 });
+
+describe('ltPlural', () => {
+  it('picks the Lithuanian form for 1, 2–9 and 0/10–20', async () => {
+    const { ltPlural } = await import('./i18n-lt');
+    const f = (n: number) => ltPlural(n, 'diena', 'dienos', 'dienų');
+    expect([1, 21, 101].map(f)).toEqual(['diena', 'diena', 'diena']);
+    expect([2, 9, 22, 29].map(f)).toEqual(['dienos', 'dienos', 'dienos', 'dienos']);
+    expect([0, 10, 11, 12, 19, 20, 111].map(f)).toEqual(['dienų', 'dienų', 'dienų', 'dienų', 'dienų', 'dienų', 'dienų']);
+  });
+});

@@ -1,13 +1,15 @@
 import { createContext } from 'preact';
 import { useContext } from 'preact/hooks';
-import type { Category, Lang, Rarity } from './cards';
+import { LOCALES, type Category, type Lang, type Rarity } from './cards';
+import { nl } from './i18n-nl';
+import { lt } from './i18n-lt';
 import type { SlipReason } from './storage';
 
 /** Czech has three plural forms: 1, 2–4, and 0/5+. */
 const csPlural = (n: number, one: string, few: string, many: string) =>
   n === 1 ? one : n >= 2 && n <= 4 ? few : many;
 
-type Slide = { title: string; body: string; terms?: { word: string; meaning: string }[] };
+export type Slide = { title: string; body: string; terms?: { word: string; meaning: string }[] };
 
 const en = {
   hookButton: "There’s a hook!",
@@ -410,7 +412,7 @@ const en = {
   school3dChest: 'Tap the chest in the middle to open your treasure',
 };
 
-type Strings = typeof en;
+export type Strings = typeof en;
 
 const cs: Strings = {
   hookButton: 'Je tu háček!',
@@ -791,10 +793,10 @@ const cs: Strings = {
   school3dChest: 'Klepni na truhlu uprostřed a otevři svůj poklad',
 };
 
-export const STRINGS: Record<Lang, Strings> = { en, cs };
+export const STRINGS: Record<Lang, Strings> = { en, cs, nl, lt };
 export const LangContext = createContext<Lang>('en');
 export const useT = () => STRINGS[useContext(LangContext)];
 export const useLang = () => useContext(LangContext);
 export const pick = <T,>(list: T[]) => list[Math.floor(Math.random() * list.length)];
 /** The locale for dates, times and numbers. English is British, so dates and times read the same on every screen. */
-export const localeOf = (lang: Lang) => (lang === 'cs' ? 'cs-CZ' : 'en-GB');
+export const localeOf = (lang: Lang) => LOCALES[lang];

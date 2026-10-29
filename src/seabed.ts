@@ -22,18 +22,18 @@ export interface Seabed {
 
 export const emptySeabed = (): Seabed => ({ earned: {}, coralMonths: 0 });
 
-/** What each milestone leaves on the seabed, by milestone ID. Czech needs a native speaker's read. */
+/** What each milestone leaves on the seabed, by milestone ID. Czech, Dutch and Lithuanian need a native speaker's read. */
 export const DECORATION_NAMES: Record<string, Record<Lang, string>> = {
-  'quit-day': { en: 'a small anchor', cs: 'malá kotva' },
-  'day-1': { en: 'a shell', cs: 'mušle' },
-  'day-3': { en: 'a bright starfish', cs: 'zářivá hvězdice' },
-  'week-1': { en: 'a coral branch', cs: 'korálová větvička' },
-  'week-2': { en: 'an anemone', cs: 'mořská sasanka' },
-  'month-1': { en: 'a pearl in a clam', cs: 'perla v lastuře' },
-  'month-2': { en: 'a glowing jellyfish', cs: 'svítící medúza' },
-  'month-3': { en: 'a lantern', cs: 'lucerna' },
-  'month-6': { en: 'a small shipwreck', cs: 'malý vrak lodi' },
-  'year-1': { en: 'a sunken castle', cs: 'potopený hrad' },
+  'quit-day': { en: 'a small anchor', cs: 'malá kotva', nl: 'een klein anker', lt: 'mažas inkaras' },
+  'day-1': { en: 'a shell', cs: 'mušle', nl: 'een schelp', lt: 'kriauklė' },
+  'day-3': { en: 'a bright starfish', cs: 'zářivá hvězdice', nl: 'een felle zeester', lt: 'ryški jūrų žvaigždė' },
+  'week-1': { en: 'a coral branch', cs: 'korálová větvička', nl: 'een koraaltakje', lt: 'koralo šakelė' },
+  'week-2': { en: 'an anemone', cs: 'mořská sasanka', nl: 'een zeeanemoon', lt: 'jūrų anemonas' },
+  'month-1': { en: 'a pearl in a clam', cs: 'perla v lastuře', nl: 'een parel in een schelp', lt: 'perlas kriauklėje' },
+  'month-2': { en: 'a glowing jellyfish', cs: 'svítící medúza', nl: 'een gloeiende kwal', lt: 'švytinti medūza' },
+  'month-3': { en: 'a lantern', cs: 'lucerna', nl: 'een lantaarn', lt: 'žibintas' },
+  'month-6': { en: 'a small shipwreck', cs: 'malý vrak lodi', nl: 'een klein scheepswrak', lt: 'mažos laivo nuolaužos' },
+  'year-1': { en: 'a sunken castle', cs: 'potopený hrad', nl: 'een gezonken kasteel', lt: 'nuskendusi pilis' },
 };
 
 /** Whole calendar months from the quit date (YYYY-MM-DD) to `now`, in local time. Never negative. */

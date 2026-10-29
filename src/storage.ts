@@ -1,6 +1,6 @@
 import { createStore, get, setMany, getMany } from 'idb-keyval';
 import type { Activity } from './activities';
-import type { Lang, Place } from './cards';
+import { LANGS, type Lang, type Place } from './cards';
 import type { DrawState } from './draw';
 import { emptySeabed, type Seabed } from './seabed';
 import { defaultCurrency, type Currency, type Treasure } from './treasure';
@@ -94,7 +94,12 @@ const store = () => (storeHandle ??= createStore('off-the-hook', 'data'));
 const KEYS = ['collection', 'hooks', 'drawState', 'settings', 'quitDate', 'treasure', 'seabed', 'pets'] as const;
 
 function defaultLang(): Lang {
-  return navigator.language?.toLowerCase().startsWith('cs') ? 'cs' : 'en';
+  const prefs = navigator.languages?.length ? navigator.languages : [navigator.language ?? 'en'];
+  for (const p of prefs) {
+    const code = p?.toLowerCase().slice(0, 2) as Lang;
+    if (LANGS.includes(code)) return code;
+  }
+  return 'en';
 }
 
 export function defaultData(): AppData {

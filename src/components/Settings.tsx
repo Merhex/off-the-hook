@@ -1,5 +1,5 @@
 import { useRef, useState } from 'preact/hooks';
-import type { Lang } from '../cards';
+import { LANG_NAMES, LANGS, type Lang } from '../cards';
 import { fx } from '../feedback';
 import { localeOf, useT } from '../i18n';
 import { isIOS } from '../platform';
@@ -104,13 +104,21 @@ export function Settings({
         <Toggle label={t.reducedMotion} checked={data.settings.reducedMotion} onChange={(v) => set('reducedMotion', v)} />
         <div class="row">
           <span>{t.language}</span>
-          <div class="segmented compact">
-            {(['en', 'cs'] as Lang[]).map((l) => (
-              <button key={l} aria-pressed={data.settings.lang === l} onClick={() => { fx.tap(); set('lang', l); }}>
-                {l === 'en' ? 'English' : 'Čeština'}
-              <Haptic /></button>
+          <select
+            class="lang-select"
+            aria-label={t.language}
+            value={data.settings.lang}
+            onChange={(e) => {
+              fx.tap();
+              set('lang', (e.target as HTMLSelectElement).value as Lang);
+            }}
+          >
+            {LANGS.map((l) => (
+              <option key={l} value={l}>
+                {LANG_NAMES[l]}
+              </option>
             ))}
-          </div>
+          </select>
         </div>
         <div class="row">
           <span>{t.currency}</span>

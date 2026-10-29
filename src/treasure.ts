@@ -4,7 +4,7 @@
  * app is closed, and never resets. The quit date itself lives outside the treasure, so the
  * milestones and the seabed work without the money part.
  */
-import type { Lang } from './cards';
+import { LOCALES, type Lang } from './cards';
 
 export type Currency = 'CZK' | 'EUR' | 'USD';
 export const CURRENCIES: Currency[] = ['CZK', 'EUR', 'USD'];
@@ -76,7 +76,7 @@ export function convertTreasure(t: Treasure, from: Currency, to: Currency): Trea
 
 export const defaultCurrency = (lang: Lang): Currency => (lang === 'cs' ? 'CZK' : 'EUR');
 
-const locale = (lang: Lang) => (lang === 'cs' ? 'cs-CZ' : 'en-GB');
+const locale = (lang: Lang) => LOCALES[lang];
 
 export function formatMoney(amount: number, currency: Currency, lang: Lang, digits = 2): string {
   return new Intl.NumberFormat(locale(lang), {

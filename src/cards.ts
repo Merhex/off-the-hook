@@ -1,6 +1,12 @@
 import deck from './data/cards.json';
 
-export type Lang = 'en' | 'cs';
+export type Lang = 'en' | 'cs' | 'nl' | 'lt';
+/** Every language the app speaks, in the order Settings lists them. */
+export const LANGS: Lang[] = ['en', 'nl', 'lt', 'cs'];
+/** Each language's own name, for the picker in Settings. */
+export const LANG_NAMES: Record<Lang, string> = { en: 'English', cs: 'Čeština', nl: 'Nederlands', lt: 'Lietuvių' };
+/** The locale used for dates and numbers. */
+export const LOCALES: Record<Lang, string> = { en: 'en-GB', cs: 'cs-CZ', nl: 'nl-NL', lt: 'lt-LT' };
 export type Rarity = 'common' | 'uncommon' | 'rare' | 'legendary';
 export type Category = 'physical' | 'sensory' | 'ridiculous' | 'social' | 'grounding' | 'daydream';
 export type Where = 'anywhere' | 'quiet' | 'home' | 'outside';

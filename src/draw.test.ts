@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { CARDS, DECK_VERSION, fitsPlace, PLACES, RARITIES } from './cards';
+import { CARDS, DECK_VERSION, fitsPlace, LANGS, PLACES, RARITIES } from './cards';
 import { drawCard, DRAW_SETTINGS, type DrawState } from './draw';
 
 const fresh: DrawState = { drawsSinceRare: 0, previousCardId: null };
@@ -69,7 +69,7 @@ describe('drawCard', () => {
     expect(CARDS).toHaveLength(61);
     expect(new Set(CARDS.map((c) => c.id)).size).toBe(61);
     for (const c of CARDS) {
-      expect(c.title.en && c.title.cs && c.task.en && c.task.cs).toBeTruthy();
+      for (const l of LANGS) expect(c.title[l] && c.task[l], `${c.id} ${l}`).toBeTruthy();
     }
   });
 
@@ -126,10 +126,7 @@ describe('card length', () => {
     for (const c of CARDS) expect(c.timerSeconds ?? 0, c.id).toBeLessThanOrEqual(60);
   });
   it('never asks for minutes, a whole song or a long walk', () => {
-    const tooLong = /\b(minutes?|full song|one song|around the block)\b|minut|celou (jednu )?písničku|obejdi blok/i;
-    for (const c of CARDS) {
-      expect(c.task.en, c.id).not.toMatch(tooLong);
-      expect(c.task.cs, c.id).not.toMatch(tooLong);
-    }
+    const tooLong = /\b(minutes?|full song|one song|around the block)\b|minut|minuu?t|celou (jednu )?písničku|obejdi blok|hele liedje|visą dainą/i;
+    for (const c of CARDS) for (const l of LANGS) expect(c.task[l], `${c.id} ${l}`).not.toMatch(tooLong);
   });
 });
