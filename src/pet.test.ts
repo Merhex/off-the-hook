@@ -58,6 +58,16 @@ describe('jokes', () => {
   }
 });
 
+describe('jokes stay in their own language', () => {
+  // Each language gets its own humour: no jokes about how other languages sound.
+  const otherLanguages = /(?<!\p{L})(polish|poles?|czech|dutch|lithuanian|polsk\p{L}*|polák\p{L}*|poláci|česk\p{L}*|čech\p{L}*|nizozem\p{L}*|litev\p{L}*|pools\p{L}*|tsjech\p{L}*|nederlands\p{L}*|litouw\p{L}*|lenk\p{L}*|čeki\p{L}*|olandi\p{L}*|lietuvi\p{L}*)(?!\p{L})/iu;
+  for (const [lang, t] of Object.entries(STRINGS)) {
+    it(`${lang}: no joke mentions another language`, () => {
+      for (const joke of [...t.petJokes, ...t.petDarkJokes]) expect(joke).not.toMatch(otherLanguages);
+    });
+  }
+});
+
 describe('ltPlural', () => {
   it('picks the Lithuanian form for 1, 2–9 and 0/10–20', async () => {
     const { ltPlural } = await import('./i18n-lt');

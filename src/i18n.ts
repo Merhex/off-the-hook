@@ -60,7 +60,8 @@ const en = {
     'Hold on, let me show you my good side. Both sides. I’m very symmetrical.',
     'I mustn’t get attached. I mustn’t get attached. Too late. Attached like a barnacle.',
     'Dear diary: today a human petted me. I am thriving. I am glowing. I am a fish.',
-    'In Polish, “zapach” is a lovely scent. In Czech, “zápach” is a stink. So when a Pole praises my zapach: blush or shower?',
+    'Whale, whale, whale. Look who’s back for more petting.',
+    'You’re reely good at this. Sorry. I’m hooked. Wait, no. Bad word.',
   ],
   petDarkJokes: [
     'Pet me while you can. One day I’ll be a gas-station sandwich at 3 a.m. and nobody will even say grace.',
@@ -77,14 +78,10 @@ const en = {
     'Tax the whales. They hoard krill and pay nothing. Petting is the only welfare state I believe in.',
     'You know what they call a fish nobody pets? Lunch.',
     'Democracy is when the big fish eats the small fish, but there’s a vote first.',
-    'The carp laughed at me. Then Christmas came. I’m not laughing. I remember.',
+    'Fish and chips. Three words that keep me up at night. Pet me until I forget them.',
     'My lawyer is a lobster. They’ve boiled him twice. We’re suing the entire concept of mayonnaise.',
     'They print “dolphin-safe” on the can. Nobody ever asked if it was fish-safe. Pet me through the trauma.',
     'When the revolution comes, those who petted will be spared. Remember that. Remember I told you.',
-    'Polish “szukam żony w sklepie”: looking for my wife at the shop. Czech hears: fucking my wife in the basement. Different kettle of fish.',
-    'Poles proudly say “Warszawa to stolica Polski”: Warsaw is the capital. In Czech, stolice means stool. As in poop. I’m staying out of this.',
-    'Every Polish election someone yells “Na zachód!”: to the West! Every Czech hears “To the toilet!” Honestly? Both are right.',
-    'Polish “czerstwa ryba”: stale fish. A Czech hears “čerstvá ryba”, fresh fish, and buys it. Not a language barrier. A business model.',
   ],
 
   intro: [
@@ -465,7 +462,6 @@ const cs: Strings = {
     'Ryba je zdravá. Pohlazená ryba je ještě zdravější. To ví každý doktor.',
     'Počkej, ukážu ti svou lepší stranu. Obě. Jsem dost souměrný.',
     'Kdo tě naučil takhle hladit? Tohle se v mořské škole neučí.',
-    'Polsky „zapach“ je vůně, česky „zápach“ smrad. Když mi Polák pochválí zapach, mám se červenat, nebo jít do sprchy?',
   ],
   petDarkJokes: [
     'Hlaď, dokud můžeš. Jednou ze mě bude bageta na benzínce ve tři ráno a nikdo se ani nepomodlí.',
@@ -486,10 +482,6 @@ const cs: Strings = {
     'Můj právník je humr. Už ho dvakrát uvařili. Žalujeme celý koncept majonézy.',
     'Na konzervu píšou „šetrné k delfínům“. Nikdo se nikdy nezeptal, jestli je to šetrné k rybám. Hlaď mě přes to trauma.',
     'Až přijde revoluce, ti, kdo hladili, budou ušetřeni. Pamatuj si to. A pamatuj si, odkud to máš.',
-    'Polsky „szukam żony w sklepie“ znamená, že hledám manželku v obchodě. Česky to zní úplně jinak. A ten sklep tomu fakt nepomáhá.',
-    'Poláci hrdě říkají „Warszawa to stolica Polski“. Myslí hlavní město. Česky to zní jako výsledek rozboru stolice.',
-    'Při každých polských volbách někdo křičí „Na zachód!“, tedy na Západ. Každý Čech slyší „na záchod“. Upřímně? Oba mají pravdu.',
-    'Polák prodává „czerstwa ryba“, tedy okoralou rybu. Čech slyší „čerstvá ryba“ a koupí ji. To není jazyková bariéra. To je byznys model.',
   ],
 
   intro: [
