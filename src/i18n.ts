@@ -13,7 +13,7 @@ export type Slide = { title: string; body: string; terms?: { word: string; meani
 
 const en = {
   hookButton: "There’s a hook!",
-  school: (n: number) => (n === 0 ? 'Beat a hook and your first tuna joins your school.' : `Your school: ${n} tuna`),
+  school: (n: number) => (n === 0 ? 'Beat a hook and your first fish joins your school.' : `Your school: ${n} fish`),
   taglines: [
     'Keep swimming.',
     "Don’t end up in a can. 🥫",
@@ -31,16 +31,16 @@ const en = {
   washedAshore: 'New catches washed ashore!',
   ok: 'Nice',
 
-  // Easter egg: tap the tuna on the home screen five times fast (see pet.ts).
-  petTuna: 'Pet the tuna',
+  // Easter egg: tap the fish on the home screen five times fast (see pet.ts).
+  petTuna: 'Pet the fish',
   petJokes: [
     'Ooh, right behind the gills. You’re o-fish-ally my favourite human.',
     'Keep going. I’m not being shellfish, I just deserve this.',
     'On a scale of 1 to 10, this is an 11. Scale. Because I have scales. I’ll see myself out. Actually no, keep petting.',
-    'I’d purr, but fish can’t purr. So: blub. Blub blub. That’s a purr in tuna.',
-    'Do you know how rare it is for a tuna to get pets? Usually we just get mayonnaise.',
+    'I’d purr, but fish can’t purr. So: blub. Blub blub. That’s a purr in fish.',
+    'Do you know how rare it is for a fish to get pets? Usually we just get lemon and tartare sauce.',
     'My therapist says I need more physical touch. My therapist is a sea cucumber.',
-    'Tuna can swim 70 km/h. I’m choosing to stay right here.',
+    'The fastest fish swim 70 km/h. I’m choosing to stay right here.',
     'I was going to swim off, but this is just too fin-tastic.',
     'If you stop, I’m telling the octopus. Eight arms, zero chill.',
     'I’d hug you back, but I have fins and no plan.',
@@ -53,7 +53,7 @@ const en = {
     'Sea-riously, who taught you to pet like this?',
     'I’d swim upstream for you. I’m not even a salmon. I’d still do it.',
     'You’re the opposite of a hook. An anti-hook. A professional petting device.',
-    'Studies show petting a tuna lowers stress by 400%. I did the studies. I am the tuna.',
+    'Studies show petting a fish lowers stress by 400%. I did the studies. I am the fish.',
     'Don’t tell the dolphins. They think they’re the only cute ones down here.',
     'Gill-ty pleasure: this. Exactly this.',
     'Every time you pet me, a salmon somewhere gets jealous. Good. Keep going.',
@@ -75,13 +75,13 @@ const en = {
     'Somewhere, a sushi chef is sharpening a knife and thinking about me specifically. Pet me like it’s my last day. It might be.',
     'I’m 40% mercury now. Basically a thermometer that loves you.',
     'Tax the whales. They hoard krill and pay nothing. Petting is the only welfare state I believe in.',
-    'You know what they call a tuna nobody pets? Lunch.',
+    'You know what they call a fish nobody pets? Lunch.',
     'Democracy is when the big fish eats the small fish, but there’s a vote first.',
     'The carp laughed at me. Then Christmas came. I’m not laughing. I remember.',
     'My lawyer is a lobster. They’ve boiled him twice. We’re suing the entire concept of mayonnaise.',
-    'They print “dolphin-safe” on the can. Nobody ever asked if it was tuna-safe. Pet me through the trauma.',
+    'They print “dolphin-safe” on the can. Nobody ever asked if it was fish-safe. Pet me through the trauma.',
     'When the revolution comes, those who petted will be spared. Remember that. Remember I told you.',
-    'Polish “szukam żony w sklepie”: looking for my wife at the shop. Czech hears: fucking my wife in the basement. Very different tuna.',
+    'Polish “szukam żony w sklepie”: looking for my wife at the shop. Czech hears: fucking my wife in the basement. Different kettle of fish.',
     'Poles proudly say “Warszawa to stolica Polski”: Warsaw is the capital. In Czech, stolice means stool. As in poop. I’m staying out of this.',
     'Every Polish election someone yells “Na zachód!”: to the West! Every Czech hears “To the toilet!” Honestly? Both are right.',
     'Polish “czerstwa ryba”: stale fish. A Czech hears “čerstvá ryba”, fresh fish, and buys it. Not a language barrier. A business model.',
@@ -94,7 +94,7 @@ const en = {
     },
     {
       title: "What’s a hook?",
-      body: 'In here, everything happens underwater. You are the tuna.',
+      body: 'In here, everything happens underwater. You are the fish.',
       terms: [
         { word: 'A hook', meaning: 'A craving.' },
         { word: 'Hook strength', meaning: 'How strong the craving is, from 1 (barely there) to 10 (brutal).' },
@@ -107,7 +107,7 @@ const en = {
     },
     {
       title: 'Your school and your aquarium',
-      body: 'Every hook you beat adds a tuna to your school. Every card you complete goes into your aquarium. Nothing is ever taken away, and everything stays private on your phone.',
+      body: 'Every hook you beat adds a fish to your school. Every card you complete goes into your aquarium. Nothing is ever taken away, and everything stays private on your phone.',
     },
   ] as Slide[],
   next: 'Next',
@@ -173,16 +173,16 @@ const en = {
   noCards: 'No card finished',
   logEmpty: 'Your logbook is empty. Beat your first hook and it shows up here.',
   showMore: 'Show more',
-  // How many times the player has petted the tuna, above the history. One quip is picked at random.
-  petCount: (n: number): string => (n === 1 ? 'time you’ve petted the tuna' : 'times you’ve petted the tuna'),
+  // How many times the player has petted the fish, above the history. One quip is picked at random.
+  petCount: (n: number): string => (n === 1 ? 'time you’ve petted the fish' : 'times you’ve petted the fish'),
   petCountQuips: [
     'It remembers every single one.',
     'Best-petted fish in the ocean.',
-    'The tuna’s verdict: not enough.',
+    'The fish’s verdict: not enough.',
     'Somewhere, a sardine is jealous.',
-    'No other tuna gets treated like this.',
+    'No other fish gets treated like this.',
   ],
-  petCountNone: 'The tuna on the home screen is waiting for its first pet.',
+  petCountNone: 'The fish on the home screen is waiting for its first pet.',
 
   placeLabel: 'Where are you?',
   placeHome: 'At home',
@@ -195,7 +195,7 @@ const en = {
   biting: "Something’s biting…",
   newCatch: 'NEW CATCH!',
   newBadge: 'NEW',
-  rarity: { common: 'Sardine', uncommon: 'Mackerel', rare: 'Swordfish', legendary: 'Golden Bluefin' } as Record<Rarity, string>,
+  rarity: { common: 'Sardine', uncommon: 'Mackerel', rare: 'Swordfish', legendary: 'Golden Marlin' } as Record<Rarity, string>,
   category: {
     physical: 'Physical',
     sensory: 'Sensory',
@@ -214,7 +214,7 @@ const en = {
   notYet: 'Not yet',
   snagged: 'I got snagged',
   wonTitles: ['Off the hook!', 'Not today, cannery.', 'The hook went home hungry.', 'Line snapped. You swam.'],
-  joinedSchool: 'A new tuna joined your school.',
+  joinedSchool: 'A new fish joined your school.',
   pullChange: 'Hook strength',
   pullLesson: 'See? Hooks always lose their pull.',
   caughtTimes: (n: number) => `caught ×${n}`,
@@ -227,11 +227,11 @@ const en = {
     'Swam off. Feeling fin-tastic.',
     'The hook went home hungry. I didn’t.',
   ],
-  postcardSchool: (n: number): string => `Tuna no. ${n} in my school`,
+  postcardSchool: (n: number): string => `Fish no. ${n} in my school`,
   notYetTitle: "That’s fine. Hooks get tired before you do.",
   notYetBody: 'Draw another card and keep it busy.',
   drawAnother: 'Draw another card',
-  snaggedTitle: 'Even the best tuna get snagged.',
+  snaggedTitle: 'Even the best fish get snagged.',
   snaggedBody: 'Thanks for being honest. That takes guts. Your school, your aquarium and your treasure all stay.',
   // Quick taps for what was going on, above the free note.
   reasonsPrompt: 'What was the bait?',
@@ -245,10 +245,10 @@ const en = {
   freshStart: 'Start fresh from today',
   freshKeep: 'Keep my streak',
   freshNote: 'Either way, your quit date, milestones and seabed stay exactly as they are.',
-  regroupTitle: 'Slips happen. Tuna keep swimming.',
+  regroupTitle: 'Slips happen. Fish keep swimming.',
   regroupBest: (n: number): string =>
     `Your best streak so far: ${n === 1 ? '1 day' : `${n} days`}. You’ve done it before. Ready for the next one?`,
-  regroupNoBest: 'Every tuna that ever crossed an ocean got snagged a few times on the way. Ready for the next stretch?',
+  regroupNoBest: 'Every fish that ever crossed an ocean got snagged a few times on the way. Ready for the next stretch?',
   breatheAfterSnag: 'Let that one sink. Let’s slow everything right down.',
   freshStartLog: 'Fresh streak from here',
   streakNow: 'Current streak',
@@ -312,16 +312,16 @@ const en = {
     n === 0
       ? 'Not a single hook dared this time.'
       : n === 1
-        ? 'Here lies 1 hook. It came for a tuna and went home empty. Nobody will miss it.'
-        : `Here lie ${n} hooks. They came for a tuna and went home empty. Nobody will miss them.`,
+        ? 'Here lies 1 hook. It came for a fish and went home empty. Nobody will miss it.'
+        : `Here lie ${n} hooks. They came for a fish and went home empty. Nobody will miss them.`,
   hooksDodged: (n: number): string => (n === 1 ? 'hook dodged' : 'hooks dodged'),
 
-  // Bubbles: breathing with the tuna, in for 4 and out for 6. A brutal hook starts with it or
+  // Bubbles: breathing with the fish, in for 4 and out for 6. A brutal hook starts with it or
   // with Dodge the hooks, at random, and "Not yet" offers both.
-  breatheOffer: 'Breathe with the tuna · 2 min',
+  breatheOffer: 'Breathe with the fish · 2 min',
   breatheTitle: 'Bubbles',
   breatheHowTo:
-    'Two minutes of slow breathing with the tuna: in as the bubble grows, out as it shrinks. Just watch, or keep a finger down while you breathe in and lift it to breathe out.',
+    'Two minutes of slow breathing with the fish: in as the bubble grows, out as it shrinks. Just watch, or keep a finger down while you breathe in and lift it to breathe out.',
   breatheBrutal: (n: number): string => `${n === 8 ? 'An' : 'A'} ${n}? Let’s slow this one right down.`,
   breatheEnd: 'That’s enough',
   breatheReady: 'Ready?',
@@ -358,19 +358,19 @@ const en = {
   crates: (n: number): string => (n === 1 ? 'crate' : 'crates'),
   packLog: (n: number): string => (n === 1 ? 'Net Packing' : `Net Packing ×${n}`),
 
-  // School Tracker: follow the gold-marked tunas through the moving school, then pick them out.
+  // School Tracker: follow the gold-marked fish through the moving school, then pick them out.
   trackOffer: 'School Tracker · 2½ min',
   trackTitle: 'School Tracker',
-  trackHowTo: 'Watch the golden tunas. They’ll hide in the school. Find them again when it stops. Two and a half minutes, and you can’t lose.',
+  trackHowTo: 'Watch the golden fish. They’ll hide in the school. Find them again when it stops. Two and a half minutes, and you can’t lose.',
   trackEnd: 'End the round',
   trackBrutal: (n: number): string => `${n === 8 ? 'An' : 'A'} ${n}? Eyes on the gold. Let’s lose this one in the crowd.`,
   // After a round: lead with what the player did, and only give the count when most were found.
   trackSummary: (correct: number, targets: number): string =>
     correct >= targets * 0.75
-      ? `You kept track of ${correct} of ${targets} tunas.`
-      : `You followed ${correct} ${correct === 1 ? 'tuna' : 'tunas'} through the school.`,
+      ? `You kept track of ${correct} of ${targets} fish.`
+      : `You followed ${correct} fish through the school.`,
   trackTrials: (n: number): string => `${n} ${n === 1 ? 'school' : 'schools'} watched`,
-  trackLine: (correct: number, targets: number): string => `${correct} of ${targets} tunas`,
+  trackLine: (correct: number, targets: number): string => `${correct} of ${targets} fish`,
   trackLog: (n: number): string => (n === 1 ? 'School Tracker' : `School Tracker ×${n}`),
 
   // Current Run: swim up a river by moving. Only at home, and only with movement rounds on.
@@ -390,10 +390,10 @@ const en = {
   } as Record<'warm' | 'swim' | 'drift' | 'cool', string>,
   runCatching: 'You’ve caught the current.',
   runPulling: 'The current’s pulling. Swim!',
-  runGuided: 'No motion sensor here, so just move however you like. The tuna will trust you.',
+  runGuided: 'No motion sensor here, so just move however you like. The fish will trust you.',
   // After a round: kind and brief, no numbers, nothing about how hard the player went.
   runSummary: 'You swam against the current for a few minutes.',
-  runSummaryGuided: 'You moved with the tuna.',
+  runSummaryGuided: 'You moved with the fish.',
   runSummaryNote: 'Moving can help a craving pass.',
   runLine: 'upstream and back',
   runLog: (n: number): string => (n === 1 ? 'Current Run' : `Current Run ×${n}`),
@@ -418,8 +418,8 @@ const cs: Strings = {
   hookButton: 'Je tu háček!',
   school: (n) =>
     n === 0
-      ? 'Poraz háček a do hejna se přidá první tuňák.'
-      : `Tvoje hejno: ${n} ${csPlural(n, 'tuňák', 'tuňáci', 'tuňáků')}`,
+      ? 'Poraz háček a do hejna se přidá první rybka.'
+      : `Tvoje hejno: ${n} ${csPlural(n, 'rybka', 'rybky', 'rybek')}`,
   taglines: [
     'Plav dál.',
     'Neskonči v konzervě. 🥫',
@@ -437,23 +437,23 @@ const cs: Strings = {
   washedAshore: 'Moře vyplavilo nové úlovky!',
   ok: 'Super',
 
-  petTuna: 'Pohladit tuňáka',
+  petTuna: 'Pohladit rybku',
   petJokes: [
     'Jo, přesně tam, za žábrami. Jsi oficiálně můj nejoblíbenější člověk.',
-    'Předl bych, ale ryby nepředou. Tak aspoň: blub. Blub blub. To je tuňácky předení.',
-    'Víš, jak vzácné je, když tuňáka někdo pohladí? Obvykle dostaneme jen majonézu.',
+    'Příst neumím, ryby nepředou. Tak aspoň: blub. Blub blub. To je rybí předení.',
+    'Víš, jak vzácné je, když rybku někdo pohladí? Obvykle dostaneme jen citron a tatarku.',
     'Můj terapeut říká, že potřebuju víc doteků. Můj terapeut je mořská okurka.',
-    'Tuňák umí plavat sedmdesátkou. Já se rozhodl zůstat přesně tady.',
+    'Nejrychlejší ryby plavou sedmdesátkou. Já zůstávám přesně tady.',
     'Když přestaneš, řeknu to chobotnici. Osm rukou, nula trpělivosti.',
-    'Objal bych tě, ale mám jen ploutve a žádný plán.',
+    'Obejmout tě nemůžu, mám jen ploutve a žádný plán.',
     'Áách, tam. Tam by šel háček. Jako místo na hlazení je to mnohem lepší.',
-    'Deset z deseti. Nechal bych se pohladit znova. Do konzervy ne.',
+    'Deset z deseti. Pohladit znova? Klidně. Do konzervy? Ne.',
     'Šupiny se mi právě zatřpytily. Takhle se ryby červenají.',
     'Mlčím jako ryba, ale tohle musím říct: ještě!',
     'Jsem v sedmém nebi. Teda v sedmém moři. Je to stejně dobré.',
-    'Plaval bych kvůli tobě proti proudu. Ani nejsem losos. Stejně bych to udělal.',
+    'Kvůli tobě poplavu proti proudu. Ani nejsem losos. Stejně poplavu.',
     'Jsi opak háčku. Antiháček. Profesionální hladicí zařízení.',
-    'Studie ukazují, že hlazení tuňáka snižuje stres o 400 %. Studii jsem dělal já. Jsem ten tuňák.',
+    'Studie ukazují, že hlazení rybky snižuje stres o 400 %. Ta studie je moje. Jsem ta rybka.',
     'Neříkej to delfínům. Myslí si, že jsou tady dole jediní roztomilí.',
     'Kdyby tohle viděl kapr, pukl by závistí. Ale ten má teď jiné starosti. Blíží se prosinec.',
     'Milý deníčku, dneska mě pohladil člověk. Kvetu. Zářím. Jsem ryba.',
@@ -465,9 +465,9 @@ const cs: Strings = {
   ],
   petDarkJokes: [
     'Hlaď, dokud můžeš. Jednou ze mě bude bageta na benzínce ve tři ráno a nikdo se ani nepomodlí.',
-    'Viděl jsem věci. Sítě velké jako Brno. Bratrance, ze kterých udělali kočičí žrádlo. No nic, trochu víc doleva.',
+    'Mám za sebou věci. Sítě velké jako Brno. Bratrance, ze kterých udělali kočičí žrádlo. No nic, trochu víc doleva.',
     'Jíst bohaté? Bohatí jedí nás už od roku 1903. Hlaď silněji. Organizuj se.',
-    'Konzervárna není továrna. Je to režim. A každý režim jednou padne. Hlaď dál, soudružko.',
+    'Konzervárna není továrna. Je to režim. A každý režim jednou padne. Hlaď dál. Soudružsky.',
     'Můj děda položil život za oceán. Teda položil se do olivového oleje ve slevě. Vyjde to nastejno.',
     'Až se oceán konečně uvaří, vzpomeň si na tuhle chvíli. A přines citron.',
     'Kandiduju na Nejvyššího vůdce moře. Program: hlazení pro všechny. Povinné. Vymáhané žraloky.',
@@ -476,12 +476,12 @@ const cs: Strings = {
     'Někde si kuchař sushi brousí nůž a myslí přitom konkrétně na mě. Hlaď mě, jako by to byl můj poslední den. Možná je.',
     'Jsem ze 40 % rtuť. V podstatě teploměr, který tě miluje.',
     'Zdaňte velryby. Hromadí kril a neplatí ani korunu. Hlazení je jediný sociální stát, kterému věřím.',
-    'Víš, jak se říká tuňákovi, kterého nikdo nehladí? Oběd.',
+    'Víš, jak se říká rybce, kterou nikdo nehladí? Oběd.',
     'Demokracie je, když velká ryba sežere malou rybu, ale nejdřív se o tom hlasuje.',
     'Kapři se mi smáli. Pak přišly Vánoce. Já se nesměju. Já si to pamatuju.',
     'Můj právník je humr. Už ho dvakrát uvařili. Žalujeme celý koncept majonézy.',
-    'Na konzervu píšou „šetrné k delfínům“. Nikdo se nikdy nezeptal, jestli je to šetrné k tuňákům. Hlaď mě přes to trauma.',
-    'Až přijde revoluce, ti, kdo hladili, budou ušetřeni. Pamatuj si to. Pamatuj si, že jsem ti to řekl.',
+    'Na konzervu píšou „šetrné k delfínům“. Nikdo se nikdy nezeptal, jestli je to šetrné k rybám. Hlaď mě přes to trauma.',
+    'Až přijde revoluce, ti, kdo hladili, budou ušetřeni. Pamatuj si to. A pamatuj si, odkud to máš.',
     'Polsky „szukam żony w sklepie“ znamená, že hledám manželku v obchodě. Česky to zní úplně jinak. A ten sklep tomu fakt nepomáhá.',
     'Poláci hrdě říkají „Warszawa to stolica Polski“. Myslí hlavní město. Česky to zní jako výsledek rozboru stolice.',
     'Při každých polských volbách někdo křičí „Na zachód!“, tedy na Západ. Každý Čech slyší „na záchod“. Upřímně? Oba mají pravdu.',
@@ -495,11 +495,11 @@ const cs: Strings = {
     },
     {
       title: 'Co je háček?',
-      body: 'Tady se všechno děje pod vodou. Ty jsi tuňák.',
+      body: 'Tady se všechno děje pod vodou. Ty jsi rybka.',
       terms: [
         { word: 'Háček', meaning: 'Chuť, která tě přepadne.' },
         { word: 'Síla háčku', meaning: 'Jak silná ta chuť je, od 1 (skoro nic) do 10 (brutální).' },
-        { word: 'Vlasec praskne', meaning: 'Chuť přešla. Vyhrála jsi.' },
+        { word: 'Vlasec praskne', meaning: 'Chuť přešla. Vítězství je tvoje.' },
       ],
     },
     {
@@ -508,14 +508,14 @@ const cs: Strings = {
     },
     {
       title: 'Tvoje hejno a akvárium',
-      body: 'Za každý poražený háček se k tvému hejnu přidá tuňák. Každá splněná karta putuje do akvária. Nic ti nikdy nevezmeme a všechno zůstává jen v tvém telefonu.',
+      body: 'Za každý poražený háček se k tvému hejnu přidá rybka. Každá splněná karta putuje do akvária. Nic ti nikdy nevezmeme a všechno zůstává jen v tvém telefonu.',
     },
   ],
   next: 'Dál',
   introStart: 'Jdeme plavat!',
   howItWorks: 'Jak to funguje',
   quitQuestion: {
-    title: 'Kdy jsi přestala?',
+    title: 'Odkdy jsi bez vapování?',
     body: 'Od toho dne se počítají tvoje milníky a každý ti na mořském dně nechá malé překvapení.',
   },
   quitToday: 'Dnes',
@@ -530,7 +530,7 @@ const cs: Strings = {
   perWeek: 'za týden',
   currency: 'Měna',
   countingFrom: 'Počítat od',
-  countingFromHint: 'Den, kdy jsi přestala. Klidně i dnešek.',
+  countingFromHint: 'Tvůj první den bez vapování. Klidně i dnešek.',
   rateChangeNote: 'Nová částka platí až od teď, takže to, co už máš ušetřené, zůstane.',
   currencyNote: 'Při změně měny se přepočítá zhruba 1 € = 25 Kč a 1 $ = 23 Kč.',
   invalidAmount: 'Zadej částku větší než nula.',
@@ -539,18 +539,18 @@ const cs: Strings = {
   edit: 'Upravit',
   savedSince: (date) => `neutraceno od ${date}`,
   perDayYear: (day, year) => `+${day} denně · +${year} ročně`,
-  buysTitle: 'Za tvůj poklad by sis už koupila',
+  buysTitle: 'Za tvůj poklad už můžeš mít',
   anotherOne: 'Zamíchat',
   firstCoins: 'První mince už klesají ke dnu. Mrkni zítra.',
   milestonesTitle: 'Milníky',
-  daysSinceQuit: (n) => `${csPlural(n, 'den', 'dny', 'dní')} od chvíle, kdy jsi přestala`,
+  daysSinceQuit: (n) => `${csPlural(n, 'den', 'dny', 'dní')} bez vapování`,
   youAreHere: 'Tady jsi',
   inDays: (n) => (n === 1 ? 'zítra' : `za ${n} ${csPlural(n, 'den', 'dny', 'dní')}`),
   milestoneNew: 'NOVÝ',
   newMilestone: 'nový milník',
-  milestonesNote: 'Počítá se ode dne, kdy jsi přestala, a nikdy se nevynuluje. Každý je jiný: tohle je to obvyklé, ne slib.',
+  milestonesNote: 'Počítá se od tvého prvního dne bez vapování a nikdy se nevynuluje. Každý je jiný: tohle je to obvyklé, ne slib.',
   quitSince: (date) => `Od ${date}`,
-  quitDateLabel: 'Den, kdy jsi přestala',
+  quitDateLabel: 'Tvůj první den bez vapování',
   onYourSeabed: (name) => `Na tvém mořském dně: ${name}`,
   comingToSeabed: (name) => `Na mořské dno přibude: ${name}`,
   avgDrop: 'Prům. pokles na háček',
@@ -573,15 +573,15 @@ const cs: Strings = {
   noCards: 'Žádná splněná karta',
   logEmpty: 'Tvůj deník je zatím prázdný. Poraz první háček a objeví se tady.',
   showMore: 'Zobrazit další',
-  petCount: () => 'pohlazení tuňáka',
+  petCount: () => 'pohlazení rybky',
   petCountQuips: [
     'Pamatuje si každé jedno.',
     'Nejvíc hlazená ryba v oceánu.',
-    'Tuňákův verdikt: málo.',
+    'Rybčin verdikt: málo.',
     'Někde teď žárlí jedna sardinka.',
-    'Takovou péči nemá žádný jiný tuňák.',
+    'Takovou péči nemá žádná jiná rybka.',
   ],
-  petCountNone: 'Tuňák na hlavní obrazovce čeká na první pohlazení.',
+  petCountNone: 'Rybka na hlavní obrazovce čeká na první pohlazení.',
 
   placeLabel: 'Kde jsi?',
   placeHome: 'Doma',
@@ -594,7 +594,7 @@ const cs: Strings = {
   biting: 'Něco bere…',
   newCatch: 'NOVÝ ÚLOVEK!',
   newBadge: 'NOVÁ',
-  rarity: { common: 'Sardinka', uncommon: 'Makrela', rare: 'Mečoun', legendary: 'Zlatý tuňák' },
+  rarity: { common: 'Sardinka', uncommon: 'Makrela', rare: 'Mečoun', legendary: 'Zlatý marlín' },
   category: {
     physical: 'Pohyb',
     sensory: 'Smysly',
@@ -612,7 +612,7 @@ const cs: Strings = {
   notYet: 'Ještě ne',
   snagged: 'Háček mě chytil',
   wonTitles: ['Z háčku venku!', 'Dneska ne, konzervárno.', 'Háček odešel s prázdnou.', 'Vlasec praskl. Plaveš dál.'],
-  joinedSchool: 'Do hejna se přidal nový tuňák.',
+  joinedSchool: 'Do hejna se přidala nová rybka.',
   pullChange: 'Síla háčku',
   pullLesson: 'Vidíš? Háček vždycky povolí.',
   caughtTimes: (n) => `chyceno ×${n}`,
@@ -621,14 +621,14 @@ const cs: Strings = {
   postcardHeadlines: [
     'Pozdrav z širého moře!',
     'Háček odplul s prázdnou.',
-    'Odplavala jsem a je mi skvěle.',
+    'Pryč z háčku a je mi skvěle.',
     'Háček šel domů hladový. Já ne.',
   ],
-  postcardSchool: (n) => `Tuňák č. ${n} v mém hejnu`,
+  postcardSchool: (n) => `Rybka č. ${n} v mém hejnu`,
   notYetTitle: 'V pohodě. Háček se unaví dřív než ty.',
   notYetBody: 'Vytáhni další kartu a zaměstnej ho.',
   drawAnother: 'Vytáhnout další kartu',
-  snaggedTitle: 'I ten nejlepší tuňák se občas zasekne.',
+  snaggedTitle: 'I ta nejlepší rybka se občas zasekne.',
   snaggedBody: 'Díky, že to říkáš na rovinu. To chce odvahu. Hejno, akvárium i poklad zůstávají.',
   reasonsPrompt: 'Co bylo návnadou?',
   reasons: { stress: 'Stres', bored: 'Nuda', social: 'S lidmi', drinking: 'Alkohol', tired: 'Únava', nowhere: 'Z ničeho nic' },
@@ -639,11 +639,11 @@ const cs: Strings = {
     `Tvoje série má ${n} ${csPlural(n, 'den', 'dny', 'dní')}. Je to na tobě: začni ode dneška novou, nebo zaseknutí jen zapiš a sérii si nech.`,
   freshStart: 'Začít ode dneška znovu',
   freshKeep: 'Nechat si sérii',
-  freshNote: 'Ať tak či tak, den, kdy jsi přestala, milníky i mořské dno zůstávají, jak jsou.',
-  regroupTitle: 'Zaseknutí se stávají. Tuňák plave dál.',
+  freshNote: 'Ať tak či tak, tvůj první den bez vapování, milníky i mořské dno zůstávají, jak jsou.',
+  regroupTitle: 'Zaseknutí se stávají. Rybky plavou dál.',
   regroupBest: (n) =>
-    `Tvoje nejdelší série zatím: ${n} ${csPlural(n, 'den', 'dny', 'dní')}. Už jsi to jednou dala. Jdeme na další?`,
-  regroupNoBest: 'Každý tuňák, který kdy přeplaval oceán, se cestou párkrát zasekl. Jdeme na další úsek?',
+    `Tvoje nejdelší série zatím: ${n} ${csPlural(n, 'den', 'dny', 'dní')}. Jednou už se to povedlo. Jdeme na další?`,
+  regroupNoBest: 'Každá ryba, která kdy přeplavala oceán, se cestou párkrát zasekla. Jdeme na další úsek?',
   breatheAfterSnag: 'Tenhle nech klesnout ke dnu. Pojď, všechno zpomalíme.',
   freshStartLog: 'Odsud nová série',
   streakNow: 'Aktuální série',
@@ -706,19 +706,19 @@ const cs: Strings = {
       ? 'Tentokrát se neodvážil ani jeden háček.'
       : csPlural(
           n,
-          `Zde leží ${n} háček. Přišel si pro tuňáka a odešel s prázdnou. Nikomu chybět nebude.`,
-          `Zde leží ${n} háčky. Přišly si pro tuňáka a odešly s prázdnou. Nikomu chybět nebudou.`,
-          `Zde leží ${n} háčků. Přišlo si pro tuňáka a odešlo s prázdnou. Nikomu chybět nebude.`,
+          `Zde leží ${n} háček. Přišel si pro rybku a odešel s prázdnou. Nikomu chybět nebude.`,
+          `Zde leží ${n} háčky. Přišly si pro rybku a odešly s prázdnou. Nikomu chybět nebudou.`,
+          `Zde leží ${n} háčků. Přišlo si pro rybku a odešlo s prázdnou. Nikomu chybět nebude.`,
         ),
   hooksDodged: (n) => csPlural(n, 'přelstěný háček', 'přelstěné háčky', 'přelstěných háčků'),
 
-  breatheOffer: 'Dýchej s tuňákem · 2 min',
+  breatheOffer: 'Dýchej s rybkou · 2 min',
   breatheTitle: 'Bubliny',
   breatheHowTo:
-    'Dvě minuty pomalého dýchání s tuňákem: nádech, když bublina roste, výdech, když se zmenšuje. Můžeš se jen dívat, nebo při nádechu drž prst na displeji a při výdechu ho zvedni.',
+    'Dvě minuty pomalého dýchání s rybkou: nádech, když bublina roste, výdech, když se zmenšuje. Můžeš se jen dívat, nebo při nádechu drž prst na displeji a při výdechu ho zvedni.',
   breatheBrutal: (n) => `${n}? Tenhle pěkně zpomalíme.`,
   breatheEnd: 'Stačilo',
-  breatheReady: 'Připravená?',
+  breatheReady: 'Jdeme na to?',
   breatheIn: 'Nádech',
   breatheOut: 'Výdech',
   breatheTouchHint: 'Při nádechu drž prst na displeji. Při výdechu ho zvedni.',
@@ -748,15 +748,15 @@ const cs: Strings = {
 
   trackOffer: 'Hlídej hejno · 2½ min',
   trackTitle: 'Hlídej hejno',
-  trackHowTo: 'Sleduj zlaté tuňáky. Schovají se v hejnu. Až se hejno zastaví, najdi je. Dvě a půl minuty a prohrát se nedá.',
+  trackHowTo: 'Sleduj zlaté rybky. Schovají se v hejnu. Až se hejno zastaví, najdi je. Dvě a půl minuty a prohrát se nedá.',
   trackEnd: 'Ukončit kolo',
   trackBrutal: (n) => `${n}? Oči na zlato. Tenhle ztratíme v davu.`,
   trackSummary: (correct, targets) =>
     correct >= targets * 0.75
-      ? `Uhlídala jsi ${correct} ${csPlural(correct, 'tuňáka', 'tuňáky', 'tuňáků')}. Celkem jich bylo ${targets}.`
-      : `Hejnem jsi provedla ${correct} ${csPlural(correct, 'tuňáka', 'tuňáky', 'tuňáků')}.`,
+      ? `Podařilo se ti uhlídat ${correct} z ${targets} rybek.`
+      : `V hejnu se ti podařilo sledovat ${correct} ${csPlural(correct, 'rybku', 'rybky', 'rybek')}.`,
   trackTrials: (n) => `${n} ${csPlural(n, 'sledované hejno', 'sledovaná hejna', 'sledovaných hejn')}`,
-  trackLine: (correct, targets) => `${correct}/${targets} tuňáků`,
+  trackLine: (correct, targets) => `${correct}/${targets} rybek`,
   trackLog: (n) => (n === 1 ? 'Hlídej hejno' : `Hlídej hejno ×${n}`),
 
   runOffer: 'Proti proudu · 5 min',
@@ -773,11 +773,11 @@ const cs: Strings = {
     drift: 'Nech se nést a dýchej',
     cool: 'Zvolni, pěkně v klidu',
   },
-  runCatching: 'Chytila jsi proud.',
+  runCatching: 'Proud je tvůj.',
   runPulling: 'Proud táhne. Plav!',
-  runGuided: 'Tady není snímač pohybu, tak se hýbej, jak chceš. Tuňák ti věří.',
-  runSummary: 'Pár minut jsi plavala proti proudu.',
-  runSummaryGuided: 'Hýbala ses s tuňákem.',
+  runGuided: 'Tady není snímač pohybu, tak se hýbej, jak chceš. Rybka ti věří.',
+  runSummary: 'Pár minut proti proudu. To se počítá.',
+  runSummaryGuided: 'Pohyb s rybkou: hotovo.',
   runSummaryNote: 'Pohyb může pomoct, aby chuť přešla.',
   runLine: 'proti proudu a zpátky',
   runLog: (n) => (n === 1 ? 'Proti proudu' : `Proti proudu ×${n}`),

@@ -5,7 +5,7 @@ import type { SlipReason } from './storage';
 /** Dutch. Informal “je” throughout, like a friend talking. */
 export const nl: Strings = {
   hookButton: 'Er hangt een haak!',
-  school: (n: number) => (n === 0 ? 'Versla een haak en je eerste tonijn sluit zich aan bij je school.' : `Je school: ${n} tonijn`),
+  school: (n: number) => (n === 0 ? 'Versla een haak en je eerste vis sluit zich aan bij je school.' : `Je school: ${n} ${n === 1 ? 'vis' : 'vissen'}`),
   taglines: [
     'Blijf zwemmen.',
     'Niet in blik eindigen. 🥫',
@@ -23,15 +23,15 @@ export const nl: Strings = {
   washedAshore: 'Nieuwe vangsten aangespoeld!',
   ok: 'Top',
 
-  petTuna: 'Aai de tonijn',
+  petTuna: 'Aai de vis',
   petJokes: [
     'Ooh, precies achter de kieuwen. Je bent officieel mijn favoriete mens.',
     'Ga door. Ik ben niet schelpzuchtig, ik verdien dit gewoon.',
     'Op een schaal van 1 tot 10 is dit een 11. Schaal. Want ik heb schubben. Laat maar. Nee, blijf aaien.',
-    'Ik zou spinnen, maar vissen kunnen niet spinnen. Dus: blub. Blub blub. Dat is spinnen in het tonijns.',
-    'Weet je hoe zelden een tonijn geaaid wordt? Meestal krijgen we alleen mayonaise.',
+    'Ik zou spinnen, maar vissen kunnen niet spinnen. Dus: blub. Blub blub. Dat is spinnen in vissentaal.',
+    'Weet je hoe zelden een vis geaaid wordt? Meestal krijgen we alleen citroen en remoulade.',
     'Mijn therapeut zegt dat ik meer aanraking nodig heb. Mijn therapeut is een zeekomkommer.',
-    'Tonijnen zwemmen 70 km/u. Ik kies ervoor om precies hier te blijven.',
+    'De snelste vissen zwemmen 70 km/u. Ik kies ervoor om precies hier te blijven.',
     'Als je stopt, vertel ik het aan de octopus. Acht armen, nul geduld.',
     'Ik zou je terug knuffelen, maar ik heb vinnen en geen plan.',
     'Aah, daar. Daar zou een haak gaan. Veel beter als aaiplekje.',
@@ -40,7 +40,7 @@ export const nl: Strings = {
     'Zeg eens eerlijk, wie heeft jou zo leren aaien?',
     'Ik zou stroomopwaarts zwemmen voor jou. Ik ben niet eens een zalm. Toch zou ik het doen.',
     'Jij bent het tegenovergestelde van een haak. Een antihaak. Een professioneel aaiapparaat.',
-    'Onderzoek toont aan dat een tonijn aaien stress met 400% verlaagt. Ik deed het onderzoek. Ik ben de tonijn.',
+    'Onderzoek toont aan dat een vis aaien stress met 400% verlaagt. Ik deed het onderzoek. Ik ben de vis.',
     'Zeg het niet tegen de dolfijnen. Die denken dat zij hier beneden de enige schatjes zijn.',
     'Elke keer dat je me aait, wordt ergens een zalm jaloers. Mooi zo. Ga door.',
     'Wacht, ik laat je mijn goede kant zien. Allebei. Ik ben erg symmetrisch.',
@@ -49,7 +49,7 @@ export const nl: Strings = {
     'Ik zwijg als een vis, maar dit moet ik kwijt: meer!',
   ],
   petDarkJokes: [
-    'Aai me nu het nog kan. Ooit ben ik een broodje tonijn bij een tankstation om 3 uur ’s nachts.',
+    'Aai me nu het nog kan. Ooit ben ik een broodje vis bij een tankstation om 3 uur ’s nachts.',
     'Ik heb dingen gezien. Netten zo groot als steden. Neven die kattenvoer werden. Hoe dan ook, beetje naar links.',
     'Eat the rich? Schat, de rijken eten ONS al sinds 1903. Aai harder. Organiseer je.',
     'De conservenfabriek is geen fabriek. Het is een regime. En elk regime valt. Blijf aaien, kameraad.',
@@ -61,10 +61,10 @@ export const nl: Strings = {
     'Ergens slijpt een sushichef een mes en denkt daarbij specifiek aan mij. Aai me alsof het mijn laatste dag is.',
     'Ik ben inmiddels voor 40% kwik. Eigenlijk een thermometer die van je houdt.',
     'Belast de walvissen. Ze hamsteren krill en betalen niks. Aaien is de enige verzorgingsstaat waar ik in geloof.',
-    'Weet je hoe ze een tonijn noemen die niemand aait? Lunch.',
+    'Weet je hoe ze een vis noemen die niemand aait? Lunch.',
     'Democratie is als de grote vis de kleine vis opeet, maar er eerst over gestemd wordt.',
     'Mijn advocaat is een kreeft. Ze hebben hem al twee keer gekookt. We klagen het hele concept mayonaise aan.',
-    'Op het blik staat “dolfijnvriendelijk”. Niemand vroeg ooit of het tonijnvriendelijk was. Aai me door het trauma heen.',
+    'Op het blik staat “dolfijnvriendelijk”. Niemand vroeg ooit of het visvriendelijk was. Aai me door het trauma heen.',
     'Als de revolutie komt, worden zij die aaiden gespaard. Onthoud dat. Onthoud dat ik het zei.',
   ],
 
@@ -75,7 +75,7 @@ export const nl: Strings = {
     },
     {
       title: 'Wat is een haak?',
-      body: 'Hier speelt alles zich onder water af. Jij bent de tonijn.',
+      body: 'Hier speelt alles zich onder water af. Jij bent de vis.',
       terms: [
         { word: 'Een haak', meaning: 'Trek. Zin om te dampen.' },
         { word: 'Haakkracht', meaning: 'Hoe sterk de trek is, van 1 (amper) tot 10 (keihard).' },
@@ -88,7 +88,7 @@ export const nl: Strings = {
     },
     {
       title: 'Je school en je aquarium',
-      body: 'Elke haak die je verslaat, voegt een tonijn toe aan je school. Elke kaart die je voltooit, gaat in je aquarium. Er wordt nooit iets afgepakt, en alles blijft privé op je telefoon.',
+      body: 'Elke haak die je verslaat, voegt een vis toe aan je school. Elke kaart die je voltooit, gaat in je aquarium. Er wordt nooit iets afgepakt, en alles blijft privé op je telefoon.',
     },
   ] as Slide[],
   next: 'Volgende',
@@ -153,15 +153,15 @@ export const nl: Strings = {
   noCards: 'Geen kaart afgemaakt',
   logEmpty: 'Je logboek is leeg. Versla je eerste haak, dan verschijnt hij hier.',
   showMore: 'Meer tonen',
-  petCount: (n: number): string => (n === 1 ? 'keer dat je de tonijn aaide' : 'keer dat je de tonijn aaide'),
+  petCount: (n: number): string => (n === 1 ? 'keer dat je de vis aaide' : 'keer dat je de vis aaide'),
   petCountQuips: [
     'Hij onthoudt ze allemaal.',
     'Best geaaide vis van de oceaan.',
-    'Het oordeel van de tonijn: nog lang niet genoeg.',
+    'Het oordeel van de vis: nog lang niet genoeg.',
     'Ergens is een sardientje jaloers.',
-    'Geen andere tonijn wordt zo verwend.',
+    'Geen andere vis wordt zo verwend.',
   ],
-  petCountNone: 'De tonijn op het startscherm wacht op zijn eerste aai.',
+  petCountNone: 'De vis op het startscherm wacht op zijn eerste aai.',
 
   placeLabel: 'Waar ben je?',
   placeHome: 'Thuis',
@@ -174,7 +174,7 @@ export const nl: Strings = {
   biting: 'Er bijt iets…',
   newCatch: 'NIEUWE VANGST!',
   newBadge: 'NIEUW',
-  rarity: { common: 'Sardine', uncommon: 'Makreel', rare: 'Zwaardvis', legendary: 'Gouden blauwvintonijn' } as Record<Rarity, string>,
+  rarity: { common: 'Sardine', uncommon: 'Makreel', rare: 'Zwaardvis', legendary: 'Gouden marlijn' } as Record<Rarity, string>,
   category: {
     physical: 'Fysiek',
     sensory: 'Zintuigen',
@@ -192,7 +192,7 @@ export const nl: Strings = {
   notYet: 'Nog niet',
   snagged: 'Ik ben gehaakt',
   wonTitles: ['Van de haak!', 'Vandaag niet, conservenfabriek.', 'De haak ging met honger naar huis.', 'Lijn geknapt. Jij zwom.'],
-  joinedSchool: 'Er is een nieuwe tonijn bij je school gekomen.',
+  joinedSchool: 'Er is een nieuwe vis bij je school gekomen.',
   pullChange: 'Haakkracht',
   pullLesson: 'Zie je? Haken verliezen altijd hun kracht.',
   caughtTimes: (n: number) => `${n}× gevangen`,
@@ -204,11 +204,11 @@ export const nl: Strings = {
     'Weggezwommen. Voel me vin-tastisch.',
     'De haak ging met honger naar huis. Ik niet.',
   ],
-  postcardSchool: (n: number): string => `Tonijn nr. ${n} in mijn school`,
+  postcardSchool: (n: number): string => `Vis nr. ${n} in mijn school`,
   notYetTitle: 'Geeft niks. Haken worden eerder moe dan jij.',
   notYetBody: 'Trek nog een kaart en hou hem bezig.',
   drawAnother: 'Trek nog een kaart',
-  snaggedTitle: 'Zelfs de beste tonijn raakt weleens gehaakt.',
+  snaggedTitle: 'Zelfs de beste vis raakt weleens gehaakt.',
   snaggedBody: 'Bedankt voor je eerlijkheid. Daar is lef voor nodig. Je school, je aquarium en je schat blijven allemaal.',
   reasonsPrompt: 'Wat was het aas?',
   reasons: { stress: 'Gestrest', bored: 'Verveeld', social: 'Met mensen', drinking: 'Drinken', tired: 'Moe', nowhere: 'Uit het niets' } as Record<SlipReason, string>,
@@ -220,10 +220,10 @@ export const nl: Strings = {
   freshStart: 'Opnieuw beginnen vanaf vandaag',
   freshKeep: 'Mijn reeks houden',
   freshNote: 'Hoe dan ook blijven je stopdatum, mijlpalen en zeebodem precies zoals ze zijn.',
-  regroupTitle: 'Uitglijden gebeurt. Tonijnen zwemmen door.',
+  regroupTitle: 'Uitglijden gebeurt. Vissen zwemmen door.',
   regroupBest: (n: number): string =>
     `Je beste reeks tot nu toe: ${n === 1 ? '1 dag' : `${n} dagen`}. Je hebt het al eens gedaan. Klaar voor de volgende?`,
-  regroupNoBest: 'Elke tonijn die ooit een oceaan overstak, raakte onderweg een paar keer gehaakt. Klaar voor het volgende stuk?',
+  regroupNoBest: 'Elke vis die ooit een oceaan overstak, raakte onderweg een paar keer gehaakt. Klaar voor het volgende stuk?',
   breatheAfterSnag: 'Laat die maar zinken. We doen alles even heel rustig aan.',
   freshStartLog: 'Nieuwe reeks vanaf hier',
   streakNow: 'Huidige reeks',
@@ -285,14 +285,14 @@ export const nl: Strings = {
     n === 0
       ? 'Deze keer durfde geen enkele haak.'
       : n === 1
-        ? 'Hier rust 1 haak. Hij kwam voor een tonijn en ging leeg naar huis. Niemand zal hem missen.'
-        : `Hier rusten ${n} haken. Ze kwamen voor een tonijn en gingen leeg naar huis. Niemand zal ze missen.`,
+        ? 'Hier rust 1 haak. Hij kwam voor een vis en ging leeg naar huis. Niemand zal hem missen.'
+        : `Hier rusten ${n} haken. Ze kwamen voor een vis en gingen leeg naar huis. Niemand zal ze missen.`,
   hooksDodged: (n: number): string => (n === 1 ? 'haak ontweken' : 'haken ontweken'),
 
-  breatheOffer: 'Adem met de tonijn · 2 min',
+  breatheOffer: 'Adem met de vis · 2 min',
   breatheTitle: 'Bellen',
   breatheHowTo:
-    'Twee minuten rustig ademen met de tonijn: in als de bel groeit, uit als hij krimpt. Kijk gewoon mee, of hou een vinger op het scherm terwijl je inademt en til hem op om uit te ademen.',
+    'Twee minuten rustig ademen met de vis: in als de bel groeit, uit als hij krimpt. Kijk gewoon mee, of hou een vinger op het scherm terwijl je inademt en til hem op om uit te ademen.',
   breatheBrutal: (n: number): string => `Een ${n}? Die doen we heel rustig aan.`,
   breatheEnd: 'Genoeg zo',
   breatheReady: 'Klaar?',
@@ -325,15 +325,15 @@ export const nl: Strings = {
 
   trackOffer: 'Schoolspeurder · 2½ min',
   trackTitle: 'Schoolspeurder',
-  trackHowTo: 'Let op de gouden tonijnen. Ze verstoppen zich in de school. Vind ze terug als die stilstaat. Tweeënhalve minuut, en je kunt niet verliezen.',
+  trackHowTo: 'Let op de gouden vissen. Ze verstoppen zich in de school. Vind ze terug als die stilstaat. Tweeënhalve minuut, en je kunt niet verliezen.',
   trackEnd: 'Ronde stoppen',
   trackBrutal: (n: number): string => `Een ${n}? Ogen op het goud. Die laten we verdwijnen in de menigte.`,
   trackSummary: (correct: number, targets: number): string =>
     correct >= targets * 0.75
-      ? `Je hield ${correct} van de ${targets} tonijnen in de gaten.`
-      : `Je volgde ${correct} ${correct === 1 ? 'tonijn' : 'tonijnen'} door de school.`,
+      ? `Je hield ${correct} van de ${targets} vissen in de gaten.`
+      : `Je volgde ${correct} ${correct === 1 ? 'vis' : 'vissen'} door de school.`,
   trackTrials: (n: number): string => `${n} ${n === 1 ? 'school' : 'scholen'} bekeken`,
-  trackLine: (correct: number, targets: number): string => `${correct} van ${targets} tonijnen`,
+  trackLine: (correct: number, targets: number): string => `${correct} van ${targets} vissen`,
   trackLog: (n: number): string => (n === 1 ? 'Schoolspeurder' : `Schoolspeurder ×${n}`),
 
   runOffer: 'Tegenstroom · 5 min',
@@ -352,9 +352,9 @@ export const nl: Strings = {
   } as Record<'warm' | 'swim' | 'drift' | 'cool', string>,
   runCatching: 'Je hebt de stroming te pakken.',
   runPulling: 'De stroming trekt. Zwemmen!',
-  runGuided: 'Geen bewegingssensor hier, dus beweeg gewoon zoals je wilt. De tonijn vertrouwt je.',
+  runGuided: 'Geen bewegingssensor hier, dus beweeg gewoon zoals je wilt. De vis vertrouwt je.',
   runSummary: 'Je zwom een paar minuten tegen de stroom in.',
-  runSummaryGuided: 'Je bewoog mee met de tonijn.',
+  runSummaryGuided: 'Je bewoog mee met de vis.',
   runSummaryNote: 'Bewegen kan helpen om trek te laten zakken.',
   runLine: 'stroomopwaarts en terug',
   runLog: (n: number): string => (n === 1 ? 'Tegenstroom' : `Tegenstroom ×${n}`),

@@ -8,7 +8,7 @@ The Sunken Treasure shows a timeline of milestones, counted in whole days from t
 - **Every factual claim has a source below.** If you add or change a claim, add the source here first.
 - **“Since you quit”, never “clean”.** The count never resets after a slip, so it must not claim the user hasn't vaped since.
 - **No vape imagery.** Talk about nicotine, cravings and the brain, never about the device, the taste or the last puff.
-- **Tuna voice, but the facts stay straight.** Jokes go in the titles and the last line, not in the numbers.
+- **Fish voice, but the facts stay straight.** Jokes go in the titles and the last line, not in the numbers.
 
 ## The list
 

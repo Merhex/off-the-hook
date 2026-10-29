@@ -15,7 +15,7 @@ export const ltPlural = (n: number, one: string, few: string, many: string) => {
 export const lt: Strings = {
   hookButton: 'Užkibo kabliukas!',
   school: (n: number) =>
-    n === 0 ? 'Įveik kabliuką ir pirmasis tunas prisijungs prie tavo būrio.' : `Tavo būrys: ${n} ${ltPlural(n, 'tunas', 'tunai', 'tunų')}`,
+    n === 0 ? 'Įveik kabliuką ir pirmoji žuvis prisijungs prie tavo būrio.' : `Tavo būrys: ${n} ${ltPlural(n, 'žuvis', 'žuvys', 'žuvų')}`,
   taglines: [
     'Plauk toliau.',
     'Nebaik konservų skardinėje. 🥫',
@@ -33,14 +33,14 @@ export const lt: Strings = {
   washedAshore: 'Jūra išmetė naujų laimikių!',
   ok: 'Puiku',
 
-  petTuna: 'Paglostyk tuną',
+  petTuna: 'Paglostyk žuvį',
   petJokes: [
     'Oi, tiesiai už žiaunų. Tu oficialiai mano mėgstamiausias žmogus.',
-    'Glostyk toliau. Aš ne savanaudis, aš tiesiog to nusipelniau.',
-    'Murkčiau, bet žuvys nemurkia. Tad: blub. Blub blub. Tunų kalba tai murkimas.',
-    'Žinai, kaip retai tuną kas paglosto? Dažniausiai gaunam tik majonezo.',
+    'Glostyk toliau. Čia ne savanaudiškumas, aš tiesiog to nusipelniau.',
+    'Murkčiau, bet žuvys nemurkia. Tad: blub. Blub blub. Žuvų kalba tai murkimas.',
+    'Žinai, kaip retai žuvį kas paglosto? Dažniausiai gaunam tik citrinos ir padažo.',
     'Mano terapeutas sako, kad man reikia daugiau prisilietimų. Mano terapeutas yra jūrų agurkas.',
-    'Tunai plaukia 70 km/h greičiu. Aš renkuosi likti būtent čia.',
+    'Greičiausios žuvys plaukia 70 km/h greičiu. Aš renkuosi likti būtent čia.',
     'Jei sustosi, pasakysiu aštuonkojui. Aštuonios rankos, nulis kantrybės.',
     'Apkabinčiau tave, bet turiu tik pelekus ir jokio plano.',
     'Aaa, ten. Ten būtų kabliukas. Glostymui ta vieta daug geresnė.',
@@ -49,10 +49,10 @@ export const lt: Strings = {
     'Rimtai, kas tave taip išmokė glostyti?',
     'Dėl tavęs plaukčiau prieš srovę. Aš net ne lašiša. Vis tiek plaukčiau.',
     'Tu kabliuko priešingybė. Antikabliukas. Profesionalus glostymo prietaisas.',
-    'Tyrimai rodo, kad tuno glostymas sumažina stresą 400 %. Tyrimą atlikau aš. Aš ir esu tas tunas.',
+    'Tyrimai rodo, kad žuvies glostymas sumažina stresą 400 %. Tyrimą atlikau aš. Aš ir esu ta žuvis.',
     'Tik nesakyk delfinams. Jie mano, kad čia, gelmėse, tik jie mieli.',
     'Kaskart tau mane paglosčius, kažkur pavydu pasidaro vienai lašišai. Puiku. Glostyk toliau.',
-    'Palauk, parodysiu savo gražiąją pusę. Abi. Aš labai simetriškas.',
+    'Palauk, parodysiu savo gražiąją pusę. Abi. Simetrija – mano stiprybė.',
     'Neprisirišti. Neprisirišti. Per vėlu. Prilipau kaip jūrų gilė.',
     'Mielas dienorašti: šiandien mane paglostė žmogus. Aš klestiu. Aš spindžiu. Aš žuvis.',
     'Tyliu kaip žuvis, bet šitą turiu pasakyti: dar!',
@@ -60,8 +60,8 @@ export const lt: Strings = {
   petDarkJokes: [
     'Glostyk, kol gali. Kada nors būsiu sumuštinis degalinėje trečią nakties ir niekas net nepasimels.',
     'Mačiau visko. Tinklus miesto dydžio. Pusbrolius, virtusius kačių ėdalu. Na, šiek tiek kairiau.',
-    'Valgyti turtuolius? Mieloji, turtuoliai mus valgo nuo 1903-iųjų. Glostyk stipriau. Organizuokis.',
-    'Konservų fabrikas ne gamykla. Tai režimas. O kiekvienas režimas kada nors žlunga. Glostyk toliau, drauge.',
+    'Valgyti turtuolius? Klausyk, turtuoliai mus valgo nuo 1903-iųjų. Glostyk stipriau. Organizuokis.',
+    'Konservų fabrikas ne gamykla. Tai režimas. O kiekvienas režimas kada nors žlunga. Glostyk toliau. Solidariai.',
     'Mano senelis paaukojo gyvybę vandenynui. Na, paaukojo ją skardinei alyvuogių aliejuje su nuolaida. Tas pats.',
     'Kai vandenynas pagaliau užvirs, prisimink šią akimirką. Ir atsinešk citrinos.',
     'Kandidatuoju į Aukščiausiuosius jūros vadus. Programa: glostymas visiems. Privalomas. Prižiūri rykliai.',
@@ -70,10 +70,10 @@ export const lt: Strings = {
     'Kažkur sušio virėjas galanda peilį ir galvoja būtent apie mane. Glostyk lyg tai būtų paskutinė mano diena.',
     'Dabar aš 40 % gyvsidabris. Iš esmės termometras, kuris tave myli.',
     'Apmokestinkit banginius. Kaupia kriliu ir nieko nemoka. Glostymas vienintelė gerovės valstybė, kuria tikiu.',
-    'Žinai, kaip vadinamas tunas, kurio niekas neglosto? Pietūs.',
+    'Žinai, kaip vadinama žuvis, kurios niekas neglosto? Pietūs.',
     'Demokratija, tai kai didelė žuvis suryja mažą, bet prieš tai balsuojama.',
     'Mano advokatas omaras. Jį jau du kartus virė. Teisiamės su visa majonezo idėja.',
-    'Ant skardinės rašo „draugiška delfinams“. Niekas niekada nepaklausė, ar draugiška tunams. Glostyk per traumą.',
+    'Ant skardinės rašo „draugiška delfinams“. Niekas niekada nepaklausė, ar draugiška žuvims. Glostyk per traumą.',
     'Kai ateis revoliucija, glosčiusieji bus pasigailėti. Atmink tai. Atmink, kad aš tau sakiau.',
   ],
 
@@ -84,7 +84,7 @@ export const lt: Strings = {
     },
     {
       title: 'Kas tas kabliukas?',
-      body: 'Čia viskas vyksta po vandeniu. Tu esi tunas.',
+      body: 'Čia viskas vyksta po vandeniu. Tu esi žuvis.',
       terms: [
         { word: 'Kabliukas', meaning: 'Noras rūkyti elektroninę cigaretę.' },
         { word: 'Kabliuko stiprumas', meaning: 'Kiek stiprus noras, nuo 1 (vos jaučiamas) iki 10 (žiaurus).' },
@@ -97,7 +97,7 @@ export const lt: Strings = {
     },
     {
       title: 'Tavo būrys ir akvariumas',
-      body: 'Kiekvienas įveiktas kabliukas prideda tuną prie tavo būrio. Kiekviena atlikta korta keliauja į tavo akvariumą. Niekas niekada neatimama, o viskas lieka privatu tavo telefone.',
+      body: 'Kiekvienas įveiktas kabliukas prideda žuvį prie tavo būrio. Kiekviena atlikta korta keliauja į tavo akvariumą. Niekas niekada neatimama, o viskas lieka privatu tavo telefone.',
     },
   ] as Slide[],
   next: 'Toliau',
@@ -162,15 +162,15 @@ export const lt: Strings = {
   noCards: 'Nė viena korta neatlikta',
   logEmpty: 'Tavo žurnalas tuščias. Įveik pirmą kabliuką ir jis atsiras čia.',
   showMore: 'Rodyti daugiau',
-  petCount: (n: number): string => `${ltPlural(n, 'kartas', 'kartai', 'kartų')} glostei tuną`,
+  petCount: (n: number): string => `${ltPlural(n, 'kartas', 'kartai', 'kartų')} glostei žuvį`,
   petCountQuips: [
     'Jis prisimena kiekvieną.',
     'Labiausiai glostoma žuvis vandenyne.',
-    'Tuno nuosprendis: dar per mažai.',
+    'Žuvies nuosprendis: dar per mažai.',
     'Kažkur pavydi viena sardinė.',
-    'Su jokiu kitu tunu taip nesielgiama.',
+    'Su jokia kita žuvimi taip nesielgiama.',
   ],
-  petCountNone: 'Tunas pradžios ekrane laukia pirmojo paglostymo.',
+  petCountNone: 'Žuvis pradžios ekrane laukia pirmojo paglostymo.',
 
   placeLabel: 'Kur tu esi?',
   placeHome: 'Namie',
@@ -183,7 +183,7 @@ export const lt: Strings = {
   biting: 'Kažkas kimba…',
   newCatch: 'NAUJAS LAIMIKIS!',
   newBadge: 'NAUJA',
-  rarity: { common: 'Sardinė', uncommon: 'Skumbrė', rare: 'Kardžuvė', legendary: 'Auksinis paprastasis tunas' } as Record<Rarity, string>,
+  rarity: { common: 'Sardinė', uncommon: 'Skumbrė', rare: 'Kardžuvė', legendary: 'Auksinis marlinas' } as Record<Rarity, string>,
   category: {
     physical: 'Fizinė',
     sensory: 'Pojūčių',
@@ -201,7 +201,7 @@ export const lt: Strings = {
   notYet: 'Dar ne',
   snagged: 'Užkibau',
   wonTitles: ['Nuo kabliuko!', 'Ne šiandien, konservų fabrike.', 'Kabliukas grįžo namo alkanas.', 'Valas nutrūko. Tu nuplaukei.'],
-  joinedSchool: 'Prie tavo būrio prisijungė naujas tunas.',
+  joinedSchool: 'Prie tavo būrio prisijungė nauja žuvis.',
   pullChange: 'Kabliuko stiprumas',
   pullLesson: 'Matai? Kabliukai visada praranda jėgą.',
   caughtTimes: (n: number) => `pagauta ×${n}`,
@@ -213,11 +213,11 @@ export const lt: Strings = {
     'Nuplaukiau. Jaučiuosi puikiai.',
     'Kabliukas grįžo namo alkanas. Aš ne.',
   ],
-  postcardSchool: (n: number): string => `Tunas nr. ${n} mano būryje`,
+  postcardSchool: (n: number): string => `Žuvis nr. ${n} mano būryje`,
   notYetTitle: 'Nieko tokio. Kabliukai pavargsta greičiau už tave.',
   notYetBody: 'Trauk dar vieną kortą ir užimk jį.',
   drawAnother: 'Traukti dar vieną kortą',
-  snaggedTitle: 'Net geriausi tunai kartais užkimba.',
+  snaggedTitle: 'Net geriausios žuvys kartais užkimba.',
   snaggedBody: 'Ačiū už sąžiningumą. Tam reikia drąsos. Tavo būrys, akvariumas ir lobis lieka.',
   reasonsPrompt: 'Koks buvo masalas?',
   reasons: { stress: 'Stresas', bored: 'Nuobodulys', social: 'Su žmonėmis', drinking: 'Alkoholis', tired: 'Nuovargis', nowhere: 'Iš niekur' } as Record<SlipReason, string>,
@@ -229,10 +229,10 @@ export const lt: Strings = {
   freshStart: 'Pradėti iš naujo nuo šiandien',
   freshKeep: 'Išlaikyti mano seriją',
   freshNote: 'Bet kuriuo atveju tavo metimo data, etapai ir jūros dugnas lieka tokie, kokie yra.',
-  regroupTitle: 'Paslysti pasitaiko. Tunai plaukia toliau.',
+  regroupTitle: 'Paslysti pasitaiko. Žuvys plaukia toliau.',
   regroupBest: (n: number): string =>
     `Tavo geriausia serija iki šiol: ${n} ${ltPlural(n, 'diena', 'dienos', 'dienų')}. Tau jau pavyko. Imamės kitos?`,
-  regroupNoBest: 'Kiekvienas tunas, kada nors perplaukęs vandenyną, pakeliui kelis kartus užkibo. Imamės kito ruožo?',
+  regroupNoBest: 'Kiekviena žuvis, kada nors perplaukusi vandenyną, pakeliui kelis kartus užkibo. Imamės kito ruožo?',
   breatheAfterSnag: 'Tegul tas nugrimzta. Viską labai sulėtinkim.',
   freshStartLog: 'Nauja serija nuo čia',
   streakNow: 'Dabartinė serija',
@@ -294,14 +294,14 @@ export const lt: Strings = {
     n === 0
       ? 'Šįkart nė vienas kabliukas neišdrįso.'
       : n === 1
-        ? 'Čia ilsisi 1 kabliukas. Atėjo tuno ir grįžo tuščias. Niekas jo nepasiges.'
-        : `Čia ilsisi ${n} ${ltPlural(n, 'kabliukas', 'kabliukai', 'kabliukų')}. Atėjo tuno ir grįžo tušti. Niekas jų nepasiges.`,
+        ? 'Čia ilsisi 1 kabliukas. Atėjo žuvies ir grįžo tuščias. Niekas jo nepasiges.'
+        : `Čia ilsisi ${n} ${ltPlural(n, 'kabliukas', 'kabliukai', 'kabliukų')}. Atėjo žuvies ir grįžo tušti. Niekas jų nepasiges.`,
   hooksDodged: (n: number): string => ltPlural(n, 'išvengtas kabliukas', 'išvengti kabliukai', 'išvengtų kabliukų'),
 
-  breatheOffer: 'Kvėpuok su tunu · 2 min.',
+  breatheOffer: 'Kvėpuok su žuvimi · 2 min.',
   breatheTitle: 'Burbulai',
   breatheHowTo:
-    'Dvi minutės lėto kvėpavimo su tunu: įkvėpk, kai burbulas didėja, iškvėpk, kai mažėja. Tiesiog žiūrėk arba laikyk pirštą ant ekrano, kol įkvepi, ir pakelk, kai iškvepi.',
+    'Dvi minutės lėto kvėpavimo su žuvimi: įkvėpk, kai burbulas didėja, iškvėpk, kai mažėja. Tiesiog žiūrėk arba laikyk pirštą ant ekrano, kol įkvepi, ir pakelk, kai iškvepi.',
   breatheBrutal: (n: number): string => `${n}? Šitą labai sulėtinkim.`,
   breatheEnd: 'Užteks',
   breatheReady: 'Pradedam?',
@@ -335,15 +335,15 @@ export const lt: Strings = {
 
   trackOffer: 'Būrio sekėjas · 2½ min.',
   trackTitle: 'Būrio sekėjas',
-  trackHowTo: 'Stebėk auksinius tunus. Jie pasislėps būryje. Surask juos, kai būrys sustos. Dvi su puse minutės, ir pralaimėti neįmanoma.',
+  trackHowTo: 'Stebėk auksines žuvis. Jos pasislėps būryje. Surask juos, kai būrys sustos. Dvi su puse minutės, ir pralaimėti neįmanoma.',
   trackEnd: 'Baigti raundą',
   trackBrutal: (n: number): string => `${n}? Akys į auksą. Paskandinkim šitą minioje.`,
   trackSummary: (correct: number, targets: number): string =>
     correct >= targets * 0.75
-      ? `Sekei ${correct} iš ${targets} tunų.`
-      : `Per būrį palydėjai ${correct} ${ltPlural(correct, 'tuną', 'tunus', 'tunų')}.`,
+      ? `Sekei ${correct} iš ${targets} žuvų.`
+      : `Per būrį palydėjai ${correct} ${ltPlural(correct, 'žuvį', 'žuvis', 'žuvų')}.`,
   trackTrials: (n: number): string => `${n} ${ltPlural(n, 'stebėtas būrys', 'stebėti būriai', 'stebėtų būrių')}`,
-  trackLine: (correct: number, targets: number): string => `${correct} iš ${targets} tunų`,
+  trackLine: (correct: number, targets: number): string => `${correct} iš ${targets} žuvų`,
   trackLog: (n: number): string => (n === 1 ? 'Būrio sekėjas' : `Būrio sekėjas ×${n}`),
 
   runOffer: 'Prieš srovę · 5 min.',
@@ -362,9 +362,9 @@ export const lt: Strings = {
   } as Record<'warm' | 'swim' | 'drift' | 'cool', string>,
   runCatching: 'Pagavai srovę.',
   runPulling: 'Srovė traukia. Plauk!',
-  runGuided: 'Judesio jutiklio čia nėra, tad judėk kaip nori. Tunas tavimi pasitiki.',
+  runGuided: 'Judesio jutiklio čia nėra, tad judėk kaip nori. Žuvis tavimi pasitiki.',
   runSummary: 'Kelias minutes plaukei prieš srovę.',
-  runSummaryGuided: 'Judėjai kartu su tunu.',
+  runSummaryGuided: 'Judėjai kartu su žuvimi.',
   runSummaryNote: 'Judėjimas gali padėti norui praeiti.',
   runLine: 'prieš srovę ir atgal',
   runLog: (n: number): string => (n === 1 ? 'Prieš srovę' : `Prieš srovę ×${n}`),

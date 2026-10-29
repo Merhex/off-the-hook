@@ -17,7 +17,7 @@
       },
       "body": {
         "en": "You’ve started. The first few days are usually the hardest, and that’s normal, not a sign it isn’t working. Each craving still only lasts a few minutes. Keep swimming.",
-        "cs": "Začala jsi. První dny bývají nejtěžší a je to normální, ne znamení, že to nefunguje. Každá chuť pořád trvá jen pár minut. Plav dál.",
+        "cs": "Začátek je za tebou. První dny bývají nejtěžší a je to normální, ne znamení, že to nefunguje. Každá chuť pořád trvá jen pár minut. Plav dál.",
         "nl": "Je bent begonnen. De eerste dagen zijn meestal het zwaarst, en dat is normaal, geen teken dat het niet werkt. Elke trek duurt nog steeds maar een paar minuten. Blijf zwemmen.",
         "lt": "Pradėjai. Pirmosios dienos paprastai sunkiausios, ir tai normalu, o ne ženklas, kad nepavyksta. Kiekvienas noras vis tiek trunka tik kelias minutes. Plauk toliau."
       }
@@ -61,7 +61,7 @@
       },
       "body": {
         "en": "Withdrawal is usually at its worst in the first three days, and you’ve just swum through them. If today still feels rough, that’s the top of the wave. For most people it eases from here.",
-        "cs": "Abstinenční příznaky bývají nejhorší první tři dny a ty jsi je právě proplavala. Jestli je dnešek pořád drsný, jsi na vrcholu vlny. Většině lidí se odsud začne ulevovat.",
+        "cs": "Abstinenční příznaky bývají nejhorší první tři dny a ty je máš právě za sebou. Jestli je dnešek pořád drsný, jsi na vrcholu vlny. Většině lidí se odsud začne ulevovat.",
         "nl": "Ontwenning is meestal het ergst in de eerste drie dagen, en daar ben je net doorheen gezwommen. Voelt vandaag nog zwaar? Dan zit je op de top van de golf. Voor de meeste mensen wordt het vanaf hier makkelijker.",
         "lt": "Abstinencija paprastai stipriausia per pirmas tris dienas, o tu jas ką tik perplaukei. Jei šiandien vis dar sunku, tai bangos viršūnė. Daugumai žmonių nuo čia darosi lengviau."
       }
@@ -192,10 +192,10 @@
         "lt": "Vandenyno perplaukėjas"
       },
       "body": {
-        "en": "Half a year. Bluefin cross whole oceans; you just crossed six months. Cravings this far in are usually rare and brief, but one can still ambush you at a party or in a rough week. Expect it, and it loses its pull.",
-        "cs": "Půl roku. Tuňák obecný přeplave celé oceány a ty jsi právě přeplavala šest měsíců. Chutě jsou teď obvykle vzácné a krátké, ale pořád tě nějaká může přepadnout na párty nebo v těžkém týdnu. Když s ní počítáš, ztrácí sílu.",
-        "nl": "Een half jaar. Blauwvintonijnen steken hele oceanen over; jij bent net zes maanden overgestoken. Zo ver in is trek meestal zeldzaam en kort, maar hij kan je nog overvallen op een feestje of in een zware week. Reken erop, dan verliest hij zijn kracht.",
-        "lt": "Pusė metų. Tunai perplaukia ištisus vandenynus; tu ką tik perplaukei šešis mėnesius. Tokiame etape norai paprastai reti ir trumpi, bet vienas dar gali užklupti vakarėlyje ar sunkią savaitę. Tikėkis jo, ir jis praras jėgą."
+        "en": "Half a year. Some fish cross whole oceans; you just crossed six months. Cravings this far in are usually rare and brief, but one can still ambush you at a party or in a rough week. Expect it, and it loses its pull.",
+        "cs": "Půl roku. Některé ryby přeplavou celé oceány a ty máš za sebou šest měsíců. Chutě jsou teď obvykle vzácné a krátké, ale pořád tě nějaká může přepadnout na párty nebo v těžkém týdnu. Když s ní počítáš, ztrácí sílu.",
+        "nl": "Een half jaar. Sommige vissen steken hele oceanen over; jij bent net zes maanden overgestoken. Zo ver in is trek meestal zeldzaam en kort, maar hij kan je nog overvallen op een feestje of in een zware week. Reken erop, dan verliest hij zijn kracht.",
+        "lt": "Pusė metų. Kai kurios žuvys perplaukia ištisus vandenynus; tu ką tik perplaukei šešis mėnesius. Tokiame etape norai paprastai reti ir trumpi, bet vienas dar gali užklupti vakarėlyje ar sunkią savaitę. Tikėkis jo, ir jis praras jėgą."
       }
     },
     {
@@ -215,7 +215,7 @@
       },
       "body": {
         "en": "One whole year. A full lap around the sun since you cut the line. Go look at your school and your aquarium: every fish in there is a hook that went home hungry.",
-        "cs": "Celý rok. Celé kolečko kolem Slunce od chvíle, kdy jsi přestřihla vlasec. Mrkni na svoje hejno a akvárium: každá ryba v nich je háček, který odešel s prázdnou.",
+        "cs": "Celý rok. Celé kolečko kolem Slunce od přestřižení vlasce. Mrkni na svoje hejno a akvárium: každá ryba v nich je háček, který odešel s prázdnou.",
         "nl": "Een heel jaar. Een volledig rondje om de zon sinds je de lijn doorknipte. Ga eens kijken naar je school en je aquarium: elke vis daarin is een haak die met honger naar huis ging.",
         "lt": "Visi metai. Visas ratas aplink saulę nuo tada, kai nukirpai valą. Pažvelk į savo būrį ir akvariumą: kiekviena ten esanti žuvis yra kabliukas, grįžęs namo alkanas."
       }
