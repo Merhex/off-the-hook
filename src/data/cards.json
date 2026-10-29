@@ -1,0 +1,1078 @@
+{
+  "deckVersion": 3,
+  "cards": [
+    {
+      "id": "weak-hand-cat",
+      "title": {
+        "en": "Picasso Paw",
+        "cs": "Picassova tlapka"
+      },
+      "task": {
+        "en": "Draw a cat with your weaker hand in 30 seconds. Then give it a tragic backstory. It has one.",
+        "cs": "Nakresli kočku slabší rukou za 30 sekund. Pak jí vymysli tragický příběh. Nějaký určitě má."
+      },
+      "rarity": "common",
+      "category": "ridiculous",
+      "where": [
+        "anywhere"
+      ],
+      "timerSeconds": 30,
+      "addedIn": 1
+    },
+    {
+      "id": "ice-cube-hold",
+      "title": {
+        "en": "Cold Blooded",
+        "cs": "Studenokrevná"
+      },
+      "task": {
+        "en": "Hold an ice cube for 30 seconds, or until your hand files a complaint. Bluefin are warm-blooded. You are now neither.",
+        "cs": "Drž kostku ledu 30 sekund, nebo dokud ti ruka nepodá stížnost. Tuňák obecný je teplokrevný. Ty teď nejsi ani jedno."
+      },
+      "rarity": "common",
+      "category": "sensory",
+      "where": [
+        "home"
+      ],
+      "timerSeconds": 30,
+      "addedIn": 1
+    },
+    {
+      "id": "landed-jacks",
+      "title": {
+        "en": "Flop on Deck",
+        "cs": "Plácání na palubě"
+      },
+      "task": {
+        "en": "15 jumping jacks, performed like a tuna that just got landed on a boat and has opinions about it.",
+        "cs": "15 skákacích panáků jako tuňák, kterého právě vytáhli na loď a má k tomu svůj názor."
+      },
+      "rarity": "common",
+      "category": "physical",
+      "where": [
+        "home",
+        "outside"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "sour-face",
+      "title": {
+        "en": "Face Crime",
+        "cs": "Zločin obličejem"
+      },
+      "task": {
+        "en": "Eat or lick something sour. Lemon, sour candy, pickle juice, whatever’s in the fridge. Commit to the face.",
+        "cs": "Sněz nebo olízni něco kyselého. Citron, kyselé bonbony, nálev od okurek, cokoli je v lednici. Ten výraz dotáhni do konce."
+      },
+      "rarity": "common",
+      "category": "sensory",
+      "where": [
+        "home"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "five-four-three",
+      "title": {
+        "en": "Five Fish Count",
+        "cs": "Pět ryb"
+      },
+      "task": {
+        "en": "Name 5 things you see, 4 you can touch, 3 you hear, 2 you smell, 1 you taste. Slowly. The craving hates being ignored this thoroughly.",
+        "cs": "Vyjmenuj 5 věcí, které vidíš, 4, kterých se můžeš dotknout, 3, které slyšíš, 2, které cítíš, a 1, kterou ochutnáš. Pomalu. Chuť nesnáší, když ji někdo takhle důkladně ignoruje."
+      },
+      "rarity": "common",
+      "category": "grounding",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "cursed-image",
+      "title": {
+        "en": "Send It to the Abyss",
+        "cs": "Pošli to do hlubin"
+      },
+      "task": {
+        "en": "Send the most cursed image in your camera roll to someone. Zero context. Do not answer follow-up questions.",
+        "cs": "Pošli někomu nejprokletější obrázek z galerie. Bez kontextu. Na doplňující otázky neodpovídej."
+      },
+      "rarity": "common",
+      "category": "social",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "wall-sit-song",
+      "title": {
+        "en": "Hold the Line",
+        "cs": "Drž linii"
+      },
+      "task": {
+        "en": "Wall sit for 45 seconds. Put on a song for moral support. You won’t make it to the end of the song. That’s fine.",
+        "cs": "Sed u zdi na 45 sekund. Pusť si k tomu písničku pro morální podporu. Do konce písničky to nevydržíš. To nevadí."
+      },
+      "rarity": "common",
+      "category": "physical",
+      "where": [
+        "home"
+      ],
+      "timerSeconds": 45,
+      "addedIn": 1
+    },
+    {
+      "id": "nature-doc",
+      "title": {
+        "en": "Planet Earth: Living Room",
+        "cs": "Planeta Země: Obývák"
+      },
+      "task": {
+        "en": "Narrate the next 45 seconds of your life out loud like a nature documentary. The narrator suspects the subject will not survive the winter.",
+        "cs": "Příštích 45 sekund svého života komentuj nahlas jako přírodopisný dokument. Vypravěč tuší, že tenhle exemplář zimu nepřežije."
+      },
+      "rarity": "common",
+      "category": "ridiculous",
+      "where": [
+        "home",
+        "quiet"
+      ],
+      "timerSeconds": 45,
+      "addedIn": 1
+    },
+    {
+      "id": "cold-water-face",
+      "title": {
+        "en": "Dive Reflex",
+        "cs": "Potápěčský reflex"
+      },
+      "task": {
+        "en": "Splash cold water on your face. This triggers the dive reflex and actually slows your heart. You are briefly a seal. Act accordingly.",
+        "cs": "Opláchni si obličej studenou vodou. Spustí to potápěčský reflex a srdce ti fakt zpomalí. Na chvíli jsi tuleň. Chovej se podle toho."
+      },
+      "rarity": "common",
+      "category": "sensory",
+      "where": [
+        "home"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "loading-screen-squats",
+      "title": {
+        "en": "Loading Screen",
+        "cs": "Načítací obrazovka"
+      },
+      "task": {
+        "en": "Controller down. 20 squats before the next match. Your character can wait, they aren’t real and they don’t love you.",
+        "cs": "Ovladač dolů. 20 dřepů před dalším zápasem. Tvoje postava počká, není skutečná a nemiluje tě."
+      },
+      "rarity": "common",
+      "category": "physical",
+      "where": [
+        "home"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "previously-on",
+      "title": {
+        "en": "Previously On…",
+        "cs": "V minulém díle…"
+      },
+      "task": {
+        "en": "Before the next episode autoplays, recap the last one out loud in exactly three sentences, like a deeply unreliable witness.",
+        "cs": "Než se spustí další díl, převyprávěj ten poslední nahlas přesně ve třech větách, jako hluboce nespolehlivý svědek."
+      },
+      "rarity": "common",
+      "category": "ridiculous",
+      "where": [
+        "home"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "chew-something",
+      "title": {
+        "en": "Chew Toy",
+        "cs": "Kousátko"
+      },
+      "task": {
+        "en": "Give your mouth a job that isn’t slowly killing you: gum, a straw, a carrot, a frozen grape. Chew with hostility.",
+        "cs": "Dej puse práci, která tě pomalu nezabíjí: žvýkačka, brčko, mrkev, zmražená kulička hroznového vína. Žvýkej nepřátelsky."
+      },
+      "rarity": "common",
+      "category": "sensory",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "hostage-breathing",
+      "title": {
+        "en": "Hostage Negotiation",
+        "cs": "Vyjednávání s únosci"
+      },
+      "task": {
+        "en": "The craving has taken you hostage. Stay calm. In for 4, hold for 4, out for 6. Four rounds. Do not make sudden moves.",
+        "cs": "Chuť tě vzala jako rukojmí. Zachovej klid. Nádech na 4, zadržet na 4, výdech na 6. Čtyři kola. Žádné prudké pohyby."
+      },
+      "rarity": "common",
+      "category": "grounding",
+      "where": [
+        "anywhere"
+      ],
+      "timerSeconds": 56,
+      "addedIn": 1
+    },
+    {
+      "id": "specific-compliment",
+      "title": {
+        "en": "Compliment Ambush",
+        "cs": "Přepadení komplimentem"
+      },
+      "task": {
+        "en": "Text someone a weirdly specific compliment. “Your elbows have always seemed trustworthy.” Leave it there.",
+        "cs": "Napiš někomu podivně konkrétní kompliment. „Tvoje lokty vždycky vypadaly důvěryhodně.“ A nech to být."
+      },
+      "rarity": "common",
+      "category": "social",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "invent-holiday",
+      "title": {
+        "en": "Bank Holiday From Hell",
+        "cs": "Státní svátek z pekla"
+      },
+      "task": {
+        "en": "Invent a holiday: name, date, and one deeply cursed tradition everyone is legally required to follow.",
+        "cs": "Vymysli svátek: název, datum a jednu hluboce prokletou tradici, kterou musí ze zákona dodržovat všichni."
+      },
+      "rarity": "common",
+      "category": "ridiculous",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "toe-touch",
+      "title": {
+        "en": "Reach the Ocean Floor",
+        "cs": "Až na dno oceánu"
+      },
+      "task": {
+        "en": "Touch your toes (or your shins, no judgement) and hang there for 30 seconds. The floor is the sea bed. You live there now.",
+        "cs": "Dotkni se špiček prstů (nebo holení, nikdo nesoudí) a 30 sekund tak vis. Podlaha je mořské dno. Teď tam bydlíš."
+      },
+      "rarity": "common",
+      "category": "physical",
+      "where": [
+        "anywhere"
+      ],
+      "timerSeconds": 30,
+      "addedIn": 1
+    },
+    {
+      "id": "brush-teeth",
+      "title": {
+        "en": "Minty Fresh Spite",
+        "cs": "Mátová zášť"
+      },
+      "task": {
+        "en": "A 30-second speed brush, like you’re scrubbing evidence off your teeth. Minty mouth, clean slate, smug smile.",
+        "cs": "Třicetisekundové rychločištění zubů, jako bys z nich drhla důkazy. Mátová pusa, čistý štít, samolibý úsměv."
+      },
+      "rarity": "common",
+      "category": "sensory",
+      "where": [
+        "home"
+      ],
+      "timerSeconds": 30,
+      "addedIn": 1
+    },
+    {
+      "id": "apocalypse-rank",
+      "title": {
+        "en": "Apocalypse Draft Pick",
+        "cs": "Draft na apokalypsu"
+      },
+      "task": {
+        "en": "Pick three objects within reach and rank them by how useful they’d be in the apocalypse. Defend the last-place pick’s honour.",
+        "cs": "Vyber tři věci na dosah a seřaď je podle toho, jak užitečné by byly při apokalypse. Obhaj čest té poslední."
+      },
+      "rarity": "common",
+      "category": "grounding",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "villain-monologue",
+      "title": {
+        "en": "Villain Monologue",
+        "cs": "Monolog padoucha"
+      },
+      "task": {
+        "en": "Deliver a 30-second villain monologue at the craving. It thinks it’s the villain. Show it what a real one looks like.",
+        "cs": "Přednes chuti 30sekundový monolog padoucha. Myslí si, že padouch je ona. Ukaž jí, jak vypadá skutečný."
+      },
+      "rarity": "common",
+      "category": "ridiculous",
+      "where": [
+        "home",
+        "quiet"
+      ],
+      "timerSeconds": 30,
+      "addedIn": 1
+    },
+    {
+      "id": "walk-the-plank",
+      "title": {
+        "en": "Walk the Plank",
+        "cs": "Po prkně"
+      },
+      "task": {
+        "en": "Walk to another room or out the door for 45 seconds. The craving can follow you, but it’s slow and out of shape.",
+        "cs": "Na 45 sekund odejdi do jiné místnosti nebo ven ze dveří. Chuť tě může sledovat, ale je pomalá a bez kondice."
+      },
+      "rarity": "common",
+      "category": "physical",
+      "where": [
+        "anywhere"
+      ],
+      "timerSeconds": 45,
+      "addedIn": 1
+    },
+    {
+      "id": "craving-last-will",
+      "title": {
+        "en": "Last Will and Testament",
+        "cs": "Poslední vůle"
+      },
+      "task": {
+        "en": "This craving has seconds to live. Write its last will in three lines: who inherits its terrible personality, its debts, and its dramatic final words.",
+        "cs": "Tahle chuť má jen pár vteřin života. Sepiš její poslední vůli na tři řádky: kdo zdědí její příšernou povahu, její dluhy a její dramatická poslední slova."
+      },
+      "rarity": "uncommon",
+      "category": "ridiculous",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "titanic-dance",
+      "title": {
+        "en": "The Band Played On",
+        "cs": "Kapela hrála dál"
+      },
+      "task": {
+        "en": "45 seconds. Dance like the ship is going down and you’ve made peace with it.",
+        "cs": "45 sekund. Tancuj, jako by se loď potápěla a ty ses s tím už smířila."
+      },
+      "rarity": "uncommon",
+      "category": "physical",
+      "where": [
+        "home"
+      ],
+      "timerSeconds": 45,
+      "addedIn": 1
+    },
+    {
+      "id": "pushup-tax",
+      "title": {
+        "en": "Lung Tax",
+        "cs": "Plicní daň"
+      },
+      "task": {
+        "en": "The craving is charging a tax. Pay it in 10 push-ups (knees allowed) instead of lung tissue.",
+        "cs": "Chuť vybírá daň. Zaplať ji 10 kliky (na kolenou se počítá) místo plicní tkáně."
+      },
+      "rarity": "uncommon",
+      "category": "physical",
+      "where": [
+        "home"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "hot-sauce-drop",
+      "title": {
+        "en": "Hot Sauce Baptism",
+        "cs": "Křest pálivou omáčkou"
+      },
+      "task": {
+        "en": "One drop of hot sauce on the tongue. You are reborn. Painfully.",
+        "cs": "Jedna kapka pálivé omáčky na jazyk. Jsi znovuzrozená. Bolestivě."
+      },
+      "rarity": "uncommon",
+      "category": "sensory",
+      "where": [
+        "home"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "dolphin-voice-memo",
+      "title": {
+        "en": "Signal from the Deep",
+        "cs": "Signál z hlubin"
+      },
+      "task": {
+        "en": "Send someone a voice memo of your best dolphin noise. Never explain it. Take it to your grave.",
+        "cs": "Pošli někomu hlasovku se svým nejlepším delfíním zvukem. Nikdy to nevysvětluj. Vezmi si to do hrobu."
+      },
+      "rarity": "uncommon",
+      "category": "social",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "boss-plank",
+      "title": {
+        "en": "Boss Music",
+        "cs": "Hudba bosse"
+      },
+      "task": {
+        "en": "Pause the game. Plank for 45 seconds while humming boss music. You are the final boss now.",
+        "cs": "Pauzni hru. Prkno na 45 sekund a k tomu si broukej hudbu na bosse. Finální boss jsi teď ty."
+      },
+      "rarity": "uncommon",
+      "category": "physical",
+      "where": [
+        "home"
+      ],
+      "timerSeconds": 45,
+      "addedIn": 1
+    },
+    {
+      "id": "crime-scene",
+      "title": {
+        "en": "Crime Scene",
+        "cs": "Místo činu"
+      },
+      "task": {
+        "en": "Describe the room you’re in like a detective who just arrived. Who died? What’s the murder weapon? Why is there a sock there?",
+        "cs": "Popiš místnost, ve které jsi, jako detektiv, který právě dorazil. Kdo zemřel? Co je vražedná zbraň? Proč tam leží ponožka?"
+      },
+      "rarity": "uncommon",
+      "category": "grounding",
+      "where": [
+        "anywhere"
+      ],
+      "timerSeconds": 45,
+      "addedIn": 1
+    },
+    {
+      "id": "object-obituary",
+      "title": {
+        "en": "Obituary Column",
+        "cs": "Parte"
+      },
+      "task": {
+        "en": "Pick a random object in the room and write its three-line obituary. Cause of death: you. In lieu of flowers: don’t.",
+        "cs": "Vyber náhodnou věc v místnosti a napiš jí parte na tři řádky. Příčina smrti: ty. Místo květin: nic."
+      },
+      "rarity": "uncommon",
+      "category": "ridiculous",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "cold-wrists",
+      "title": {
+        "en": "Ice in the Veins",
+        "cs": "Led v žilách"
+      },
+      "task": {
+        "en": "Run cold water over your wrists for 30 seconds. Emotionally, you are now a mob boss.",
+        "cs": "Pouštěj si 30 sekund studenou vodu na zápěstí. Citově jsi teď šéfová mafie."
+      },
+      "rarity": "uncommon",
+      "category": "sensory",
+      "where": [
+        "home"
+      ],
+      "timerSeconds": 30,
+      "addedIn": 1
+    },
+    {
+      "id": "surface-speedrun",
+      "title": {
+        "en": "Any% Cleaning Speedrun",
+        "cs": "Speedrun úklidu (Any%)"
+      },
+      "task": {
+        "en": "Pick one surface. Clear it in 45 seconds. World record pace. No glitches.",
+        "cs": "Vyber jeden povrch. Ukliď ho za 45 sekund. Tempo na světový rekord. Žádné glitche."
+      },
+      "rarity": "uncommon",
+      "category": "physical",
+      "where": [
+        "home"
+      ],
+      "timerSeconds": 45,
+      "addedIn": 1
+    },
+    {
+      "id": "wrong-answers",
+      "title": {
+        "en": "Wrong Answers Only",
+        "cs": "Jen špatné odpovědi"
+      },
+      "task": {
+        "en": "Text someone a normal question (“what should I eat?”) and demand wrong answers only. Check the damage later.",
+        "cs": "Napiš někomu normální otázku („co mám jíst?“) a chtěj jen špatné odpovědi. Škody zkontroluj později."
+      },
+      "rarity": "uncommon",
+      "category": "social",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "craving-eulogy",
+      "title": {
+        "en": "Funeral at Sea",
+        "cs": "Pohřeb na moři"
+      },
+      "task": {
+        "en": "This craving is dying. Stand up and give it a 45-second eulogy. Mention its flaws. Someone in the back is sobbing. It’s not you.",
+        "cs": "Tahle chuť umírá. Postav se a prones nad ní 45sekundovou smuteční řeč. Zmiň její chyby. Někdo vzadu vzlyká. Ty to nejsi."
+      },
+      "rarity": "rare",
+      "category": "ridiculous",
+      "where": [
+        "home"
+      ],
+      "timerSeconds": 45,
+      "addedIn": 1
+    },
+    {
+      "id": "landed-tuna",
+      "title": {
+        "en": "Landed",
+        "cs": "Vylovená"
+      },
+      "task": {
+        "en": "Lie on the floor like a freshly landed tuna for 45 seconds. Flop occasionally. Stare at the ceiling. This is your life now.",
+        "cs": "Lehni si na 45 sekund na zem jako čerstvě vylovený tuňák. Občas se zaplácej. Zírej do stropu. Tohle je teď tvůj život."
+      },
+      "rarity": "rare",
+      "category": "physical",
+      "where": [
+        "home"
+      ],
+      "timerSeconds": 45,
+      "addedIn": 1
+    },
+    {
+      "id": "craving-tribunal",
+      "title": {
+        "en": "Tuna Tribunal",
+        "cs": "Tuňácký tribunál"
+      },
+      "task": {
+        "en": "Put the craving on trial in 45 seconds flat. Prosecution, defence (make it terrible), verdict, sentence. Execution method is up to the court.",
+        "cs": "Postav chuť před soud, na všechno máš 45 sekund. Obžaloba, obhajoba (ať je hrozná), verdikt, trest. Způsob popravy je na soudu."
+      },
+      "rarity": "rare",
+      "category": "ridiculous",
+      "where": [
+        "anywhere"
+      ],
+      "timerSeconds": 45,
+      "addedIn": 1
+    },
+    {
+      "id": "ice-bowl-dunk",
+      "title": {
+        "en": "Abyssal Plunge",
+        "cs": "Ponor do hlubin"
+      },
+      "task": {
+        "en": "Fill a bowl with cold water and ice. Hold your breath and dunk your face for a few seconds. Surface like something ancient that has awakened.",
+        "cs": "Napusť misku studenou vodou s ledem. Zadrž dech a na pár sekund do ní ponoř obličej. Vynoř se jako něco prastarého, co se právě probudilo."
+      },
+      "rarity": "rare",
+      "category": "sensory",
+      "where": [
+        "home"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "freedom-shanty",
+      "title": {
+        "en": "Shanty of Spite",
+        "cs": "Námořnická píseň zášti"
+      },
+      "task": {
+        "en": "Make up a two-line sea shanty about the hook that tried to catch you and failed. Sing it into a voice memo. Send it to someone who didn’t ask.",
+        "cs": "Vymysli dvouveršovou námořnickou píseň o háčku, který tě chtěl chytit a nepovedlo se mu to. Nazpívej ji do hlasovky. Pošli ji někomu, kdo o ni nežádal."
+      },
+      "rarity": "rare",
+      "category": "social",
+      "where": [
+        "home",
+        "outside"
+      ],
+      "addedIn": 1
+    },
+    {
+      "id": "around-the-block",
+      "title": {
+        "en": "Migration Season",
+        "cs": "Období migrace"
+      },
+      "task": {
+        "en": "45 seconds of stairs, up and down (no stairs? March on the spot, knees high). Bluefin cross entire oceans one stroke at a time; you can cross a staircase.",
+        "cs": "45 sekund schodů nahoru a dolů (nemáš schody? Pochoduj na místě s vysokými koleny). Tuňáci přeplavou celé oceány tempo po tempu, ty zvládneš jedno schodiště."
+      },
+      "rarity": "rare",
+      "category": "physical",
+      "where": [
+        "home"
+      ],
+      "timerSeconds": 45,
+      "addedIn": 1
+    },
+    {
+      "id": "haunted-body-scan",
+      "title": {
+        "en": "Exorcism",
+        "cs": "Exorcismus"
+      },
+      "task": {
+        "en": "Scan your body head to toe. Find where the craving lives (chest? throat? hands?). Describe it as a ghost, give it a name, and tell it to get out.",
+        "cs": "Projdi si tělo od hlavy k patě. Najdi, kde chuť bydlí (hrudník? krk? ruce?). Popiš ji jako ducha, dej jí jméno a řekni jí, ať vypadne."
+      },
+      "rarity": "rare",
+      "category": "grounding",
+      "where": [
+        "quiet",
+        "home"
+      ],
+      "timerSeconds": 45,
+      "addedIn": 1
+    },
+    {
+      "id": "movie-trailer",
+      "title": {
+        "en": "In a World…",
+        "cs": "Ve světě, kde…"
+      },
+      "task": {
+        "en": "Record a 30-second movie-trailer voiceover of you defeating this craving. Deep voice. Explosions (mouth-made). End on the title card: OFF THE HOOK.",
+        "cs": "Nahraj 30sekundový voiceover filmového traileru o tom, jak porážíš tuhle chuť. Hluboký hlas. Výbuchy (pusou). Na konci titulek: OFF THE HOOK."
+      },
+      "rarity": "legendary",
+      "category": "ridiculous",
+      "where": [
+        "home"
+      ],
+      "timerSeconds": 30,
+      "addedIn": 1
+    },
+    {
+      "id": "bluefin-burst",
+      "title": {
+        "en": "Bluefin Burst",
+        "cs": "Tuňákový sprint"
+      },
+      "task": {
+        "en": "Bluefin hit 70 km/h. Your turn: 30 seconds of high knees, as fast as your legs allow. The craving can’t keep up. Nothing can.",
+        "cs": "Tuňák obecný zvládne 70 km/h. Teď ty: 30 sekund běhu na místě s vysokými koleny, tak rychle, jak ti nohy dovolí. Chuť nestíhá. Nic nestíhá."
+      },
+      "rarity": "legendary",
+      "category": "physical",
+      "where": [
+        "home",
+        "outside"
+      ],
+      "timerSeconds": 30,
+      "addedIn": 1
+    },
+    {
+      "id": "clam-press",
+      "title": {
+        "en": "Clam Up",
+        "cs": "Zavřená škeble"
+      },
+      "task": {
+        "en": "Press your palms together as hard as you can for 10 seconds, then let go. Three rounds. You are a clam. Nothing gets in.",
+        "cs": "Stiskni dlaně k sobě, co nejsilněji to jde, na 10 sekund, a pak povol. Tři kola. Jsi škeble. Nic se dovnitř nedostane."
+      },
+      "rarity": "common",
+      "category": "physical",
+      "where": [
+        "anywhere"
+      ],
+      "timerSeconds": 30,
+      "addedIn": 2
+    },
+    {
+      "id": "nose-sommelier",
+      "title": {
+        "en": "Nose Sommelier",
+        "cs": "Čichový someliér"
+      },
+      "task": {
+        "en": "Find the strongest smell within reach: your tea, soap, your sleeve, someone’s lunch. Sniff it slowly and describe its notes like it costs a fortune.",
+        "cs": "Najdi nejsilnější vůni v dosahu: tvůj čaj, mýdlo, vlastní rukáv, cizí svačinu. Pomalu přičichni a popiš její tóny, jako by stála majlant."
+      },
+      "rarity": "common",
+      "category": "sensory",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 2
+    },
+    {
+      "id": "tongue-twister",
+      "title": {
+        "en": "Tongue Tied",
+        "cs": "Jazykolam"
+      },
+      "task": {
+        "en": "Say “six slippery sardines slid slowly southward” five times fast. In your head if you’re on a bus. Out loud if you’re brave.",
+        "cs": "Řekni pětkrát rychle „strč prst skrz krk“. V duchu, jestli sedíš v tramvaji. Nahlas, jestli jsi odvážná."
+      },
+      "rarity": "common",
+      "category": "ridiculous",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 2
+    },
+    {
+      "id": "toe-piano",
+      "title": {
+        "en": "Toe Piano",
+        "cs": "Klavír v botách"
+      },
+      "task": {
+        "en": "Play a 30-second piano concerto with your toes, inside your shoes or socks. Ten keys, one masterpiece, zero audience. Bow internally.",
+        "cs": "Zahraj prsty u nohou třicetivteřinový klavírní koncert, v botách nebo v ponožkách. Deset kláves, jedno mistrovské dílo, nula diváků. V duchu se ukloň."
+      },
+      "rarity": "uncommon",
+      "category": "physical",
+      "where": [
+        "anywhere"
+      ],
+      "timerSeconds": 30,
+      "addedIn": 2
+    },
+    {
+      "id": "cold-sip",
+      "title": {
+        "en": "Freshwater Upgrade",
+        "cs": "Sladkovodní upgrade"
+      },
+      "task": {
+        "en": "Drink something cold in ten slow sips. Feel each one all the way down. Tuna drink seawater all day. You got the upgrade.",
+        "cs": "Vypij něco studeného na deset pomalých doušků. Vnímej každý až dolů. Tuňáci celý den pijou mořskou vodu. Ty máš upgrade."
+      },
+      "rarity": "uncommon",
+      "category": "sensory",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 2
+    },
+    {
+      "id": "alphabet-aquarium",
+      "title": {
+        "en": "Alphabet Aquarium",
+        "cs": "Abecední akvárium"
+      },
+      "task": {
+        "en": "Name a sea creature for every letter, A to Z, in 45 seconds. Stuck on X? Everyone is. Invent one and describe it with confidence.",
+        "cs": "Vyjmenuj mořského tvora na každé písmeno abecedy, od A do Z, za 45 sekund. Zasekla ses na X? To každý. Vymysli si ho a popiš ho sebevědomě."
+      },
+      "rarity": "uncommon",
+      "category": "grounding",
+      "where": [
+        "anywhere"
+      ],
+      "timerSeconds": 45,
+      "addedIn": 2
+    },
+    {
+      "id": "pearl-diver",
+      "title": {
+        "en": "Pearl Diver",
+        "cs": "Lovkyně perel"
+      },
+      "task": {
+        "en": "Dive for three pearls: type three tiny good things from today into your notes. Rules: one must be food, and one must be extremely stupid.",
+        "cs": "Vylov tři perly: napiš si do poznámek tři drobné dobré věci z dneška. Pravidla: jedna musí být jídlo a jedna musí být extrémně hloupá."
+      },
+      "rarity": "uncommon",
+      "category": "grounding",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 2
+    },
+    {
+      "id": "undercover-tuna",
+      "title": {
+        "en": "Undercover Tuna",
+        "cs": "Tuňák v utajení"
+      },
+      "task": {
+        "en": "Pick someone nearby (or the last person in your camera roll). Notice three details, then silently build their secret life: name, job, and what’s really in that bag.",
+        "cs": "Vyber si někoho poblíž (nebo poslední osobu ve fotkách). Všimni si tří detailů a v duchu mu vymysli tajný život: jméno, práci a co má doopravdy v té tašce."
+      },
+      "rarity": "rare",
+      "category": "grounding",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 2
+    },
+    {
+      "id": "emoji-hieroglyphs",
+      "title": {
+        "en": "Hieroglyphs",
+        "cs": "Hieroglyfy"
+      },
+      "task": {
+        "en": "Text someone your entire life story in exactly five emoji. Let them guess. Confirm nothing. Deny nothing. Swim away.",
+        "cs": "Pošli někomu celý svůj životní příběh v přesně pěti emoji. Ať hádá. Nic nepotvrzuj. Nic nevyvracej. Odplav."
+      },
+      "rarity": "rare",
+      "category": "social",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 2
+    },
+    {
+      "id": "haiku-of-spite",
+      "title": {
+        "en": "Haiku of Spite",
+        "cs": "Haiku pomsty"
+      },
+      "task": {
+        "en": "Write the craving a haiku in your notes: 5, 7, 5 syllables. It should leave the craving feeling personally attacked. Read it back. Admire.",
+        "cs": "Napiš téhle chuti do poznámek haiku: 5, 7, 5 slabik. Má se po něm cítit osobně napadená. Přečti si ho. Obdivuj."
+      },
+      "rarity": "rare",
+      "category": "ridiculous",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 2
+    },
+    {
+      "id": "end-credits",
+      "title": {
+        "en": "End Credits",
+        "cs": "Závěrečné titulky"
+      },
+      "task": {
+        "en": "45 seconds: walk like the hero in the final scene of a film. Slow, unbothered, wind in your fins. Behind you, the craving explodes. Don’t look back.",
+        "cs": "45 sekund: kráčej jako hrdinka v závěrečné scéně filmu. Pomalu, nad věcí, vítr v ploutvích. Za tebou vybuchne chuť. Neohlížej se."
+      },
+      "rarity": "legendary",
+      "category": "physical",
+      "where": [
+        "anywhere"
+      ],
+      "timerSeconds": 45,
+      "addedIn": 2
+    },
+    {
+      "id": "dd-ramen-shop",
+      "title": {
+        "en": "Eight Seats",
+        "cs": "Osm míst"
+      },
+      "task": {
+        "en": "You’re queuing for a tiny ramen shop. It’s drizzling. Inside, a bowl lands in front of you. Describe it topping by topping: the broth, the egg, the steam on your face. Then eat it slowly in your head.",
+        "cs": "Stojíš frontu do malého ramen bistra. Mrholí. Uvnitř před tebou přistane miska. Popiš ji kousek po kousku: vývar, vajíčko, páru na obličeji. Pak ji v duchu pomalu sněz."
+      },
+      "rarity": "common",
+      "category": "daydream",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 3
+    },
+    {
+      "id": "dd-night-shop",
+      "title": {
+        "en": "Corner Shop at 1 a.m.",
+        "cs": "Večerka v jednu ráno"
+      },
+      "task": {
+        "en": "It’s 1 a.m. in an all-night corner shop. Fill your basket in your head: one snack, one drink, one thing you can’t identify, one flavour that shouldn’t exist, and one sandwich. Not tuna. Please.",
+        "cs": "Je jedna ráno a jsi v nonstop večerce. Naplň si v duchu košík: jednu dobrotu, jedno pití, jednu věc, kterou nepoznáš, jednu příchuť, která by neměla existovat, a jeden sendvič. Ne s tuňákem. Prosím."
+      },
+      "rarity": "common",
+      "category": "daydream",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 3
+    },
+    {
+      "id": "dd-tangerine-orchard",
+      "title": {
+        "en": "Tangerine Orchard",
+        "cs": "Mandarinkový sad"
+      },
+      "task": {
+        "en": "A tangerine orchard by the sea. Pick one off the branch. Peel it in one long strip. Smell your fingers. Eat it slice by slice for 30 seconds. Sweet or sour?",
+        "cs": "Mandarinkový sad u moře. Utrhni jednu z větve. Oloupej ji jedním dlouhým proužkem. Přičichni si k prstům. Jez ji 30 sekund dílek po dílku. Sladká, nebo kyselá?"
+      },
+      "rarity": "common",
+      "category": "daydream",
+      "where": [
+        "anywhere"
+      ],
+      "timerSeconds": 30,
+      "addedIn": 3
+    },
+    {
+      "id": "dd-tea-room",
+      "title": {
+        "en": "Tea, Slowly",
+        "cs": "Čaj, pomalu"
+      },
+      "task": {
+        "en": "A quiet tea room. A cushion under your knees, steam rising from the cup. Hold it in both hands. How does the tea smell? Take three slow sips in your head. No slurping.",
+        "cs": "Tichá čajovna. Pod koleny polštář, z šálku stoupá pára. Drž ho v obou dlaních. Jak čaj voní? Dej si v duchu tři pomalé doušky. Žádné srkání."
+      },
+      "rarity": "uncommon",
+      "category": "daydream",
+      "where": [
+        "anywhere"
+      ],
+      "timerSeconds": 45,
+      "addedIn": 3
+    },
+    {
+      "id": "dd-red-carpet",
+      "title": {
+        "en": "Red Carpet",
+        "cs": "Červený koberec"
+      },
+      "task": {
+        "en": "You’re stepping onto a red carpet. Cameras everywhere. What are you wearing, down to the shoes? Now plan your three photos: where you stand, the pose, the caption.",
+        "cs": "Vystupuješ na červený koberec. Všude fotoaparáty. Co máš na sobě, až po boty? Teď naplánuj tři fotky: kde stojíš, jaká póza, jaký popisek."
+      },
+      "rarity": "uncommon",
+      "category": "daydream",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 3
+    },
+    {
+      "id": "dd-panda-inspection",
+      "title": {
+        "en": "Panda Inspection",
+        "cs": "Inspekce pand"
+      },
+      "task": {
+        "en": "You’re at a panda sanctuary. Pick one panda and name it. For 30 seconds, narrate its day like a sports commentator. Bamboo. Rolling. More bamboo. Lazier than a tuna on a Sunday.",
+        "cs": "Jsi v pandí rezervaci. Vyber si jednu pandu a pojmenuj ji. 30 sekund komentuj její den jako sportovní komentátor. Bambus. Válení. Další bambus. Línější než tuňák v neděli."
+      },
+      "rarity": "uncommon",
+      "category": "daydream",
+      "where": [
+        "anywhere"
+      ],
+      "timerSeconds": 30,
+      "addedIn": 3
+    },
+    {
+      "id": "dd-karaoke-room",
+      "title": {
+        "en": "Karaoke Room",
+        "cs": "Karaoke místnost"
+      },
+      "task": {
+        "en": "A private karaoke room: neon everywhere, a tambourine on the table. You get the mic. Pick your three songs, in order. The last one is your guiltiest pleasure. Who’s on backing vocals?",
+        "cs": "Soukromá karaoke místnost: všude neony, na stole tamburína. Mikrofon máš ty. Vyber tři písničky, v pořadí. Poslední je tvoje nejtajnější slabost. Kdo dělá vokály?"
+      },
+      "rarity": "uncommon",
+      "category": "daydream",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 3
+    },
+    {
+      "id": "dd-hot-spring",
+      "title": {
+        "en": "Hot Spring Night",
+        "cs": "Noc u horkého pramene"
+      },
+      "task": {
+        "en": "A cabin in the mountains. Robe on, slippers off. Step into the hot spring while snow falls on the water. For 45 seconds, just feel the heat in your shoulders. Nothing else to do.",
+        "cs": "Chata v horách. Župan na sebe, pantofle dolů. Vlez do horkého pramene, zatímco na hladinu padá sníh. 45 sekund jen cíť teplo v ramenou. Nic jiného dělat nemusíš."
+      },
+      "rarity": "rare",
+      "category": "daydream",
+      "where": [
+        "anywhere"
+      ],
+      "timerSeconds": 45,
+      "addedIn": 3
+    },
+    {
+      "id": "dd-perfect-day",
+      "title": {
+        "en": "One Perfect Day",
+        "cs": "Jeden dokonalý den"
+      },
+      "task": {
+        "en": "Plan one perfect day anywhere in the world, money no object. Breakfast, where you go, who’s with you, what you wear, the last thing you see before sleep. The more specific, the better.",
+        "cs": "Naplánuj jeden dokonalý den kdekoli na světě, na penězích nezáleží. Snídaně, kam jdeš, kdo je s tebou, co máš na sobě, co uvidíš jako poslední před spaním. Čím konkrétnější, tím líp."
+      },
+      "rarity": "rare",
+      "category": "daydream",
+      "where": [
+        "anywhere"
+      ],
+      "addedIn": 3
+    },
+    {
+      "id": "dd-front-row",
+      "title": {
+        "en": "Front Row",
+        "cs": "První řada"
+      },
+      "task": {
+        "en": "Close your eyes. The stadium goes dark and thousands of phone lights come on. Your favourite artist walks out. What’s the first song? What are you screaming? Stay in that crowd for 60 seconds.",
+        "cs": "Zavři oči. Stadion potemní a rozsvítí se tisíce světel z mobilů. Na pódium vychází tvoje nejoblíbenější hvězda. Jaká je první písnička? Co ječíš? Zůstaň v tom davu 60 sekund."
+      },
+      "rarity": "legendary",
+      "category": "daydream",
+      "where": [
+        "anywhere"
+      ],
+      "timerSeconds": 60,
+      "addedIn": 3
+    }
+  ]
+}

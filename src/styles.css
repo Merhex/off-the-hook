@@ -1,0 +1,1617 @@
+/* Off the Hook: deep-ocean theme. Gold is reserved for legendary. */
+:root {
+  --sea-top: #155a85;
+  --sea-mid: #0c3350;
+  --sea-deep: #061724;
+  --surface: rgba(255, 255, 255, 0.08);
+  --surface-strong: rgba(255, 255, 255, 0.14);
+  --line: rgba(255, 255, 255, 0.16);
+  --ink: #eaf4fa;
+  --muted: #a9c3d4;
+  --ink-dark: #0b1f2e;
+  --accent: #5ec4f0;
+  --accent-strong: #2fa6dc;
+  --coral: #ff7a59;
+  --coral-strong: #f2552f;
+  --gold: #f2c14e;
+  --gold-deep: #b98712;
+  --tuna-body: #4f8fbf;
+  --tuna-belly: #d4e3ec;
+  --tuna-fin: #f2c14e;
+
+  --r-common: #8aa4b6;
+  --r-uncommon: #5ec4f0;
+  --r-rare: #b28cff;
+  --r-legendary: var(--gold);
+
+  --display: 'Baloo 2', ui-rounded, system-ui, sans-serif;
+  --sans: 'Nunito', ui-rounded, -apple-system, system-ui, sans-serif;
+
+  color-scheme: dark;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* No zooming, by double tap or pinch: the layout already fits every screen. Scrolling still works.
+   Set on every element, not just html, because iPhone Safari starts afresh inside each scrolling
+   area. main.tsx backs this up for iPhone. */
+* { box-sizing: border-box; touch-action: pan-x pan-y; }
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+html { background: var(--sea-deep); }
+/* Installed app on iPhone (iOS 26+): with the see-through status bar, iOS can open a page that is
+   shorter than the screen with a viewport that's short by the status bar's height, leaving a strip
+   at the bottom until something makes it re-measure (tapping the status bar, say). A page at least
+   as tall as the screen gets the full viewport, so make the page one status bar taller than the
+   short viewport. The 100lvh cap keeps it from ever being taller than the screen (no scrolling)
+   once the viewport is right, and where the status bar takes no space (no top inset) nothing changes. */
+@media (display-mode: standalone) {
+  html { min-height: min(100lvh, calc(100% + env(safe-area-inset-top, 0px))); }
+}
+/* No background on body: it would paint over the fixed ocean backdrop. */
+body { background: transparent; -webkit-user-select: none; user-select: none; }
+textarea, input { -webkit-user-select: text; user-select: text; }
+
+button {
+  font: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+h1, h2 { font-family: var(--display); line-height: 1.1; margin: 0; text-wrap: balance; letter-spacing: -0.005em; }
+h1 { font-size: 1.85rem; font-weight: 800; }
+h2 { font-size: 1.25rem; font-weight: 700; }
+p { margin: 0; }
+
+.splash { min-height: 100dvh; background: var(--sea-mid); }
+
+/* ---------- Ocean background ---------- */
+.ocean {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, var(--sea-top) 0%, var(--sea-mid) 45%, var(--sea-deep) 100%);
+  overflow: hidden;
+}
+.rays {
+  position: absolute;
+  inset: -20% -40% auto;
+  height: 70%;
+  background: repeating-linear-gradient(100deg, rgba(255, 255, 255, 0.07) 0 40px, transparent 40px 130px);
+  mask-image: linear-gradient(180deg, #000 0%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 100%);
+  filter: blur(8px);
+  animation: rays 18s ease-in-out infinite alternate;
+}
+@keyframes rays { from { transform: translateX(-4%); } to { transform: translateX(4%); } }
+
+/* ---------- Layout ---------- */
+.screen {
+  min-height: 100dvh;
+  padding: calc(env(safe-area-inset-top, 0px) + 8px) max(16px, env(safe-area-inset-right, 0px))
+    calc(env(safe-area-inset-bottom, 0px) + 24px) max(16px, env(safe-area-inset-left, 0px));
+  max-width: 560px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 52px;
+  position: relative;
+  z-index: 2;
+}
+.topbar-spacer { width: 44px; }
+.screen-title { font-size: 1.35rem; }
+
+.icon-btn {
+  min-width: 44px;
+  height: 44px;
+  padding: 0 12px;
+  border-radius: 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1.1rem;
+}
+.icon-label { font-size: 0.9rem; font-weight: 600; }
+
+.panel { display: flex; flex-direction: column; gap: 16px; padding: 0 0 8px; }
+.center { align-items: center; text-align: center; justify-content: center; flex: 1; }
+.stack { display: flex; flex-direction: column; gap: 10px; width: 100%; }
+.muted { color: var(--muted); }
+.small { font-size: 0.85rem; }
+
+/* ---------- Buttons ---------- */
+.primary, .secondary {
+  min-height: 52px;
+  padding: 0 24px;
+  border-radius: 999px;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: transform 0.1s ease;
+}
+.primary:active, .secondary:active, .hook-button:active, .rate-btn:active { transform: scale(0.96); }
+.primary { background: var(--accent); color: var(--ink-dark); box-shadow: 0 6px 0 var(--accent-strong); }
+.primary:active { box-shadow: 0 2px 0 var(--accent-strong); }
+.secondary { background: var(--surface-strong); border: 1px solid var(--line); }
+.secondary:disabled { opacity: 0.5; }
+.big { width: 100%; min-height: 60px; font-size: 1.3rem; }
+.full { width: 100%; }
+.small.secondary { min-height: 40px; font-size: 0.95rem; padding: 0 18px; }
+.link { color: var(--accent); font-weight: 600; padding: 10px 14px; min-height: 44px; }
+
+/* The slip option: present but deliberately quiet. */
+.quiet-link {
+  color: var(--muted);
+  opacity: 0.7;
+  font-size: 0.82rem;
+  padding: 10px 14px;
+  min-height: 44px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.segmented {
+  display: inline-flex;
+  padding: 4px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  gap: 4px;
+  align-self: center;
+}
+.segmented button {
+  padding: 8px 14px;
+  min-height: 38px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.segmented button[aria-pressed='true'] { background: var(--accent); color: var(--ink-dark); }
+.segmented.compact button { padding: 6px 12px; }
+
+/* ---------- Home ---------- */
+.home-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.tagline { font-family: var(--display); font-size: 1.2rem; font-weight: 700; color: var(--muted); max-width: 26ch; text-shadow: 0 1px 8px rgba(6, 23, 36, 0.9); }
+/* Scales with the screen's height too, so short phones fit the whole home screen without scrolling. */
+.hook-button {
+  width: min(72vw, 260px, 42dvh);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ff9a7d, var(--coral) 55%, var(--coral-strong));
+  color: #fff;
+  font-family: var(--display);
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1.05;
+  padding: 0 18px;
+  text-shadow: 0 2px 0 rgba(150, 40, 10, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 10px 0 #b93a1a, 0 20px 50px rgba(255, 122, 89, 0.35);
+  animation: pulse 2.6s ease-in-out infinite;
+  transition: transform 0.1s ease;
+}
+.hook-button:active { box-shadow: 0 4px 0 #b93a1a; }
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 10px 0 #b93a1a, 0 0 0 0 rgba(255, 122, 89, 0.45); }
+  50% { box-shadow: 0 10px 0 #b93a1a, 0 0 0 22px rgba(255, 122, 89, 0); }
+}
+.school-count { color: var(--muted); font-weight: 600; max-width: 30ch; text-shadow: 0 1px 8px rgba(6, 23, 36, 0.95), 0 0 2px rgba(6, 23, 36, 0.9); }
+@media (max-height: 600px) {
+  .home-center { gap: 12px; }
+  .home .tuna-pet .tuna { width: 96px; height: 58px; }
+  .hook-button { width: min(72vw, 260px, 38dvh); font-size: 1.6rem; }
+}
+
+.school { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: -1; }
+.swimmer {
+  position: absolute;
+  left: 0;
+  opacity: 0.5;
+  animation: swim linear infinite;
+}
+@keyframes swim {
+  from { transform: translateX(-60px); }
+  to { transform: translateX(calc(100vw + 60px)); }
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 10px 10px 16px;
+  border-radius: 16px;
+  background: #1c4d70;
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  position: fixed;
+  top: calc(env(safe-area-inset-top, 0px) + 64px);
+  left: 16px;
+  right: 16px;
+  max-width: 528px;
+  margin: 0 auto;
+  z-index: 5;
+  animation: fadeIn 0.4s ease;
+}
+
+.bob { animation: bob 4s ease-in-out infinite; }
+@keyframes bob {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-8px) rotate(2deg); }
+}
+
+/* Petting the tuna (Easter egg, see PettableTuna in Home.tsx). */
+.pet-zone { position: relative; z-index: 2; }
+.tuna-pet { display: block; position: relative; padding: 4px 12px; border-radius: 40px; }
+.tuna-pet .tuna { display: block; }
+.tuna-pet:active .tuna { scale: 0.94 1.04; transition: scale 0.08s ease; }
+.pet-heart {
+  position: absolute;
+  left: calc(50% - 9px);
+  top: 18px;
+  color: var(--coral);
+  pointer-events: none;
+  animation: heartUp 0.9s ease-out forwards;
+}
+.pet-heart svg { display: block; }
+@keyframes heartUp {
+  from { transform: translate(calc(var(--dx) * 0.4), 0) scale(0.6); opacity: 1; }
+  to { transform: translate(var(--dx), -64px) scale(1.15) rotate(var(--rot)); opacity: 0; }
+}
+/* The tuna talks in place of the tagline, so nothing on the screen moves. */
+.home-center:has(.speech) .tagline { opacity: 0; }
+.tagline { transition: opacity 0.2s ease; }
+.speech {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  translate: -50% 0;
+  width: min(340px, calc(100vw - 32px));
+  margin: 0;
+  padding: 11px 15px;
+  border-radius: 18px;
+  background: #f4fafd;
+  color: var(--ink-dark);
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  text-align: left;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+  transform-origin: calc(50% - 46px) 0;
+  animation: speechIn 0.3s cubic-bezier(0.2, 1.4, 0.4, 1);
+}
+/* The tail points up at the tuna's mouth, on the left. */
+.speech::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: calc(50% - 56px);
+  border: 10px solid transparent;
+  border-bottom-color: #f4fafd;
+  border-top: 0;
+}
+.speech.dark {
+  background: #2a0d12;
+  color: #ffd6cc;
+  box-shadow: 0 0 0 2px var(--coral-strong), 0 10px 32px rgba(242, 85, 47, 0.45);
+  animation: speechIn 0.3s cubic-bezier(0.2, 1.4, 0.4, 1), shudder 0.45s 0.3s linear;
+}
+.speech.dark::after { border-bottom-color: #2a0d12; }
+@media (max-height: 600px) {
+  .speech { font-size: 0.88rem; padding: 9px 13px; }
+}
+@keyframes speechIn { from { scale: 0.3; opacity: 0; } }
+@keyframes shudder {
+  0%, 100% { rotate: 0deg; }
+  20% { rotate: -1.5deg; }
+  40% { rotate: 1.5deg; }
+  60% { rotate: -1deg; }
+  80% { rotate: 1deg; }
+}
+
+/* ---------- Rating ---------- */
+.rating { width: 100%; }
+.rating-row { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 4px; }
+.rate-btn {
+  height: 44px;
+  min-width: 0;
+  padding: 0;
+  font-family: var(--display);
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  background: color-mix(in srgb, var(--coral) calc((var(--level) - 1) * 11%), #2c6d92);
+  border: 1px solid var(--line);
+}
+.rate-btn.on { outline: 3px solid #fff; outline-offset: 1px; }
+.rating-ends { display: flex; justify-content: space-between; color: var(--muted); font-size: 0.8rem; margin-top: 6px; }
+
+/* ---------- Line drop ---------- */
+.line-drop { height: 230px; position: relative; width: 60px; }
+.line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.6);
+  animation: lineDown 0.9s ease-out forwards;
+}
+.hook-swing {
+  position: absolute;
+  left: calc(50% - 9px);
+  color: #e6eef3;
+  margin-left: -18px;
+  animation: hookDown 0.9s ease-out forwards, swing 1.2s ease-in-out 0.9s infinite;
+  transform-origin: top center;
+}
+@keyframes lineDown { from { height: 0; } to { height: 160px; } }
+/* The hook travels exactly as far as the line grows, so the line always ends at the hook's eye. */
+@keyframes hookDown { from { top: -6px; } to { top: 154px; } }
+@keyframes swing { 0%, 100% { rotate: -8deg; } 50% { rotate: 8deg; } }
+.biting { font-family: var(--display); font-size: 1.2rem; color: var(--muted); animation: fadeIn 0.6s ease; }
+
+/* ---------- Cards ---------- */
+/* The card grows to fit its text (both faces share one grid cell), so long tasks are never cut off. */
+.card-3d { width: min(86vw, 340px); perspective: 1200px; }
+.card-inner {
+  position: relative;
+  display: grid;
+  width: 100%;
+  min-height: clamp(260px, 44dvh, 440px);
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1.1);
+  animation: cardIn 0.35s ease-out;
+}
+.flipped .card-inner { transform: rotateY(180deg); }
+@keyframes cardIn { from { transform: translateY(40px) scale(0.9); opacity: 0; } }
+.card-back, .card-3d .card-face {
+  grid-area: 1 / 1;
+  position: relative;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 22px;
+}
+.card-back {
+  background:
+    radial-gradient(circle at 50% 45%, rgba(94, 196, 240, 0.25), transparent 55%),
+    repeating-radial-gradient(circle at 50% 120%, #1d5a86 0 14px, #164a70 14px 28px);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 0 8px rgba(255, 255, 255, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: #e6eef3;
+}
+.card-back-name {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+.card-3d .card-face { transform: rotateY(180deg); }
+
+.card-face {
+  --rc: var(--r-common);
+  background: linear-gradient(170deg, #fdfbf5, #e8f1f6);
+  color: var(--ink-dark);
+  border: 4px solid var(--rc);
+  border-radius: 22px;
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+  overflow: hidden;
+}
+.rarity-uncommon { --rc: var(--r-uncommon); }
+.rarity-rare { --rc: var(--r-rare); }
+.rarity-legendary { --rc: var(--r-legendary); }
+.card-face.rarity-uncommon { box-shadow: 0 0 24px rgba(94, 196, 240, 0.5); }
+.card-face.rarity-rare { box-shadow: 0 0 34px rgba(178, 140, 255, 0.65); }
+.card-face.rarity-rare::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 35%, rgba(255, 255, 255, 0.45) 50%, transparent 65%);
+  z-index: 0;
+  transform: translateX(-100%);
+  animation: shimmer 2.4s ease-in-out 0.8s infinite;
+  pointer-events: none;
+}
+@keyframes shimmer { 60%, 100% { transform: translateX(100%); } }
+.card-face.rarity-legendary {
+  background: linear-gradient(160deg, #fff6d8, #f7dc8a 60%, #f2c14e);
+  box-shadow: 0 0 50px rgba(242, 193, 78, 0.8);
+}
+.burst {
+  position: absolute;
+  inset: -50%;
+  background: repeating-conic-gradient(rgba(255, 255, 255, 0.45) 0 10deg, transparent 10deg 20deg);
+  animation: spin 12s linear infinite;
+  pointer-events: none;
+  opacity: 0.5;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.card-top { display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 1; }
+.rarity-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-dark);
+  background: var(--rc);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+.new-pill { font-size: 0.72rem; font-weight: 800; background: var(--coral); color: #fff; padding: 3px 9px; border-radius: 999px; }
+.card-title { font-size: 1.7rem; position: relative; z-index: 1; }
+.card-task { font-size: 1.08rem; line-height: 1.45; flex: 1; position: relative; z-index: 1; font-weight: 600; }
+.chip {
+  align-self: flex-start;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(11, 31, 46, 0.08);
+  position: relative;
+}
+.card-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  margin: 0 -8px -10px 0;
+}
+.card-bottom .rarity-fish { flex-shrink: 0; filter: drop-shadow(0 4px 6px rgba(11, 31, 46, 0.18)); }
+.flipped .card-bottom .rarity-fish { animation: fishIn 0.6s cubic-bezier(0.2, 1.4, 0.4, 1) 0.45s both; }
+@keyframes fishIn { from { transform: translateX(40px) rotate(8deg); opacity: 0; } }
+
+.card-actions { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.fade-in { animation: fadeIn 0.4s ease 0.3s both; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } }
+
+/* ---------- Countdown ---------- */
+.countdown { display: flex; align-items: center; gap: 14px; }
+.ring { width: 64px; height: 64px; transform: rotate(-90deg); }
+.ring-bg { fill: none; stroke: var(--surface-strong); stroke-width: 8; }
+.ring-fg {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 276.5;
+  transition: stroke-dashoffset 0.25s linear;
+}
+.countdown-text { font-family: var(--display); font-size: 1.4rem; font-weight: 800; min-width: 3.5ch; font-variant-numeric: tabular-nums; }
+
+/* ---------- Celebration ---------- */
+.celebrate { position: relative; }
+.won-title { font-size: 2rem; }
+.new-catch {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: var(--gold);
+  animation: pop 0.6s cubic-bezier(0.2, 1.6, 0.4, 1) both;
+}
+@keyframes pop { from { transform: scale(0.3); opacity: 0; } }
+.bubbles { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+.celebrate > :not(.bubbles) { position: relative; z-index: 1; }
+.bubbles span {
+  position: absolute;
+  bottom: -30px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  animation: rise 2.8s ease-in infinite;
+}
+@keyframes rise { to { transform: translateY(-110vh) translateX(20px); opacity: 0; } }
+
+.field { display: flex; flex-direction: column; gap: 8px; width: 100%; min-width: 0; text-align: left; color: var(--muted); font-size: 0.9rem; }
+textarea {
+  font: inherit;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px;
+  resize: none;
+  font-size: 16px; /* prevents iOS zoom on focus */
+}
+
+/* ---------- Aquarium ---------- */
+.progress-text { text-align: center; color: var(--muted); font-weight: 600; margin: 8px 0; }
+.progress-bar { height: 10px; border-radius: 999px; background: var(--surface); overflow: hidden; margin-bottom: 16px; }
+.progress-bar div { height: 100%; background: linear-gradient(90deg, var(--accent), var(--gold)); border-radius: 999px; transition: width 0.6s ease; }
+.aquarium .segmented { margin-bottom: 16px; }
+.tank-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 10px; }
+.tank-card {
+  --rc: var(--r-common);
+  aspect-ratio: 5 / 6;
+  border-radius: 16px;
+  border: 2px solid var(--rc);
+  background: rgba(8, 30, 48, 0.6);
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-align: center;
+  min-width: 0;
+}
+.tank-card.caught { background: color-mix(in srgb, var(--rc) 22%, rgba(8, 30, 48, 0.75)); }
+.tank-card.unknown { border-style: dashed; opacity: 0.7; }
+.tank-title { font-weight: 800; font-size: 0.82rem; line-height: 1.2; overflow-wrap: anywhere; }
+.tank-meta { font-size: 0.8rem; color: var(--muted); display: inline-flex; align-items: center; gap: 4px; }
+.tank-meta svg { color: var(--coral); }
+.star { color: var(--gold); }
+.tank-rarity { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rc); font-weight: 700; }
+.tank-silhouette { color: rgba(255, 255, 255, 0.16); display: flex; }
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 12, 20, 0.7);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  z-index: 10;
+  animation: fadeIn 0.2s ease;
+}
+.modal { position: relative; width: min(100%, 360px); }
+.modal-fish { display: flex; justify-content: center; position: relative; z-index: 1; }
+.modal-fish .rarity-fish[class] { color: rgba(11, 31, 46, 0.25); }
+.fav-btn {
+  align-self: flex-start;
+  padding: 10px 16px;
+  min-height: 44px;
+  border-radius: 999px;
+  border: 2px solid var(--coral);
+  color: var(--coral-strong);
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  z-index: 1;
+}
+.fav-btn.on { background: var(--coral); color: #fff; }
+.modal .link { color: var(--accent-strong); align-self: center; }
+
+/* ---------- Settings ---------- */
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 8px 0 16px; }
+.stats div { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; }
+.stats strong { font-family: var(--display); font-size: 1.8rem; }
+.stats span { color: var(--muted); font-size: 0.85rem; }
+.group {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 14px;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.row { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 44px; }
+.row > span { display: flex; flex-direction: column; }
+.row small { font-size: 0.78rem; }
+.toggle input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 51px;
+  height: 31px;
+  margin: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  position: relative;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.toggle input::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+.toggle input:checked { background: var(--accent); }
+.toggle input:checked::before { transform: translateX(20px); }
+.toggle input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.status { color: var(--accent); font-weight: 600; }
+
+/* ---------- Install guide ---------- */
+.install-box {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+.ios-steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; counter-reset: s; }
+.ios-steps li { display: flex; gap: 14px; align-items: center; }
+.step-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--surface-strong);
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+.url { font-size: 0.8rem; word-break: break-all; color: var(--muted); }
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  .swimmer { animation: none; left: var(--x); }
+}
+.calm *, .calm *::before, .calm *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+.calm .swimmer { animation: none; left: var(--x); }
+.card-face .muted { color: #4d6274; }
+@media (max-height: 700px) {
+  .card-title { font-size: 1.35rem; }
+  .card-task { font-size: 0.98rem; }
+  .card-face { padding: 18px 16px; gap: 10px; }
+  .card-inner { min-height: 230px; }
+  .card-bottom .rarity-fish { width: 96px; height: 48px; }
+  .ring { width: 52px; height: 52px; }
+  .card-actions { gap: 10px; }
+}
+.countdown .secondary { white-space: nowrap; }
+
+/* ---------- Background bubbles and seabed ---------- */
+.bg-bubbles { position: absolute; inset: 0; }
+.bg-bubbles span {
+  position: absolute;
+  bottom: -20px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.22);
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.25), transparent 60%);
+  animation: bgRise linear infinite;
+}
+@keyframes bgRise {
+  0% { transform: translate(0, 0); opacity: 0; }
+  10% { opacity: 1; }
+  50% { transform: translate(10px, -55vh); }
+  100% { transform: translate(-6px, -110vh); opacity: 0; }
+}
+.seabed { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 110px; }
+.sand { fill: #0a2233; }
+.pebble { fill: #12324a; }
+.weed path { fill: none; stroke: #0f4a3e; stroke-width: 7; stroke-linecap: round; }
+.weed { transform-box: fill-box; transform-origin: bottom center; animation: sway 6s ease-in-out infinite alternate; }
+.weed-b { animation-duration: 7.5s; animation-delay: -2s; }
+@keyframes sway { from { transform: skewX(-4deg); } to { transform: skewX(5deg); } }
+
+/* ---------- Seabed decorations ---------- */
+.decos { position: absolute; inset: 0; pointer-events: none; }
+.deco { position: absolute; transform: translateX(-50%); line-height: 0; }
+.deco-art { display: block; overflow: visible; }
+.deco > .deco-art { rotate: var(--tilt, 0deg); transform-origin: 50% 100%; }
+/* The far-back pieces fade into the water a little. */
+.deco-month-6, .deco-year-1 { opacity: 0.9; }
+.deco-day-3 > .deco-art { filter: drop-shadow(0 0 6px rgba(255, 138, 92, 0.55)); }
+.deco-month-1 .pearl { filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.9)); }
+.deco-month-2 > .deco-art { filter: drop-shadow(0 0 7px rgba(127, 224, 240, 0.65)); }
+.deco-month-2 { animation: drift-up 5.5s ease-in-out infinite alternate; }
+@keyframes drift-up { from { translate: 0 0; } to { translate: 0 -10px; } }
+.deco-week-1 > .deco-art { filter: hue-rotate(var(--hue, 0deg)); }
+.anemone-arms { transform-box: fill-box; transform-origin: bottom center; animation: sway 4.5s ease-in-out infinite alternate; }
+.deco-month-3 > .deco-art { filter: drop-shadow(0 0 7px rgba(255, 211, 107, 0.75)); }
+.lantern-flame { animation: flicker 2.6s ease-in-out infinite alternate; }
+@keyframes flicker { from { opacity: 0.75; } to { opacity: 1; } }
+
+/* The first time the player sees one: it pops up out of the sand with a soft glow and a few twinkles. */
+.deco.sparkle > .deco-art { animation: deco-pop 0.9s cubic-bezier(0.2, 0.9, 0.3, 1.35) var(--delay) both; }
+@keyframes deco-pop {
+  from { scale: 0.2; opacity: 0; }
+  to { scale: 1; opacity: 1; }
+}
+.sparkles { position: absolute; left: 50%; top: 50%; width: 76px; height: 76px; translate: -50% -50%; overflow: visible; }
+.spark-halo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 72px;
+  height: 72px;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 242, 196, 0.55), rgba(255, 242, 196, 0) 65%);
+  opacity: 0;
+  animation: halo 2.4s ease-out var(--delay) both;
+}
+@keyframes halo { 0% { opacity: 0; } 25% { opacity: 1; } 100% { opacity: 0; } }
+.spark { fill: #fff7d6; transform-box: fill-box; transform-origin: center; opacity: 0; animation: twinkle 0.9s ease-in-out 3 both; }
+@keyframes twinkle {
+  0%, 100% { opacity: 0; transform: scale(0.3) rotate(0deg); }
+  50% { opacity: 1; transform: scale(1.2) rotate(45deg); }
+}
+/* In lists (the Treasure), a decoration not earned yet is a pale shape. */
+.deco-silhouette { filter: brightness(0) invert(1); opacity: 0.22; }
+.deco-silhouette * { animation: none; }
+
+/* ---------- Line snap on the win screen ---------- */
+.snap { position: relative; width: 60px; height: 64px; margin-bottom: -4px; }
+.snap-line {
+  position: absolute;
+  left: 50%;
+  top: -200px;
+  width: 2px;
+  height: 208px;
+  background: rgba(255, 255, 255, 0.6);
+  transform-origin: top;
+  animation: lineRetract 0.5s ease-in 0.15s forwards;
+}
+.snap-hook {
+  position: absolute;
+  left: calc(50% - 9px);
+  top: 4px;
+  color: #e6eef3;
+  animation: hookAway 1.4s cubic-bezier(0.3, 0, 0.6, 1) 0.15s forwards;
+}
+@keyframes lineRetract { to { transform: scaleY(0); } }
+@keyframes hookAway {
+  15% { transform: translate(4px, -6px) rotate(-15deg); }
+  100% { transform: translate(110px, -260px) rotate(200deg); opacity: 0; }
+}
+
+/* ---------- Hook strength before/after ---------- */
+.pull-change {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 18px;
+  border-radius: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+.pull-values { display: flex; align-items: center; gap: 12px; }
+.pull-num {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 1.3rem;
+  background: color-mix(in srgb, var(--coral) calc((var(--level) - 1) * 11%), #2c6d92);
+}
+.pull-arrow { font-size: 1.4rem; color: var(--muted); }
+/* Short screens (iPhone SE, or any iPhone in Safari): the whole win screen, button included, fits without scrolling. */
+@media (max-height: 700px) {
+  .step-won .topbar { min-height: 0; }
+  .step-won .panel { gap: 8px; }
+  .step-won .tuna { width: 120px; height: 72px; }
+  .step-won .won-title { font-size: 1.7rem; }
+  .step-won .pull-change { padding: 8px 16px; gap: 4px; }
+  .step-won .pull-num { width: 38px; height: 38px; font-size: 1.15rem; }
+}
+@media (max-height: 600px) {
+  .step-snagged .panel { gap: 10px; }
+}
+/* What was the bait: quick taps, any number of them. */
+.reason-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.reason-chip {
+  padding: 8px 14px;
+  min-height: 38px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.reason-chip[aria-pressed='true'] { background: var(--accent); border-color: var(--accent); color: var(--ink-dark); }
+.streak-row { margin: 4px 0 8px; }
+
+.stat-wide { grid-column: 1 / -1; }
+.secondary.full { display: inline-flex; align-items: center; justify-content: center; gap: 10px; }
+
+/* Frosted glass, so the background bubbles blur behind panels instead of crossing text. */
+.group, .stats > div, .install-box, .segmented, .icon-btn, .secondary, .toast, .pull-change, textarea {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+/* ---------- Intro ---------- */
+.intro { overflow: hidden; height: 100dvh; }
+.intro-viewport { flex: 1; min-height: 0; overflow: hidden; display: flex; }
+.intro-track { display: flex; width: 100%; transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.intro-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  padding: 0 4px;
+  overflow-y: auto;
+}
+/* Auto margins centre the content but still let it scroll on very small screens. */
+.intro-slide > :first-child { margin-top: auto; }
+.intro-slide > :last-child { margin-bottom: auto; }
+.intro-art { min-height: 110px; display: grid; place-items: center; }
+.intro-body { color: var(--muted); font-size: 1.05rem; max-width: 32ch; }
+.glossary { margin: 4px 0 0; width: 100%; display: flex; flex-direction: column; gap: 8px; text-align: left; }
+.term {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  column-gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.term-icon { grid-row: span 2; width: 44px; height: 44px; border-radius: 12px; background: var(--surface-strong); display: grid; place-items: center; color: var(--accent); }
+.term dt { font-family: var(--display); font-weight: 800; font-size: 1.05rem; line-height: 1.2; }
+.term dd { margin: 0; color: var(--muted); font-size: 0.92rem; line-height: 1.35; }
+.mini-scale { display: flex; gap: 2px; align-items: flex-end; height: 20px; }
+.mini-scale i { width: 4px; border-radius: 2px; background: currentColor; }
+.mini-scale i:nth-child(1) { height: 5px; background: #2c6d92; }
+.mini-scale i:nth-child(2) { height: 8px; background: #5f8a9a; }
+.mini-scale i:nth-child(3) { height: 12px; background: #a8806f; }
+.mini-scale i:nth-child(4) { height: 16px; background: #dc7a5e; }
+.mini-scale i:nth-child(5) { height: 20px; background: var(--coral); }
+.intro-hook { position: relative; height: 110px; width: 60px; display: flex; flex-direction: column; align-items: center; color: #e6eef3; animation: swingSoft 2.4s ease-in-out infinite; transform-origin: top center; }
+.intro-line { width: 2px; height: 46px; background: rgba(255, 255, 255, 0.6); margin-bottom: -4px; margin-left: 10px; }
+@keyframes swingSoft { 0%, 100% { rotate: -6deg; } 50% { rotate: 6deg; } }
+.fish-ladder { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 18px; align-items: center; justify-items: center; }
+.intro-school { position: relative; width: 220px; height: 110px; }
+.intro-school span { position: absolute; animation: drift 3s ease-in-out infinite alternate; }
+.intro-school span:nth-child(1) { left: 10px; top: 14px; }
+.intro-school span:nth-child(2) { left: 80px; top: 0; }
+.intro-school span:nth-child(3) { left: 150px; top: 20px; }
+.intro-school span:nth-child(4) { left: 40px; top: 62px; }
+.intro-school span:nth-child(5) { left: 120px; top: 70px; }
+@keyframes drift { from { transform: translateX(-6px); } to { transform: translateX(8px); } }
+.intro-footer { display: flex; flex-direction: column; align-items: center; gap: 14px; padding-top: 8px; }
+.dots { display: flex; gap: 4px; }
+.dot { width: 28px; height: 28px; display: grid; place-items: center; padding: 0; }
+.dot::before { content: ''; width: 8px; height: 8px; border-radius: 999px; background: rgba(255, 255, 255, 0.3); transition: width 0.25s ease, background 0.25s ease; }
+.dot.on::before { width: 22px; background: var(--accent); }
+@media (max-height: 700px) {
+  /* The glossary slide is the tallest; a smaller hook keeps its last term from being cut off. */
+  .intro-slide:has(.glossary) .intro-art { min-height: 0; height: 84px; transform: scale(0.75); }
+}
+@media (max-height: 640px) {
+  .intro-slide { gap: 10px; }
+  .intro-art { min-height: 0; height: 84px; transform: scale(0.75); }
+  /* The glossary slide is the tallest; its icons say enough without the big hook. */
+  .intro-slide:has(.glossary) .intro-art { display: none; }
+  .intro h1 { font-size: 1.55rem; }
+  .intro-body { font-size: 0.95rem; }
+  .glossary { gap: 6px; }
+  .term { padding: 6px 10px; }
+  .term-icon { width: 36px; height: 36px; }
+  .term dd { font-size: 0.86rem; }
+  .intro-footer { gap: 8px; }
+}
+
+/* ---------- Logbook ---------- */
+.topbar-group { display: flex; gap: 8px; min-width: 0; }
+.stat-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 8px 0 14px; }
+.stat {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.stat strong { font-family: var(--sans); font-weight: 800; font-size: 1.6rem; line-height: 1.1; }
+.stat strong small { font-size: 0.9rem; color: var(--muted); font-weight: 700; }
+.stat span { color: var(--muted); font-size: 0.78rem; line-height: 1.25; }
+.chart-card {
+  background: #0d2c44;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 16px 14px 12px;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.chart-card h2 { font-size: 1.15rem; }
+.chart { width: 100%; position: relative; }
+.chart svg { display: block; overflow: visible; touch-action: pan-y; }
+.chart svg:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 6px; }
+.chart rect[tabindex]:focus { outline: none; }
+.axis-text { fill: #a9c3d4; font: 600 11px var(--sans); font-variant-numeric: tabular-nums; }
+.value-text { fill: #eaf4fa; font: 800 13px var(--sans); }
+.legend { display: flex; gap: 16px; font-size: 0.82rem; color: var(--muted); margin: 4px 0 2px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.key-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.readout {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(234, 244, 250, 0.06);
+  margin-top: 4px;
+}
+.readout strong { font-size: 1.05rem; font-weight: 800; }
+.readout .drop { color: var(--muted); font-weight: 700; }
+.readout span { font-size: 0.85rem; color: var(--muted); }
+.trend-note { font-weight: 700; font-size: 0.95rem; }
+.chart-empty { color: var(--muted); font-size: 0.92rem; padding: 18px 4px; text-align: center; }
+
+/* How many times the player has petted the tuna, just above the history. */
+.pet-count {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  margin-bottom: 14px;
+  border-radius: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.pet-count-heart { color: var(--coral); flex-shrink: 0; }
+.pet-count-heart svg { display: block; }
+.pet-count p { min-width: 0; line-height: 1.3; }
+.pet-count strong { font-weight: 800; font-size: 1.15rem; font-variant-numeric: tabular-nums; }
+.pet-count .small { display: block; }
+
+.history h2 { font-size: 1.25rem; margin: 6px 0 4px; }
+.history-day h3 { font-family: var(--display); font-size: 0.95rem; color: var(--muted); margin: 14px 0 6px; }
+/* Only the first letter: Czech month names stay lowercase ("úterý 13. října" → "Úterý 13. října"). */
+.history-day h3::first-letter { text-transform: uppercase; }
+.history-day > ul, .history-cards { list-style: none; margin: 0; padding: 0; }
+.history-day > ul { display: flex; flex-direction: column; gap: 8px; }
+.history-row {
+  display: grid;
+  grid-template-columns: 36px 1fr auto;
+  gap: 10px;
+  align-items: start;
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: rgba(13, 44, 68, 0.82);
+  border: 1px solid var(--line);
+}
+.history-icon { display: grid; place-items: center; height: 30px; color: var(--muted); }
+.history-main { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.history-top { display: flex; gap: 8px; align-items: baseline; }
+.history-time { font-weight: 800; font-variant-numeric: tabular-nums; }
+.history-result { font-size: 0.85rem; color: var(--muted); }
+.history-cards { display: flex; flex-direction: column; gap: 2px; }
+.history-cards li { display: flex; align-items: center; gap: 6px; font-size: 0.9rem; min-width: 0; }
+.history-cards li span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.history-cards .rarity-fish { flex-shrink: 0; }
+.bait-note { font-size: 0.85rem; color: var(--muted); font-style: italic; }
+.history-pull { display: inline-flex; align-items: center; gap: 4px; padding-top: 2px; }
+.pull-chip {
+  min-width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+  background: color-mix(in srgb, var(--coral) calc((var(--level) - 1) * 11%), #2c6d92);
+}
+.history .secondary.full { margin-top: 14px; }
+
+.pull-chip.empty { background: transparent; border: 1px dashed var(--line); color: var(--muted); }
+
+/* Invisible native switch over a button, for iPhone haptics (components/Haptic.tsx). */
+button:has(> .haptic-switch) { position: relative; }
+.haptic-switch {
+  -webkit-appearance: auto;
+  appearance: auto;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  border-radius: inherit;
+  cursor: pointer;
+  z-index: 3;
+  touch-action: pan-x pan-y; /* scrolling that starts on a button still scrolls */
+  -webkit-tap-highlight-color: transparent;
+}
+/* iPhone SE and similar: keep a full card with timer and both buttons on one screen. */
+@media (max-height: 600px) {
+  .step-card .panel { gap: 10px; }
+  .step-card .card-actions { gap: 8px; }
+  .step-card .big { min-height: 52px; }
+  .step-card .card-face { gap: 8px; }
+}
+
+/* ---------- Home navigation: icon over label, so three fit next to the gear on small phones ---------- */
+.nav-btn {
+  flex-direction: column;
+  gap: 2px;
+  height: 52px;
+  min-width: 0;
+  padding: 0 10px;
+  border-radius: 16px;
+}
+.nav-btn .icon-label { font-size: 0.72rem; font-weight: 700; line-height: 1; }
+.home .topbar { min-height: 60px; }
+.home .topbar .icon-btn:not(.nav-btn, .swim-back) { width: 52px; height: 52px; border-radius: 16px; }
+
+/* ---------- Sunken Treasure ---------- */
+.treasure .screen-title { font-size: 1.25rem; }
+.treasure-pitch { max-width: 32ch; }
+.treasure-main { align-items: stretch; gap: 10px; }
+.chest-wrap { display: flex; justify-content: center; margin-top: 4px; }
+.chest.open .chest-sparkles path { animation: sparkle 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.chest.open .chest-sparkles path:nth-child(2) { animation-delay: 0.8s; }
+.chest.open .chest-sparkles path:nth-child(3) { animation-delay: 1.6s; }
+@keyframes sparkle { 0%, 100% { opacity: 0; transform: scale(0.4); } 50% { opacity: 1; transform: scale(1); } }
+.money {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  font-family: var(--display);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--gold);
+  text-shadow: 0 2px 16px rgba(242, 193, 78, 0.35);
+}
+.money-main { font-size: clamp(2.2rem, 11vw, 3rem); line-height: 1; white-space: pre; }
+.money-dust { font-size: 1.1rem; opacity: 0.55; margin-left: 2px; }
+.center-text { text-align: center; }
+.rate-line { text-align: center; font-weight: 700; font-size: 0.95rem; }
+.buys {
+  margin-top: 6px;
+  background: rgba(13, 44, 68, 0.82);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.buys h2 { font-size: 1.05rem; color: var(--muted); }
+.buy-list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.buy-list li { padding-left: 22px; position: relative; line-height: 1.35; }
+.buy-list li::before { content: ''; position: absolute; left: 2px; top: 0.45em; width: 11px; height: 11px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #ffe9a3, #e0a419); }
+.buys .secondary { align-self: flex-start; }
+.treasure-form { gap: 18px; padding-top: 8px; }
+.treasure-form .chest { align-self: center; }
+.amount-row { display: flex; align-items: center; gap: 10px; }
+.amount-input {
+  font: inherit;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 10px 14px;
+  min-width: 0;
+  color-scheme: dark;
+}
+.amount-input { width: 8ch; flex: none; }
+.date-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  min-width: 0;
+  min-height: 52px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 1.1rem;
+  font-weight: 800;
+  overflow: hidden; /* whatever size Safari gives the picker, it stays inside */
+}
+.date-field svg { flex-shrink: 0; color: var(--accent); }
+.date-field:focus-within { outline: 3px solid var(--accent); outline-offset: 2px; }
+.date-text { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.date-native {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  opacity: 0;
+  cursor: pointer;
+  font-size: 16px; /* below 16px, iPhone zooms the page when the field is tapped */
+  -webkit-appearance: none;
+  appearance: none;
+}
+.date-native::-webkit-calendar-picker-indicator { position: absolute; inset: 0; width: auto; height: auto; opacity: 0; cursor: pointer; }
+.amount-unit { font-weight: 700; color: var(--ink); }
+.hint { font-size: 0.82rem; color: var(--muted); }
+.form-error { color: var(--coral); font-weight: 700; font-size: 0.9rem; }
+.treasure-form .field > span:first-child { font-weight: 700; color: var(--ink); font-size: 1rem; }
+.treasure-form .segmented { align-self: flex-start; }
+.treasure-form .segmented button { min-width: 56px; justify-content: center; font-size: 1rem; }
+@media (max-width: 360px) {
+  .treasure .screen-title { font-size: 1.05rem; white-space: nowrap; }
+}
+
+/* ---------- Where are you? ---------- */
+.place-toggle button { padding: 8px 16px; }
+.place-toggle svg { flex: none; }
+
+/* New milestone waiting in the treasure. */
+.nav-dot {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--coral);
+  box-shadow: 0 0 0 2px var(--sea-top);
+}
+
+/* ---------- Milestones ---------- */
+.milestones {
+  margin-top: 16px;
+  background: rgba(13, 44, 68, 0.82);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.milestones h2 { font-size: 1.05rem; color: var(--muted); }
+.days-count { margin: 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 8px; }
+.days-count strong { font-family: var(--display); font-size: 2.4rem; font-weight: 800; line-height: 1.1; color: var(--gold); font-variant-numeric: tabular-nums; }
+.days-count span { font-weight: 700; }
+.milestone-list { list-style: none; margin: 4px 0 0; padding: 0; position: relative; }
+/* The line the milestones hang on. */
+.milestone-list::before { content: ''; position: absolute; left: 9px; top: 18px; bottom: 18px; width: 2px; background: var(--line); }
+.milestone summary {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  min-height: 44px;
+  cursor: pointer;
+}
+.milestone summary::-webkit-details-marker { display: none; }
+.milestone summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 8px; }
+.milestone-dot { width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--line); background: #0d2c44; position: relative; }
+.milestone.done .milestone-dot { background: var(--gold); border-color: var(--gold); }
+.milestone.current .milestone-dot { background: var(--gold); border-color: #ffe9a3; box-shadow: 0 0 0 4px rgba(242, 193, 78, 0.25); }
+.milestone.next .milestone-dot { border-color: var(--accent); }
+.milestone-head { display: flex; flex-direction: column; }
+.milestone-when { font-size: 0.75rem; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.milestone-title { font-family: var(--display); font-weight: 700; font-size: 1.08rem; line-height: 1.2; }
+.milestone.future .milestone-head { opacity: 0.6; }
+.milestone-tag { font-size: 0.8rem; font-weight: 700; color: var(--muted); text-align: right; white-space: nowrap; }
+.milestone.current .milestone-tag { color: var(--gold); }
+.milestone.next .milestone-tag { color: var(--accent); }
+.milestone details p { margin: 0 0 8px 32px; font-size: 0.95rem; line-height: 1.45; }
+.milestone.future details p, .milestone.done details p { color: var(--muted); }
+
+/* ---------- Quit date ---------- */
+/* Treasure without the money part: the pitch sits above the milestones. */
+.center.money-pitch { flex: none; padding-top: 8px; }
+.date-field.compact {
+  align-self: flex-start;
+  width: auto;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 8px 12px;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+/* The decoration each milestone leaves on the seabed. */
+.milestone details p.milestone-deco { display: flex; align-items: center; gap: 10px; margin: 0 0 10px 32px; font-size: 0.88rem; font-weight: 700; }
+.milestone-deco-art { flex: none; width: 38px; height: 38px; display: grid; place-items: center; border-radius: 12px; background: rgba(255, 255, 255, 0.05); }
+.milestone-deco.has .milestone-deco-art { background: #0a2233; }
+.milestone-deco.has { color: var(--ink); }
+/* The intro's last step shows a strip of seabed with the first decorations. */
+.intro-seabed { position: relative; display: flex; align-items: flex-end; gap: 22px; padding: 0 30px 4px; }
+.intro-seabed > span { display: block; line-height: 0; }
+.intro-seabed::after { content: ''; position: absolute; left: 0; right: 0; bottom: -8px; height: 20px; border-radius: 50%; background: #0a2233; z-index: -1; }
+
+/* ---------- Dodge the hooks ---------- */
+/* Full screen over the craving flow, which keeps its own top bar underneath. */
+.dodge-pond { position: fixed; inset: 0; z-index: 5; overflow: hidden; }
+/* Dragging moves the tuna, not the page. */
+.dodge-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; -webkit-touch-callout: none; }
+.dodge-hud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: calc(env(safe-area-inset-top, 0px) + 8px) max(16px, env(safe-area-inset-right, 0px)) 0 max(16px, env(safe-area-inset-left, 0px));
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  pointer-events: none;
+}
+.dodge-hud button { pointer-events: auto; }
+/* The tide: how much of the round has gone by. */
+.dodge-tide { flex: 1; height: 8px; border-radius: 999px; background: var(--surface-strong); overflow: hidden; }
+.dodge-tide > div { width: 0; height: 100%; border-radius: inherit; background: var(--accent); }
+.dodge-count { display: inline-flex; align-items: center; gap: 6px; min-width: 2.8em; font-family: var(--display); font-weight: 700; font-size: 1.1rem; font-variant-numeric: tabular-nums; }
+.dodge-bubble { width: 15px; height: 15px; border-radius: 50%; border: 2px solid var(--ink); background: rgba(94, 196, 240, 0.3); }
+/* The backdrop's rising bubbles look too much like the ones to catch. */
+.dodging .bg-bubbles { display: none; }
+/* How to play, until the player taps Start (RoundIntro). Only its buttons take taps. */
+.dodge-hint {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(340px, calc(100% - 48px));
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+/* A brutal hook's line above the how-to. */
+.dodge-lead { color: var(--coral); font-family: var(--display); font-weight: 700; font-size: 1.05rem; }
+/* After a round: the hooks' eulogy above "Did the hook let go?". */
+.dodge-summary { display: flex; flex-direction: column; gap: 2px; max-width: 340px; }
+.history-game { color: var(--muted); }
+.history-game-icon { width: 30px; display: inline-flex; justify-content: center; }
+
+/* ---------- Net Packing ---------- */
+/* Full screen over the craving flow, like Dodge the hooks: the top bar, then the board in the room
+   left under it. A finger anywhere plays, so the page mustn't scroll or select. */
+.pack-pond {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 12px);
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.pack-hud { position: relative; flex: none; width: 100%; }
+/* The next piece, small, at the end of the top bar. */
+.pack-next { flex: none; width: 46px; height: 30px; border-radius: 8px; background: var(--surface); }
+.pack-well {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  margin: 10px max(16px, env(safe-area-inset-right, 0px)) 0 max(16px, env(safe-area-inset-left, 0px));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pack-canvas { display: block; touch-action: none; }
+.packing .bg-bubbles { display: none; }
+/* "Net hauled in": shown for a moment when the stack reached the top and the bottom half went. */
+.pack-toast {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: calc(100% - 32px);
+  padding: 10px 16px;
+  border-radius: 14px;
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  font-family: var(--display);
+  font-weight: 700;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+.pack-toast.show { opacity: 1; }
+
+/* ---------- School Tracker ---------- */
+/* Full screen like Dodge the hooks (it reuses .dodge-pond and .dodge-hud). */
+.tracking .bg-bubbles { display: none; }
+/* While the school is stopped: a dot for every tuna to find, filled in gold as the player picks. */
+.track-picks { position: absolute; left: 0; right: 0; display: flex; justify-content: center; gap: 10px; pointer-events: none; }
+.track-picks i { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--ink); opacity: 0.8; }
+.track-picks i.on { background: var(--gold); border-color: var(--gold); opacity: 1; }
+
+/* ---------- Current Run ---------- */
+/* Settings' secret corner, where the round can be tried while it's out of the rotation. */
+.settings .version { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+.secret-corner h2 { margin: 0; font-family: var(--display); font-size: 1.2rem; }
+/* Full screen like Dodge the hooks (it reuses .dodge-pond and .dodge-hud). */
+.running .bg-bubbles { display: none; }
+/* The phase and its countdown, big enough to read at arm's length while moving. */
+.run-phase {
+  position: absolute;
+  top: calc(env(safe-area-inset-top, 0px) + 64px);
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 0 16px;
+  text-align: center;
+  pointer-events: none;
+}
+.run-phase-label { margin: 0; font-family: var(--display); font-weight: 800; font-size: 1.6rem; line-height: 1.15; }
+.run-phase-label.swim { color: var(--gold); font-size: 2.3rem; }
+.run-clock { font-family: var(--display); font-weight: 700; font-size: 3rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.run-phase-hint, .run-hold-hint { margin: 0; min-height: 1.4em; color: var(--muted); font-weight: 700; }
+.run-hold-hint { color: var(--ink); }
+/* Once the round is going, the back button fills up while held (HOLD_MS in Run.tsx). */
+.run-hold { position: relative; overflow: hidden; touch-action: none; -webkit-touch-callout: none; user-select: none; }
+.run-hold::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--accent);
+  opacity: 0.45;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  pointer-events: none;
+}
+.run-hold.holding::after { transform: scaleY(1); transition: transform 1s linear; }
+.run-note {
+  position: absolute;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 24px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(340px, calc(100% - 32px));
+  margin: 0;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  font-weight: 700;
+  pointer-events: none;
+}
+/* For tuning on a phone: open the app with ?motion=1. Not translated, not for them. */
+.run-debug-toggle { pointer-events: auto; -webkit-touch-callout: none; user-select: none; }
+.run-debug {
+  position: absolute;
+  right: 8px;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 8px);
+  margin: 0;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.55);
+  font: 11px/1.35 ui-monospace, monospace;
+  pointer-events: none;
+}
+
+/* ---------- Bubbles ---------- */
+/* Full screen over the craving flow, like Dodge the hooks. A finger anywhere is a breath in, so the
+   page mustn't scroll or select. */
+.breathe-pond {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  overflow: hidden;
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.breathing .bg-bubbles { display: none; }
+.breathe-center {
+  position: absolute;
+  inset: 0;
+  padding: calc(env(safe-area-inset-top, 0px) + 64px) 16px calc(env(safe-area-inset-bottom, 0px) + 16px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  text-align: center;
+  pointer-events: none;
+}
+.breathe-word { font-family: var(--display); font-weight: 700; font-size: 1.9rem; line-height: 1.2; min-height: 1.2em; }
+.breathe-stage { position: relative; width: min(340px, calc(100vw - 32px), 52dvh); aspect-ratio: 1; }
+.breathe-stage > svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.breathe-track { fill: none; stroke: var(--line); stroke-width: 3; }
+.breathe-bubble { fill: rgba(94, 196, 240, 0.12); stroke: rgba(234, 244, 250, 0.75); stroke-width: 2.5; transition: fill 0.25s, stroke 0.25s; }
+.breathe-shine { fill: rgba(255, 255, 255, 0.75); }
+.breathe-little { fill: rgba(94, 196, 240, 0.25); stroke: rgba(234, 244, 250, 0.8); stroke-width: 1.5; }
+.breathe-dot { fill: var(--accent); }
+.breathe-dot.glow { filter: drop-shadow(0 0 6px var(--accent)); }
+/* Their finger is down: the bubble brightens, so the player can see it counts. */
+.pressing .breathe-bubble { fill: rgba(94, 196, 240, 0.22); stroke: #fff; }
+.breathe-tuna { position: absolute; left: 50%; top: 50%; width: calc(120 / 340 * 100%); transform: translate(-50%, -50%); line-height: 0; }
+.breathe-tuna svg { width: 100%; height: auto; }
+.breathe-count { font-family: var(--display); font-weight: 700; font-size: 3rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.breathe-cheer { min-height: 1.5em; color: var(--accent); font-weight: 700; opacity: 0; transition: opacity 0.4s; }
+.breathe-cheer.show { opacity: 1; }
+.breathe-hint { max-width: 300px; transition: opacity 0.6s; }
+.breathe-hint.gone { opacity: 0; }
+/* Until the player taps Start: the stage waits, dimmed, under how it works. */
+.breathe-center.waiting { opacity: 0.35; }
+.breathe-center.waiting :is(.breathe-word, .breathe-count, .breathe-hint) { visibility: hidden; }
+.round-intro button { pointer-events: auto; }
+.round-intro .primary { align-self: center; min-height: 46px; margin-top: 4px; }
+/* "Give me another game", under how to play when the round was picked from the rating. The card
+   lets taps through to the round, but this button takes its own. */
+.another-game { pointer-events: auto; align-self: center; min-height: 44px; margin-top: 6px; }
+
+/* ---------- The 3D tank ---------- */
+/* Behind every screen, shown only on the home screen. It fades in the first time; after that it's
+   there as soon as the home screen is. */
+.tank {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
+  touch-action: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease, visibility 0s linear 0.8s;
+}
+.tank.on { opacity: 1; visibility: visible; transition: opacity 0.8s ease; }
+.tank.settled { transition: none; }
+/* Visit my school: in front of the page, so drags reach it (the top bar and the card are above it). */
+.tank-front .tank { z-index: 1; }
+/* Once the tank covers it, the backdrop behind stops drawing. */
+.ocean-off .ocean { display: none; }
+/* The drawn seabed, until the tank is ready (or without 3D). */
+.floor { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.tuna-pet.in-3d .tuna { opacity: 0; transition: opacity 0.8s ease; }
+/* While the tank loads on a phone where it worked before: no drawn tuna, and "Visit my school"
+   keeps its place unseen, so nothing moves when the tank fades in. */
+.tuna-pet.waiting .tuna { opacity: 0; }
+.visit-btn.waiting { opacity: 0; visibility: hidden; }
+
+/* Visit my school: the buttons fade and the screen lets drags through to the tank. */
+.visit-btn { display: inline-flex; align-items: center; gap: 8px; margin-top: -6px; transition: opacity 0.8s ease, visibility 0.8s; }
+/* Short phones: a little less space between things, so the visit button fits without scrolling. */
+@media (max-height: 700px) {
+  .home-center { gap: 12px; }
+  .visit-btn { min-height: 34px; margin-top: -4px; }
+}
+@media (max-height: 600px) {
+  .home-center { gap: 9px; }
+}
+.home .home-center, .school-card { transition: opacity 0.5s ease, transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.home.wide { pointer-events: none; }
+.home.wide .topbar button, .home.wide .toast button { pointer-events: auto; }
+.home.wide .home-center { opacity: 0; transform: scale(0.9); }
+/* Hidden buttons never catch a tap (inert does this too, where the phone supports it). */
+.home.wide .home-center button { pointer-events: none; }
+.school-card {
+  position: absolute;
+  left: max(16px, env(safe-area-inset-left, 0px));
+  right: max(16px, env(safe-area-inset-right, 0px));
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 16px);
+  margin: 0;
+  gap: 2px;
+  z-index: 2;
+  background: rgba(6, 23, 36, 0.55);
+}
+.home:not(.wide) .school-card { opacity: 0; transform: scale(0.94); pointer-events: none; }
+.school-card-count { font-family: var(--display); font-weight: 700; font-size: 1.1rem; display: flex; flex-direction: column; }
+.school-card-count small { font-family: var(--sans); font-weight: 600; font-size: 0.82rem; }
+
+/* ---------- The treasure chest in the tank ---------- */
+/* Where the 3D chest goes: the tank fits the chest into this space, which keeps the drawing's place. */
+.chest-slot { flex: none; max-width: 100%; }
+.treasure-form .chest-slot { align-self: center; }
+/* Under the chest the water darkens behind the page, so the text stays easy to read over the lit sand.
+   The screen is its own layer (z-index), so the shade sits above the tank but behind the text. */
+.treasure.in-3d { z-index: 0; }
+.treasure.in-3d::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 190px;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(6, 23, 36, 0) 0, rgba(6, 23, 36, 0.5) 130px, rgba(6, 23, 36, 0.62) 100%);
+  pointer-events: none;
+}
+/* The page comes in once the camera has swum down to the chest and the lid is opening. */
+.treasure.arriving > .topbar { animation: treasure-in 0.35s ease both; }
+.treasure.arriving > :not(.topbar) { animation: treasure-in 0.6s ease 0.85s both; }
+.treasure.arriving::before { animation: treasure-shade 0.6s ease 0.85s both; }
+@keyframes treasure-shade { from { opacity: 0; } }
+/* Back from the treasure, the home screen fades in as the camera swims up (still tappable meanwhile). */
+.home.surfacing > :is(.topbar, .home-center, .school-card) { animation: treasure-shade 0.6s ease backwards; }
+@keyframes treasure-in { from { opacity: 0; transform: translateY(14px); } }
