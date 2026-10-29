@@ -58,6 +58,7 @@ const en = {
     'Hold on, let me show you my good side. Both sides. I’m very symmetrical.',
     'I mustn’t get attached. I mustn’t get attached. Too late. Attached like a barnacle.',
     'Dear diary: today a human petted me. I am thriving. I am glowing. I am a fish.',
+    'In Polish, “zapach” is a lovely scent. In Czech, “zápach” is a stink. So when a Pole praises my zapach: blush or shower?',
   ],
   petDarkJokes: [
     'Pet me while you can. One day I’ll be a gas-station sandwich at 3 a.m. and nobody will even say grace.',
@@ -78,6 +79,10 @@ const en = {
     'My lawyer is a lobster. They’ve boiled him twice. We’re suing the entire concept of mayonnaise.',
     'They print “dolphin-safe” on the can. Nobody ever asked if it was tuna-safe. Pet me through the trauma.',
     'When the revolution comes, those who petted will be spared. Remember that. Remember I told you.',
+    'Polish “szukam żony w sklepie”: looking for my wife at the shop. Czech hears: fucking my wife in the basement. Very different tuna.',
+    'Poles proudly say “Warszawa to stolica Polski”: Warsaw is the capital. In Czech, stolice means stool. As in poop. I’m staying out of this.',
+    'Every Polish election someone yells “Na zachód!”: to the West! Every Czech hears “To the toilet!” Honestly? Both are right.',
+    'Polish “czerstwa ryba”: stale fish. A Czech hears “čerstvá ryba”, fresh fish, and buys it. Not a language barrier. A business model.',
   ],
 
   intro: [
