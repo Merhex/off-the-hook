@@ -251,7 +251,7 @@ export const nl: Strings = {
   restoreConfirm: 'Dit vervangt alles in de app door de back-up. Doorgaan?',
   restored: 'Aquarium teruggezet.',
   restoreFailed: 'Dat bestand is geen back-up van Off the Hook.',
-  showInstall: 'Toon de uitleg voor het startscherm',
+  showInstall: 'Uitleg voor je startscherm',
 
   installTitle: 'Tijd voor een tank op je startscherm',
   installWhy:
