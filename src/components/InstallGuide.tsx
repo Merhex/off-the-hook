@@ -2,7 +2,7 @@ import { useEffect, useState } from 'preact/hooks';
 import { fx } from '../feedback';
 import { useT } from '../i18n';
 import { isInAppBrowser, isIOS, isIOSNonSafari } from '../platform';
-import { PlusSquare, ShareIOS } from './Icons';
+import { MoreVertical, PlusSquare, ShareIOS } from './Icons';
 import { MiniTuna, Tuna } from './Tuna';
 import { Haptic } from './Haptic';
 
@@ -79,24 +79,31 @@ export function InstallGuide({ onContinue, fromSettings = false }: { onContinue:
             </ol>
             {isIOSNonSafari() && <p class="muted small">{t.iosOtherBrowser}</p>}
           </div>
-        ) : deferredPrompt ? (
+        ) : deferredPrompt || isAndroid() ? (
           <div class="install-box">
-            <button
-              class="primary big"
-              onClick={async () => {
-                fx.tap();
-                await deferredPrompt?.prompt();
-                const choice = await deferredPrompt?.userChoice;
-                deferredPrompt = null;
-                if (choice?.outcome === 'accepted') onContinue();
-              }}
-            >
-              📲 {t.androidInstall}
-            </button>
-          </div>
-        ) : isAndroid() ? (
-          <div class="install-box">
-            <p>{t.androidManual}</p>
+            {/* Chrome on Android can install with one tap; the steps stay below for every other browser. */}
+            {deferredPrompt && (
+              <button
+                class="primary big"
+                onClick={async () => {
+                  fx.tap();
+                  await deferredPrompt?.prompt();
+                  const choice = await deferredPrompt?.userChoice;
+                  deferredPrompt = null;
+                  if (choice?.outcome === 'accepted') onContinue();
+                }}
+              >
+                📲 {t.androidInstall}
+              </button>
+            )}
+            <ol class="ios-steps">
+              {t.androidSteps.map((s, i) => (
+                <li key={i}>
+                  <span class="step-icon" aria-hidden="true">{[<MoreVertical />, <PlusSquare />, <MiniTuna size={30} />][i]}</span>
+                  <span>{s}</span>
+                </li>
+              ))}
+            </ol>
           </div>
         ) : (
           <div class="install-box">

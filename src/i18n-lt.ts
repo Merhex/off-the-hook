@@ -264,7 +264,7 @@ export const lt: Strings = {
 
   installTitle: 'Įsikurkim akvariumą tavo pradžios ekrane',
   installWhy:
-    'Pridėta prie pradžios ekrano programėlė atsidaro per visą ekraną, veikia be interneto, o tavo akvariumas saugus, net jei Safari išvalo duomenis.',
+    'Pridėta prie pradžios ekrano programėlė atsidaro per visą ekraną, veikia be interneto, o tavo akvariumas saugus, net jei naršyklė išvalo duomenis.',
   iosSteps: [
     'Safari naršyklėje bakstelėk mygtuką „Bendrinti“. (Nematai? Pirma bakstelėk •••.)',
     'Slink žemyn ir bakstelėk „Įtraukti į pradžios ekraną“.',
@@ -272,7 +272,11 @@ export const lt: Strings = {
   ],
   iosOtherBrowser: 'Patarimas: patikimiausiai tai veikia Safari naršyklėje.',
   androidInstall: 'Pridėti prie pradžios ekrano',
-  androidManual: 'Atidaryk naršyklės meniu (⋮) ir pasirink „Įdiegti programą“ arba „Pridėti prie pradžios ekrano“.',
+  androidSteps: [
+    'Bakstelėk naršyklės meniu mygtuką (⋮, dažniausiai viršutiniame kampe).',
+    'Bakstelėk „Įdiegti programą“ arba „Pridėti prie pradžios ekrano“.',
+    'Bakstelėk „Įdiegti“, tada atidaryk Off the Hook iš pradžios ekrano.',
+  ],
   inAppTitle: 'Ši naršyklė negali įdiegti programėlių',
   inAppBody: 'Nukopijuok nuorodą ir atidaryk ją Safari (arba Chrome Android telefone).',
   copyLink: 'Kopijuoti nuorodą',

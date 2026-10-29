@@ -8,7 +8,7 @@ The sources for every milestone claim live in [`docs/milestones.md`](docs/milest
 
 ## How it works
 
-- **No backend.** It's a static site. All progress stays on your phone (IndexedDB), with backup/restore to a file.
+- **No backend.** It's a static site. All progress stays on your phone (IndexedDB), with backup/restore to a file. The database is called `off-the-hook-app`: every site on `merhex.github.io` shares one browser storage, and another app there uses `off-the-hook`, so don't change this name to one that's already taken.
 - **Installable and offline.** It's a PWA: add it to the home screen from Safari and it runs full screen, offline.
 - **English, Dutch, Lithuanian and Czech.** The language is picked from the phone's settings and can be changed in Settings. To add one, add its code to `Lang`, `LANGS`, `LANG_NAMES` and `LOCALES` in [`src/cards.ts`](src/cards.ts), add a strings file like [`src/i18n-nl.ts`](src/i18n-nl.ts), and fill in the new key in the cards, milestones, comparisons and seabed names; `npm test` and `npm run build` point out anything missing.
 - **Where are you?** At the start of a craving you can switch between *At home* and *Out and about* (remembered). Out of the house, only cards tagged `anywhere` or `outside` are drawn.

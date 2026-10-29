@@ -63,7 +63,7 @@ export function Intro({
       <header class="topbar">
         <span class="topbar-spacer" />
         {!last && (
-          <button class="link" onClick={() => onDone(null)}>
+          <button class="link" onClick={() => (askQuitDate ? goTo(slides.length - 1) : onDone(null))}>
             {t.skip}
             <Haptic />
           </button>

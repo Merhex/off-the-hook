@@ -280,7 +280,7 @@ const en = {
 
   installTitle: "Let’s get you a tank on your home screen",
   installWhy:
-    'Added to your home screen, the app opens full screen, works offline, and your aquarium is safe from Safari clearing its data.',
+    'Added to your home screen, the app opens full screen, works offline, and your aquarium is safe if the browser clears its data.',
   iosSteps: [
     'Tap the Share button in Safari. (Don’t see it? Tap ••• first.)',
     'Scroll down and tap “Add to Home Screen”.',
@@ -288,7 +288,11 @@ const en = {
   ],
   iosOtherBrowser: 'Tip: this works most reliably in Safari.',
   androidInstall: 'Add to home screen',
-  androidManual: 'Open the browser menu (⋮) and choose “Install app” or “Add to home screen”.',
+  androidSteps: [
+    'Tap the menu button in your browser (⋮, usually in the top corner).',
+    'Tap “Install app” or “Add to home screen”.',
+    'Tap “Install”, then open Off the Hook from your home screen.',
+  ],
   inAppTitle: "This browser can’t install apps",
   inAppBody: 'Copy the link and open it in Safari (or Chrome on Android).',
   copyLink: 'Copy link',
@@ -675,7 +679,7 @@ const cs: Strings = {
 
   installTitle: 'Pořiďme ti nádrž na plochu',
   installWhy:
-    'Na ploše se appka otevře přes celou obrazovku, funguje offline a tvoje akvárium je v bezpečí, i když Safari maže data.',
+    'Na ploše se appka otevře přes celou obrazovku, funguje offline a tvoje akvárium je v bezpečí, i když prohlížeč smaže data.',
   iosSteps: [
     'V Safari klepni na tlačítko Sdílet. (Nevidíš ho? Nejdřív klepni na •••.)',
     'Sjeď dolů a klepni na „Přidat na plochu“.',
@@ -683,7 +687,11 @@ const cs: Strings = {
   ],
   iosOtherBrowser: 'Tip: nejspolehlivěji to funguje v Safari.',
   androidInstall: 'Přidat na plochu',
-  androidManual: 'Otevři menu prohlížeče (⋮) a zvol „Instalovat aplikaci“ nebo „Přidat na plochu“.',
+  androidSteps: [
+    'Klepni v prohlížeči na tlačítko menu (⋮, obvykle v horním rohu).',
+    'Klepni na „Instalovat aplikaci“ nebo „Přidat na plochu“.',
+    'Klepni na „Instalovat“ a pak otevři Off the Hook z plochy.',
+  ],
   inAppTitle: 'Tenhle prohlížeč neumí instalovat aplikace',
   inAppBody: 'Zkopíruj odkaz a otevři ho v Safari (nebo v Chromu na Androidu).',
   copyLink: 'Zkopírovat odkaz',

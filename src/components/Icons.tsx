@@ -120,6 +120,17 @@ export function ShareIOS({ size = 22 }: P) {
   );
 }
 
+/** Android's browser menu button (⋮). */
+export function MoreVertical({ size = 22 }: P) {
+  return (
+    <svg {...base(size)} viewBox="0 0 24 24">
+      <circle cx="12" cy="5" r="1.4" fill="currentColor" />
+      <circle cx="12" cy="12" r="1.4" fill="currentColor" />
+      <circle cx="12" cy="19" r="1.4" fill="currentColor" />
+    </svg>
+  );
+}
+
 export function PlusSquare({ size = 22 }: P) {
   return (
     <svg {...base(size)} viewBox="0 0 24 24">

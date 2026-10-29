@@ -90,7 +90,9 @@ export interface AppData {
 
 let storeHandle: ReturnType<typeof createStore> | undefined;
 // Opened on first use, so this module can also be imported where IndexedDB doesn't exist (tests).
-const store = () => (storeHandle ??= createStore('off-the-hook', 'data'));
+// Its own database name: every app on merhex.github.io shares one browser storage, and another app
+// there already uses 'off-the-hook'. Sharing it would mix up both apps' progress.
+const store = () => (storeHandle ??= createStore('off-the-hook-app', 'data'));
 const KEYS = ['collection', 'hooks', 'drawState', 'settings', 'quitDate', 'treasure', 'seabed', 'pets'] as const;
 
 function defaultLang(): Lang {

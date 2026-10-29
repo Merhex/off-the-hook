@@ -255,7 +255,7 @@ export const nl: Strings = {
 
   installTitle: 'Tijd voor een tank op je startscherm',
   installWhy:
-    'Op je startscherm opent de app op volledig scherm, werkt hij offline, en is je aquarium veilig als Safari zijn gegevens wist.',
+    'Op je startscherm opent de app op volledig scherm, werkt hij offline, en is je aquarium veilig als de browser zijn gegevens wist.',
   iosSteps: [
     'Tik in Safari op de deelknop. (Zie je hem niet? Tik eerst op •••.)',
     'Scroll naar beneden en tik op “Zet op beginscherm”.',
@@ -263,7 +263,11 @@ export const nl: Strings = {
   ],
   iosOtherBrowser: 'Tip: dit werkt het best in Safari.',
   androidInstall: 'Toevoegen aan startscherm',
-  androidManual: 'Open het browsermenu (⋮) en kies “App installeren” of “Toevoegen aan startscherm”.',
+  androidSteps: [
+    'Tik op de menuknop van je browser (⋮, meestal in de bovenhoek).',
+    'Tik op “App installeren” of “Toevoegen aan startscherm”.',
+    'Tik op “Installeren” en open Off the Hook vanaf je startscherm.',
+  ],
   inAppTitle: 'Deze browser kan geen apps installeren',
   inAppBody: 'Kopieer de link en open hem in Safari (of Chrome op Android).',
   copyLink: 'Link kopiëren',

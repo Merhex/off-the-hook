@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import type { Tank } from '../tank/scene';
 
-const WORKED_KEY = 'off-the-hook:tank-worked';
+const WORKED_KEY = 'off-the-hook-app:tank-worked';
 
 /**
  * Whether the tank loaded on this phone last time. If so, the home screen opens with just the water
