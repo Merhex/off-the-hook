@@ -5,7 +5,10 @@ import type { SlipReason } from './storage';
 /** Dutch. Informal “je” throughout, like a friend talking. */
 export const nl: Strings = {
   hookButton: 'Er hangt een haak!',
-  school: (n: number) => (n === 0 ? 'Versla een haak en je eerste vis sluit zich aan bij je school.' : `Je school: ${n} ${n === 1 ? 'vis' : 'vissen'}`),
+  school: (n: number, striped = 0) =>
+    n === 0
+      ? 'Elke dag zonder en elke haak die je verslaat, voegt een vis toe aan je school.'
+      : `Je school: ${n} ${n === 1 ? 'vis' : 'vissen'}${striped ? ` · ${striped} met gouden streep` : ''}`,
   taglines: [
     'Blijf zwemmen.',
     'Niet in blik eindigen. 🥫',
@@ -88,7 +91,7 @@ export const nl: Strings = {
     },
     {
       title: 'Je school en je aquarium',
-      body: 'Elke haak die je verslaat, voegt een vis toe aan je school. Elke kaart die je voltooit, gaat in je aquarium. Er wordt nooit iets afgepakt, en alles blijft privé op je telefoon.',
+      body: 'Elke dag zonder voegt een vis toe aan je school, en elke haak die je verslaat een vis met een gouden streep. Elke kaart die je voltooit, gaat in je aquarium. Er wordt nooit iets afgepakt, en alles blijft privé op je telefoon.',
     },
   ] as Slide[],
   next: 'Volgende',

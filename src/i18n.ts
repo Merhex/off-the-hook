@@ -13,7 +13,11 @@ export type Slide = { title: string; body: string; terms?: { word: string; meani
 
 const en = {
   hookButton: "There’s a hook!",
-  school: (n: number) => (n === 0 ? 'Beat a hook and your first fish joins your school.' : `Your school: ${n} fish`),
+  /** The school: `n` fish in all, `striped` of them for cravings beaten (the rest are days off it). */
+  school: (n: number, striped = 0) =>
+    n === 0
+      ? 'Every day off it and every hook you beat adds a fish to your school.'
+      : `Your school: ${n} fish${striped ? ` · ${striped} gold-striped` : ''}`,
   taglines: [
     'Keep swimming.',
     "Don’t end up in a can. 🥫",
@@ -104,7 +108,7 @@ const en = {
     },
     {
       title: 'Your school and your aquarium',
-      body: 'Every hook you beat adds a fish to your school. Every card you complete goes into your aquarium. Nothing is ever taken away, and everything stays private on your phone.',
+      body: 'Every day off it adds a fish to your school, and every hook you beat adds one with a gold stripe. Every card you complete goes into your aquarium. Nothing is ever taken away, and everything stays private on your phone.',
     },
   ] as Slide[],
   next: 'Next',
@@ -417,10 +421,10 @@ export type Strings = typeof en;
 
 const cs: Strings = {
   hookButton: 'Je tu háček!',
-  school: (n) =>
+  school: (n, striped = 0) =>
     n === 0
-      ? 'Poraz háček a do hejna se přidá první rybka.'
-      : `Tvoje hejno: ${n} ${csPlural(n, 'rybka', 'rybky', 'rybek')}`,
+      ? 'Za každý den bez toho a každý poražený háček se do hejna přidá rybka.'
+      : `Tvoje hejno: ${n} ${csPlural(n, 'rybka', 'rybky', 'rybek')}${striped ? ` · ${striped} se zlatým pruhem` : ''}`,
   taglines: [
     'Plav dál.',
     'Neskonči v konzervě. 🥫',
@@ -504,7 +508,7 @@ const cs: Strings = {
     },
     {
       title: 'Tvoje hejno a akvárium',
-      body: 'Za každý poražený háček se k tvému hejnu přidá rybka. Každá splněná karta putuje do akvária. Nic ti nikdy nevezmeme a všechno zůstává jen v tvém telefonu.',
+      body: 'Za každý den bez toho se k tvému hejnu přidá rybka a za každý poražený háček rybka se zlatým pruhem. Každá splněná karta putuje do akvária. Nic ti nikdy nevezmeme a všechno zůstává jen v tvém telefonu.',
     },
   ],
   next: 'Dál',

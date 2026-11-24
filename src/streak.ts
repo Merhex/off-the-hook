@@ -5,7 +5,7 @@
  */
 import { daysSince } from './milestones';
 import { dayKey } from './stats';
-import type { HookEntry } from './storage';
+import type { AppData, HookEntry } from './storage';
 
 export interface Streak {
   /** Days since their quit date or their latest fresh start. */
@@ -38,4 +38,15 @@ export function streakOf(hooks: HookEntry[], quitDate: string, now = new Date())
     swamFree: Math.max(0, daysSince(quitDate, now) - slipDays),
     hasSlips: slips.length > 0,
   };
+}
+
+/**
+ * The player's school: a fish for every day they have stayed off it since their quit date (the days
+ * they got snagged don't count) and a gold-striped one for every hook they have beaten. Like the rest of the
+ * school it never shrinks with a fresh start (D11).
+ */
+export function schoolOf(data: Pick<AppData, 'hooks' | 'quitDate'>, now = new Date()): { days: number; cravings: number; total: number } {
+  const days = data.quitDate ? streakOf(data.hooks, data.quitDate, now).swamFree : 0;
+  const cravings = data.hooks.filter((h) => h.result === 'passed').length;
+  return { days, cravings, total: days + cravings };
 }
