@@ -4,11 +4,11 @@ import type { Screen } from '../app';
 import { fx } from '../feedback';
 import { pick, useT } from '../i18n';
 import { useApp } from '../state';
-import { schoolSize } from '../storage';
 import { FAVOURITES_MIN } from '../draw';
 import { latestMilestoneDay, MILESTONES } from '../milestones';
 import { jokeDurationMs, jokeKind, makeBag, nextStreak, PET_SETTINGS, type JokeKind } from '../pet';
-import { shownTuna } from '../school3d';
+import { shownSchool, shownTuna } from '../school3d';
+import { schoolOf } from '../streak';
 import { coralLook } from '../seabed';
 import type { Tank } from '../tank/scene';
 import { treasureFill } from './Chest';
@@ -50,7 +50,8 @@ export function Home({
 }) {
   const t = useT();
   const { data, update } = useApp();
-  const school = schoolSize(data);
+  const theirSchool = schoolOf(data);
+  const school = theirSchool.total;
   const tagline = useMemo(() => pick(t.taglines), [t]);
   const favCount = Object.values(data.collection).filter((c) => c.favourite).length;
   // A milestone reached since the player last opened the treasure.
@@ -101,7 +102,8 @@ export function Home({
 
   // What the tank shows: their school, their decorations (each one sparkling the first time), and the view.
   const earned = MILESTONES.filter((m) => data.seabed.earned[m.id]).map((m) => m.id);
-  useEffect(() => tank?.setTuna(shownTuna(school)), [tank, school]);
+  const shown = shownSchool(theirSchool.days, theirSchool.cravings);
+  useEffect(() => tank?.setTuna(shown.days, shown.cravings), [tank, shown.days, shown.cravings]);
   useEffect(() => tank?.setDecorations(earned, coralLook(data.seabed.coralMonths)), [tank, earned.join(), data.seabed.coralMonths]);
   useEffect(() => tank?.sparkle(sparkling), [tank, sparkling.join()]);
   useEffect(() => tank?.go(view), [tank, view]);
@@ -133,6 +135,8 @@ export function Home({
   }, [tank, view]);
 
   // Stable pseudo-random lanes so the drawn school doesn't jump around between renders.
+  // The craving tuna (gold-striped) in the same share as in the real school.
+  const drawnCravings = school > MAX_SWIMMERS ? Math.round((theirSchool.cravings * MAX_SWIMMERS) / school) : theirSchool.cravings;
   const swimmers = useMemo(
     () =>
       Array.from({ length: Math.min(school, MAX_SWIMMERS) }, (_, i) => {
@@ -143,9 +147,10 @@ export function Home({
           delay: -r(3) * 30,
           size: 20 + r(4) * 16,
           x: r(5) * 85,
+          striped: i < drawnCravings,
         };
       }),
-    [school],
+    [school, drawnCravings],
   );
 
   const visit = (v: 'home' | 'wide') => {
@@ -167,7 +172,7 @@ export function Home({
                 class="swimmer"
                 style={{ '--x': `${s.x}%`, top: `${s.top}%`, animationDuration: `${s.duration}s`, animationDelay: `${s.delay}s` }}
               >
-                <MiniTuna size={s.size} />
+                <MiniTuna size={s.size} striped={s.striped} />
               </div>
             ))}
           </div>
@@ -234,7 +239,7 @@ export function Home({
           <span>{t.hookButton}</span>
           <Haptic />
         </button>
-        <p class="school-count">{t.school(school)}</p>
+        <p class="school-count">{t.school(school, theirSchool.cravings)}</p>
         {/* Hidden but keeping its place while the tank loads, so nothing moves when it comes. */}
         {(tank || waiting) && (
           <button class={`secondary small visit-btn${tank ? '' : ' waiting'}`} onClick={() => visit('wide')}>
@@ -265,7 +270,7 @@ export function Home({
       {tank && (
         <section class="group school-card" ref={card} inert={view !== 'wide'}>
           <p class="school-card-count">
-            {t.school(school)}
+            {t.school(school, theirSchool.cravings)}
             {school > shownTuna(school) && <small class="muted">{t.school3dShown(shownTuna(school))}</small>}
           </p>
           <p class="muted small">{calm ? t.school3dCalm : t.school3dDrag}</p>

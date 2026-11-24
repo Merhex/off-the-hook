@@ -14,8 +14,10 @@ export const ltPlural = (n: number, one: string, few: string, many: string) => {
 /** Lithuanian. Informal “tu” throughout. Needs a native speaker’s read. */
 export const lt: Strings = {
   hookButton: 'Užkibo kabliukas!',
-  school: (n: number) =>
-    n === 0 ? 'Įveik kabliuką ir pirmoji žuvis prisijungs prie tavo būrio.' : `Tavo būrys: ${n} ${ltPlural(n, 'žuvis', 'žuvys', 'žuvų')}`,
+  school: (n: number, striped = 0) =>
+    n === 0
+      ? 'Kiekviena diena be to ir kiekvienas įveiktas kabliukas prideda žuvį prie tavo būrio.'
+      : `Tavo būrys: ${n} ${ltPlural(n, 'žuvis', 'žuvys', 'žuvų')}${striped ? ` · ${striped} su auksine juostele` : ''}`,
   taglines: [
     'Plauk toliau.',
     'Nebaik konservų skardinėje. 🥫',
@@ -97,7 +99,7 @@ export const lt: Strings = {
     },
     {
       title: 'Tavo būrys ir akvariumas',
-      body: 'Kiekvienas įveiktas kabliukas prideda žuvį prie tavo būrio. Kiekviena atlikta korta keliauja į tavo akvariumą. Niekas niekada neatimama, o viskas lieka privatu tavo telefone.',
+      body: 'Kiekviena diena be to prideda žuvį prie tavo būrio, o kiekvienas įveiktas kabliukas – žuvį su auksine juostele. Kiekviena atlikta korta keliauja į tavo akvariumą. Niekas niekada neatimama, o viskas lieka privatu tavo telefone.',
     },
   ] as Slide[],
   next: 'Toliau',

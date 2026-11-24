@@ -1,6 +1,6 @@
 # Off the Hook
 
-A fish-themed web app that helps you ride out vape cravings. Tap **There's a hook!**, draw a silly side-quest card, do it, and build an aquarium of cards along the way. Every craving beaten adds a fish to your school.
+A fish-themed web app that helps you ride out vape cravings. Tap **There's a hook!**, draw a silly side-quest card, do it, and build an aquarium of cards along the way. Every day off it adds a fish to your school, and every craving beaten adds a gold-striped one.
 
 The sources for every milestone claim live in [`docs/milestones.md`](docs/milestones.md). The `docs/` folder isn't part of the app: only the built `dist/` is deployed.
 
@@ -17,7 +17,7 @@ The sources for every milestone claim live in [`docs/milestones.md`](docs/milest
 - **Daydream cards** walk you through picturing something you'd love, from a slow cup of tea to the front row at your favourite artist's show. They work anywhere.
 - **Postcards:** the win screen can send a picture of the win through the share sheet. It never mentions vaping, and nothing leaves the phone unless you pick someone.
 - **Dodge the hooks and Bubbles:** a 2½-minute game and two minutes of slow breathing with the fish (in 4, out 6). A brutal hook (8 to 10) starts with one of them at random, and "Not yet" offers both. Timings are in `DODGE_SETTINGS` (`src/dodge.ts`) and `BREATHE_SETTINGS` (`src/breathe.ts`).
-- **A 3D tank on the home screen.** Your school swims behind the button, one fish per hook beaten (up to 200 drawn), with your milestone decorations on the sand and the fish you pet in front, all in 3D. “Visit my school” under the button pulls back to the whole tank; drag to look around, or tap the treasure chest in the middle to open the treasure. three.js loads just after the app opens, so the button never waits: once 3D has worked on a phone, it opens with just the water and the button and the tank fades in; a phone without 3D keeps the drawn seabed. Tuning is in `SCHOOL3D_SETTINGS` (`src/school3d.ts`); the scene is in `src/tank/`.
+- **A 3D tank on the home screen.** Your school swims behind the button: a fish for every day off it (since the quit date, not counting days you got snagged) and a gold-striped one for every hook beaten (up to 200 drawn), with your milestone decorations on the sand and the fish you pet in front, all in 3D. “Visit my school” under the button pulls back to the whole tank; drag to look around, or tap the treasure chest in the middle to open the treasure. three.js loads just after the app opens, so the button never waits: once 3D has worked on a phone, it opens with just the water and the button and the tank fades in; a phone without 3D keeps the drawn seabed. Tuning is in `SCHOOL3D_SETTINGS` (`src/school3d.ts`); the scene is in `src/tank/`.
 - **Getting snagged:** the quiet “I got snagged” link asks what the bait was (quick taps and a note), lets you choose to start a fresh streak or keep it, and offers two minutes of breathing. Only the streak can reset; the quit date, milestones, treasure and school never do. The treasure shows current and best streak once there's been a snag.
 - **Sounds and vibrations** are generated in code (no audio files) and can be turned off in Settings. On iPhone, vibrations need iOS 18+.
 
